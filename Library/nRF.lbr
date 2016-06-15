@@ -533,12 +533,79 @@ XTAL SMD 3.2 x 1.5 mm</description>
 </symbols>
 <devicesets>
 <deviceset name="NRF51X22">
-<description>nRF51x22
+<description>&lt;h2&gt;nRF51x22&lt;/h2&gt;
 
-For devices:
-nRF51422
-nRF51822
-nRF51824</description>
+&lt;h3&gt;For devices:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;nRF51422&lt;/li&gt;
+&lt;li&gt;nRF51822&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Features&lt;/h3&gt;             
+
+&lt;ul&gt;
+
+&lt;li&gt;Single chip, highly flexible, 2.4 GHz multi-protocol device&lt;/li&gt;
+
+&lt;li&gt;32-bit ARM Cortex M0 CPU core&lt;/li&gt;
+
+&lt;li&gt;256kB/128kB flash + 32kB/16kB RAM&lt;/li&gt;
+
+&lt;li&gt;Supports Bluetooth low energy protocol stacks&lt;/li&gt;
+
+&lt;li&gt;Thread safe and run-time protected&lt;/li&gt;
+
+&lt;li&gt;Event driven API&lt;/li&gt;
+
+&lt;li&gt;On air compatible with nRF24L series&lt;/li&gt;
+
+&lt;li&gt;3 data rates (2Mbps/1Mbps/250kbps)&lt;/li&gt;
+
+&lt;li&gt;+4dBm output power&lt;/li&gt;
+
+&lt;li&gt;-93dBm sensitivity, Bluetooth low energy&lt;/li&gt;
+
+&lt;li&gt;PPI system for maximum power-efficient applications and code simplification&lt;/li&gt;
+
+&lt;li&gt;Flexible power management system with automatic power management of each peripheral&lt;/li&gt;
+
+&lt;li&gt;Configurable I/O mapping for analog and digital I/O&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;h3&gt;Applications&lt;/h3&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;Mobile phone accessories&lt;/li&gt;
+
+&lt;li&gt;Wearables&lt;/li&gt;
+
+&lt;li&gt;Beacons&lt;/li&gt;
+
+&lt;li&gt;Rezence wireless charging monitoring&lt;/li&gt;
+
+&lt;li&gt;PC peripherals&lt;/li&gt;
+
+&lt;li&gt;Consumer Electronics (CE) remote controls&lt;/li&gt;
+
+&lt;li&gt;Proximity/Alert sensors&lt;/li&gt;
+
+&lt;li&gt;Smart Home&lt;/li&gt;
+
+&lt;li&gt;Sports, fitness and healthcare sensors&lt;/li&gt;
+
+&lt;li&gt;Smart RF tags&lt;/li&gt;
+
+&lt;li&gt;Toys and electronic games&lt;/li&gt;
+
+&lt;li&gt;Intelligent domestic appliances&lt;/li&gt;
+
+&lt;li&gt;Industrial and commercial sensors&lt;/li&gt;
+
+&lt;li&gt;Lighting&lt;/li&gt;
+
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="NRF51X22" x="0" y="0"/>
 </gates>
@@ -601,6 +668,93 @@ nRF51824</description>
 </devices>
 </deviceset>
 <deviceset name="NRF52832">
+<description>&lt;h2&gt;nRF52832&lt;/h2&gt;&lt;p&gt;
+
+ &lt;h3&gt;Features&lt;/h3&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;Single chip, highly flexible, 2.4 GHz multi-protocol SoC&lt;/li&gt;
+
+&lt;li&gt;32-bit ARM Cortex-M4F Processor&lt;/li&gt;
+
+&lt;li&gt;1.7v to 3.6v operation&lt;/li&gt;
+
+&lt;li&gt;512kB flash + 64kB RAM&lt;/li&gt;
+
+&lt;li&gt;Supports concurrent Bluetooth Smart/ANT protocol operation&lt;/li&gt;
+
+&lt;li&gt;On-chip NFC tag for Out-of-Band (OOB) pairing&lt;/li&gt;
+
+&lt;li&gt;Up to +4dBm output power&lt;/li&gt;
+
+&lt;li&gt;-96dBm sensitivity, Bluetooth Smart&lt;/li&gt;
+
+&lt;li&gt;Thread safe and run-time protected&lt;/li&gt;
+
+&lt;li&gt;Event driven API&lt;/li&gt;
+
+&lt;li&gt;On air compatible with nRF24L and nRF24AP series&lt;/li&gt;
+
+&lt;li&gt;2 data rates (2Mbps/1Mbps)&lt;/li&gt;
+
+&lt;li&gt;PPI - maximum flexibility for power-efficient applications and code simplification&lt;/li&gt;
+
+&lt;li&gt;Automated power management system with automatic power management of each peripheral&lt;/li&gt;
+
+&lt;li&gt;Configurable I/O mapping for analog and digital I/O&lt;/li&gt;
+
+&lt;li&gt;3 x Master/Slave SPI&lt;/li&gt;
+
+&lt;li&gt;2 x Two-wire interface (I²C)&lt;/li&gt;
+
+&lt;li&gt;UART (RTS/CTS)&lt;/li&gt;
+
+&lt;li&gt;3 x PWM&lt;/li&gt;
+
+&lt;li&gt;AES HW encryption&lt;/li&gt;
+
+&lt;li&gt;Real Time Counter (RTC)&lt;/li&gt;
+
+&lt;li&gt;Digital microphone interface (PDM)&lt;/li&gt;
+
+&lt;li&gt;On-chip balun&lt;/li&gt;
+
+&lt;/ul&gt;
+
+ &lt;h3&gt;Applications&lt;/h3&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;Internet of Things (IoT)&lt;/li&gt;
+
+&lt;li&gt;Wearables&lt;/li&gt;
+
+&lt;li&gt;SmartHome sensors&lt;/li&gt;
+
+&lt;li&gt;Connected white goods&lt;/li&gt;
+
+&lt;li&gt;Computer peripherals&lt;/li&gt;
+
+&lt;li&gt;Voice-command smart remotes&lt;/li&gt;
+
+&lt;li&gt;A4WP ‘Rezence’ wireless charging&lt;/li&gt;
+
+&lt;li&gt;Beacons&lt;/li&gt;
+
+&lt;li&gt;Sports and fitness sensors and hubs&lt;/li&gt;
+
+&lt;li&gt;Connected health products&lt;/li&gt;
+
+&lt;li&gt;Smart watches&lt;/li&gt;
+
+&lt;li&gt;RC Toys&lt;/li&gt;
+
+&lt;li&gt;Interactive games&lt;/li&gt;
+
+&lt;li&gt;Building automation and sensor networks&lt;/li&gt;
+
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="NRF52832" x="0" y="0"/>
 </gates>
