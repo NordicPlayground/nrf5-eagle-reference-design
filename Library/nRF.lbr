@@ -331,9 +331,237 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <wire x1="1.6" y1="0.75" x2="-1.6" y2="0.75" width="0.1" layer="51"/>
 <wire x1="-1.6" y1="0.75" x2="-1.6" y2="-0.75" width="0.1" layer="51"/>
 </package>
+<package name="CEAA_WLCSP_C62">
+<description>&lt;h2&gt;CEAA WLCSP package&lt;/h2&gt;</description>
+<smd name="P$A1" x="-1.6" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A2" x="-1.2" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A3" x="-0.8" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A4" x="-0.4" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A5" x="0" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A6" x="0.4" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A7" x="0.8" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A8" x="1.2" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B1" x="-1.6" y="1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B4" x="-0.4" y="1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B5" x="0" y="1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B6" x="0.4" y="1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B7" x="0.8" y="1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B8" x="1.2" y="1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B9" x="1.6" y="1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C1" x="-1.6" y="0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C5" x="0" y="0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C6" x="0.4" y="0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C7" x="0.8" y="0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C8" x="1.2" y="0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C9" x="1.6" y="0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$D1" x="-1.6" y="0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$D7" x="0.8" y="0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$D8" x="1.2" y="0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$D9" x="1.6" y="0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E1" x="-1.6" y="0" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E2" x="-1.2" y="0" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E3" x="-0.8" y="0" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E7" x="0.8" y="0" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E8" x="1.2" y="0" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E9" x="1.6" y="0" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F1" x="-1.6" y="-0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F2" x="-1.2" y="-0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F3" x="-0.8" y="-0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F7" x="0.8" y="-0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F8" x="1.2" y="-0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F9" x="1.6" y="-0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G1" x="-1.6" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G2" x="-1.2" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G3" x="-0.8" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G4" x="-0.4" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G5" x="0" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G6" x="0.4" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G7" x="0.8" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G8" x="1.2" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G9" x="1.6" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H1" x="-1.6" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H2" x="-1.2" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H3" x="-0.8" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H4" x="-0.4" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H5" x="0" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H6" x="0.4" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H7" x="0.8" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H8" x="1.2" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H9" x="1.6" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$J2" x="-1.2" y="-1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$J3" x="-0.8" y="-1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$J4" x="-0.4" y="-1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$J5" x="0" y="-1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$J6" x="0.4" y="-1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$J7" x="0.8" y="-1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$J8" x="1.2" y="-1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<wire x1="-1.74" y1="1.84" x2="-1.74" y2="-2.01" width="0.1" layer="51"/>
+<wire x1="-1.74" y1="-2.01" x2="1.76" y2="-2.01" width="0.1" layer="51"/>
+<wire x1="1.76" y1="-2.01" x2="1.76" y2="1.84" width="0.1" layer="51"/>
+<wire x1="1.76" y1="1.84" x2="-1.74" y2="1.84" width="0.1" layer="51"/>
+<circle x="-2.39" y="1.94" radius="0.1" width="0.2" layer="21"/>
+<wire x1="-1.19" y1="-2.26" x2="-1.99" y2="-2.26" width="0.2" layer="21"/>
+<wire x1="-1.99" y1="-2.26" x2="-1.99" y2="-1.46" width="0.2" layer="21"/>
+<wire x1="1.21" y1="-2.26" x2="2.01" y2="-2.26" width="0.2" layer="21"/>
+<wire x1="2.01" y1="-2.26" x2="2.01" y2="-1.46" width="0.2" layer="21"/>
+<wire x1="2.01" y1="2.14" x2="2.01" y2="1.34" width="0.2" layer="21"/>
+<wire x1="2.01" y1="2.14" x2="1.21" y2="2.14" width="0.2" layer="21"/>
+<wire x1="-1.19" y1="2.14" x2="-1.99" y2="2.14" width="0.2" layer="21"/>
+<wire x1="-1.99" y1="2.14" x2="-1.99" y2="1.34" width="0.2" layer="21"/>
+</package>
+<package name="CFAC_WLCSP_C62">
+<description>&lt;h2&gt;CEAA WLCSP package&lt;/h2&gt;</description>
+<smd name="P$A1" x="-1.6" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A2" x="-1.2" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A3" x="-0.8" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A4" x="-0.4" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A5" x="0" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A6" x="0.4" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A7" x="0.8" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A8" x="1.2" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B1" x="-1.6" y="1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B4" x="-0.4" y="1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B5" x="0" y="1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B6" x="0.4" y="1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B7" x="0.8" y="1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B8" x="1.2" y="1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B9" x="1.6" y="1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C1" x="-1.6" y="0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C5" x="0" y="0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C6" x="0.4" y="0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C7" x="0.8" y="0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C8" x="1.2" y="0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C9" x="1.6" y="0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$D1" x="-1.6" y="0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$D7" x="0.8" y="0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$D8" x="1.2" y="0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$D9" x="1.6" y="0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E1" x="-1.6" y="0" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E2" x="-1.2" y="0" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E3" x="-0.8" y="0" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E7" x="0.8" y="0" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E8" x="1.2" y="0" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E9" x="1.6" y="0" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F1" x="-1.6" y="-0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F2" x="-1.2" y="-0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F3" x="-0.8" y="-0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F7" x="0.8" y="-0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F8" x="1.2" y="-0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F9" x="1.6" y="-0.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G1" x="-1.6" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G2" x="-1.2" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G3" x="-0.8" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G4" x="-0.4" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G5" x="0" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G6" x="0.4" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G7" x="0.8" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G8" x="1.2" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G9" x="1.6" y="-0.8" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H1" x="-1.6" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H2" x="-1.2" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H3" x="-0.8" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H4" x="-0.4" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H5" x="0" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H6" x="0.4" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H7" x="0.8" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H8" x="1.2" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H9" x="1.6" y="-1.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$J2" x="-1.2" y="-1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$J3" x="-0.8" y="-1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$J4" x="-0.4" y="-1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$J5" x="0" y="-1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$J6" x="0.4" y="-1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$J7" x="0.8" y="-1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$J8" x="1.2" y="-1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<wire x1="-1.77" y1="1.84" x2="-1.77" y2="-2.01" width="0.1" layer="51"/>
+<wire x1="-1.77" y1="-2.01" x2="2.13" y2="-2.01" width="0.1" layer="51"/>
+<wire x1="2.13" y1="-2.01" x2="2.13" y2="1.84" width="0.1" layer="51"/>
+<wire x1="2.13" y1="1.84" x2="-1.77" y2="1.84" width="0.1" layer="51"/>
+<circle x="-2.42" y="1.94" radius="0.1" width="0.2" layer="21"/>
+<wire x1="-1.22" y1="-2.26" x2="-2.02" y2="-2.26" width="0.2" layer="21"/>
+<wire x1="-2.02" y1="-2.26" x2="-2.02" y2="-1.46" width="0.2" layer="21"/>
+<wire x1="1.58" y1="-2.26" x2="2.38" y2="-2.26" width="0.2" layer="21"/>
+<wire x1="2.38" y1="-2.26" x2="2.38" y2="-1.46" width="0.2" layer="21"/>
+<wire x1="2.38" y1="2.14" x2="2.38" y2="1.34" width="0.2" layer="21"/>
+<wire x1="2.38" y1="2.14" x2="1.58" y2="2.14" width="0.2" layer="21"/>
+<wire x1="-1.22" y1="2.14" x2="-2.02" y2="2.14" width="0.2" layer="21"/>
+<wire x1="-2.02" y1="2.14" x2="-2.02" y2="1.34" width="0.2" layer="21"/>
+</package>
+<package name="CDAB_WLCSP_C56">
+<description>&lt;h2&gt;CDAB WLCSP package&lt;/h2&gt;</description>
+<smd name="P$A1" x="-1.6" y="1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A2" x="-1.2" y="1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A3" x="-0.8" y="1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A4" x="-0.4" y="1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A5" x="0" y="1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A6" x="0.4" y="1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A7" x="0.8" y="1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$A8" x="1.2" y="1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B1" x="-1.6" y="1" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B4" x="-0.4" y="1" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B5" x="0" y="1" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B6" x="0.4" y="1" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B7" x="0.8" y="1" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B8" x="1.2" y="1" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$B9" x="1.6" y="1" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C1" x="-1.6" y="0.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C5" x="0" y="0.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C6" x="0.4" y="0.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C7" x="0.8" y="0.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C8" x="1.2" y="0.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$C9" x="1.6" y="0.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$D1" x="-1.6" y="0.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$D7" x="0.8" y="0.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$D8" x="1.2" y="0.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$D9" x="1.6" y="0.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E1" x="-1.6" y="-0.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E2" x="-1.2" y="-0.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E3" x="-0.8" y="-0.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E7" x="0.8" y="-0.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E8" x="1.2" y="-0.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$E9" x="1.6" y="-0.2" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F1" x="-1.6" y="-0.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F2" x="-1.2" y="-0.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F3" x="-0.8" y="-0.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F7" x="0.8" y="-0.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F8" x="1.2" y="-0.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F9" x="1.6" y="-0.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G1" x="-1.6" y="-1" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G2" x="-1.2" y="-1" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G3" x="-0.8" y="-1" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G4" x="-0.4" y="-1" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G5" x="0" y="-1" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G6" x="0.4" y="-1" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G7" x="0.8" y="-1" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G8" x="1.2" y="-1" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$G9" x="1.6" y="-1" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H2" x="-1.2" y="-1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H3" x="-0.8" y="-1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H4" x="-0.4" y="-1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H5" x="0" y="-1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H6" x="0.4" y="-1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H7" x="0.8" y="-1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$H8" x="1.2" y="-1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<wire x1="-1.74" y1="1.64" x2="-1.74" y2="-1.66" width="0.1" layer="51"/>
+<wire x1="-1.74" y1="-1.66" x2="1.76" y2="-1.66" width="0.1" layer="51"/>
+<wire x1="1.76" y1="-1.66" x2="1.76" y2="1.64" width="0.1" layer="51"/>
+<wire x1="1.76" y1="1.64" x2="-1.74" y2="1.64" width="0.1" layer="51"/>
+<circle x="-2.39" y="1.79" radius="0.1" width="0.2" layer="21"/>
+<wire x1="-1.19" y1="-1.91" x2="-1.99" y2="-1.91" width="0.2" layer="21"/>
+<wire x1="-1.99" y1="-1.91" x2="-1.99" y2="-1.11" width="0.2" layer="21"/>
+<wire x1="1.21" y1="-1.91" x2="2.01" y2="-1.91" width="0.2" layer="21"/>
+<wire x1="2.01" y1="-1.91" x2="2.01" y2="-1.11" width="0.2" layer="21"/>
+<wire x1="2.01" y1="1.89" x2="2.01" y2="1.09" width="0.2" layer="21"/>
+<wire x1="2.01" y1="1.89" x2="1.21" y2="1.89" width="0.2" layer="21"/>
+<wire x1="-1.19" y1="1.89" x2="-1.99" y2="1.89" width="0.2" layer="21"/>
+<wire x1="-1.99" y1="1.89" x2="-1.99" y2="1.09" width="0.2" layer="21"/>
+<smd name="P$F4" x="-0.4" y="-0.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F5" x="0" y="-0.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="P$F6" x="0.4" y="-0.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+</package>
 </packages>
 <symbols>
-<symbol name="NRF51X22">
+<symbol name="NRF51X22_QF">
 <pin name="VDD@01" x="-5.08" y="40.64" length="middle" direction="pwr"/>
 <pin name="DCC@02" x="-5.08" y="38.1" length="middle" direction="pwr"/>
 <pin name="P0.30@03" x="-5.08" y="35.56" length="middle"/>
@@ -530,9 +758,128 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
 </symbol>
+<symbol name="NRF51X22_CD">
+<pin name="VDD@B8" x="40.64" y="38.1" length="middle" direction="pwr" rot="R180"/>
+<pin name="DCC@B9" x="40.64" y="50.8" length="middle" direction="pwr" rot="R180"/>
+<pin name="P0.00@C9" x="-5.08" y="81.28" length="middle"/>
+<pin name="P0.01@E7" x="-5.08" y="78.74" length="middle"/>
+<pin name="P0.02@D9" x="-5.08" y="76.2" length="middle"/>
+<pin name="P0.03@E9" x="-5.08" y="73.66" length="middle"/>
+<pin name="P0.04@E8" x="-5.08" y="71.12" length="middle"/>
+<pin name="P0.05@G9" x="-5.08" y="68.58" length="middle"/>
+<pin name="P0.06@F8" x="-5.08" y="66.04" length="middle"/>
+<pin name="P0.07@G7" x="-5.08" y="63.5" length="middle"/>
+<pin name="VDD@G8" x="40.64" y="35.56" length="middle" direction="pwr" rot="R180"/>
+<pin name="VSS@B1" x="40.64" y="15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="P0.08@H8" x="-5.08" y="60.96" length="middle"/>
+<pin name="P0.09@H7" x="-5.08" y="58.42" length="middle"/>
+<pin name="P0.10@G6" x="-5.08" y="55.88" length="middle"/>
+<pin name="P0.11@H6" x="-5.08" y="53.34" length="middle"/>
+<pin name="P0.12@H5" x="-5.08" y="50.8" length="middle"/>
+<pin name="P0.13@G5" x="-5.08" y="48.26" length="middle"/>
+<pin name="P0.14@G4" x="-5.08" y="45.72" length="middle"/>
+<pin name="P0.15@H4" x="-5.08" y="43.18" length="middle"/>
+<pin name="P0.16@H3" x="-5.08" y="40.64" length="middle"/>
+<pin name="SWDIO/NRESET@H2" x="40.64" y="58.42" length="middle" rot="R180"/>
+<pin name="SWDCLK@G2" x="40.64" y="60.96" length="middle" direction="in" rot="R180"/>
+<pin name="P0.17@G3" x="-5.08" y="38.1" length="middle"/>
+<pin name="P0.18@F3" x="-5.08" y="35.56" length="middle"/>
+<pin name="P0.19@F2" x="-5.08" y="33.02" length="middle"/>
+<pin name="P0.20@G1" x="-5.08" y="30.48" length="middle"/>
+<pin name="DEC2@F1" x="40.64" y="25.4" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD_PA@E1" x="40.64" y="33.02" length="middle" direction="pwr" rot="R180"/>
+<pin name="ANT1@D1" x="40.64" y="71.12" length="middle" rot="R180"/>
+<pin name="ANT2@C1" x="40.64" y="68.58" length="middle" rot="R180"/>
+<pin name="VSS@F4" x="40.64" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="VSS@D7" x="40.64" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="AVDD@A1" x="40.64" y="40.64" length="middle" direction="pwr" rot="R180"/>
+<pin name="XC1@A2" x="40.64" y="81.28" length="middle" rot="R180"/>
+<pin name="XC2@A3" x="40.64" y="78.74" length="middle" rot="R180"/>
+<pin name="DEC1@A4" x="40.64" y="27.94" length="middle" direction="pwr" rot="R180"/>
+<pin name="P0.21@A5" x="-5.08" y="27.94" length="middle"/>
+<pin name="P0.22@B5" x="-5.08" y="25.4" length="middle"/>
+<pin name="P0.23@B6" x="-5.08" y="22.86" length="middle"/>
+<pin name="P0.24@A6" x="-5.08" y="20.32" length="middle"/>
+<pin name="P0.25@C5" x="-5.08" y="17.78" length="middle"/>
+<pin name="P0.26@A7" x="-5.08" y="15.24" length="middle"/>
+<pin name="P0.27@A8" x="-5.08" y="12.7" length="middle"/>
+<pin name="P0.28@B7" x="-5.08" y="10.16" length="middle"/>
+<pin name="P0.29@C7" x="-5.08" y="7.62" length="middle"/>
+<text x="0" y="83.82" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VSS@B4" x="40.64" y="12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="P0.30@C8" x="-5.08" y="5.08" length="middle"/>
+<pin name="P0.31@D8" x="-5.08" y="2.54" length="middle"/>
+<pin name="VSS@F6" x="40.64" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="VSS@F9" x="40.64" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<wire x1="0" y1="0" x2="35.56" y2="0" width="0.254" layer="94"/>
+<wire x1="35.56" y1="0" x2="35.56" y2="83.82" width="0.254" layer="94"/>
+<wire x1="35.56" y1="83.82" x2="0" y2="83.82" width="0.254" layer="94"/>
+<wire x1="0" y1="83.82" x2="0" y2="0" width="0.254" layer="94"/>
+</symbol>
+<symbol name="NRF51X22_CE/CF">
+<pin name="VDD@B8" x="40.64" y="38.1" length="middle" direction="pwr" rot="R180"/>
+<pin name="DCC@B9" x="40.64" y="50.8" length="middle" direction="pwr" rot="R180"/>
+<pin name="P0.00@C9" x="-5.08" y="81.28" length="middle"/>
+<pin name="P0.01@E9" x="-5.08" y="78.74" length="middle"/>
+<pin name="P0.02@D9" x="-5.08" y="76.2" length="middle"/>
+<pin name="P0.03@F9" x="-5.08" y="73.66" length="middle"/>
+<pin name="P0.04@F8" x="-5.08" y="71.12" length="middle"/>
+<pin name="P0.05@H9" x="-5.08" y="68.58" length="middle"/>
+<pin name="P0.06@G8" x="-5.08" y="66.04" length="middle"/>
+<pin name="P0.07@H7" x="-5.08" y="63.5" length="middle"/>
+<pin name="VDD@H8" x="40.64" y="35.56" length="middle" direction="pwr" rot="R180"/>
+<pin name="VSS@B1" x="40.64" y="17.78" length="middle" direction="pwr" rot="R180"/>
+<pin name="P0.08@J8" x="-5.08" y="60.96" length="middle"/>
+<pin name="P0.09@J7" x="-5.08" y="58.42" length="middle"/>
+<pin name="P0.10@H6" x="-5.08" y="55.88" length="middle"/>
+<pin name="P0.11@J6" x="-5.08" y="53.34" length="middle"/>
+<pin name="P0.12@J5" x="-5.08" y="50.8" length="middle"/>
+<pin name="P0.13@H5" x="-5.08" y="48.26" length="middle"/>
+<pin name="P0.14@H4" x="-5.08" y="45.72" length="middle"/>
+<pin name="P0.15@J4" x="-5.08" y="43.18" length="middle"/>
+<pin name="P0.16@J3" x="-5.08" y="40.64" length="middle"/>
+<pin name="SWDIO/NRESET@J2" x="40.64" y="58.42" length="middle" rot="R180"/>
+<pin name="SWDCLK@H2" x="40.64" y="60.96" length="middle" direction="in" rot="R180"/>
+<pin name="P0.17@G2" x="-5.08" y="38.1" length="middle"/>
+<pin name="P0.18@H1" x="-5.08" y="35.56" length="middle"/>
+<pin name="P0.19@F2" x="-5.08" y="33.02" length="middle"/>
+<pin name="P0.20@G1" x="-5.08" y="30.48" length="middle"/>
+<pin name="DEC2@F1" x="40.64" y="25.4" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD_PA@E1" x="40.64" y="33.02" length="middle" direction="pwr" rot="R180"/>
+<pin name="ANT1@D1" x="40.64" y="71.12" length="middle" rot="R180"/>
+<pin name="ANT2@C1" x="40.64" y="68.58" length="middle" rot="R180"/>
+<pin name="VSS@G6" x="40.64" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="VSS@D7" x="40.64" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="AVDD@A1" x="40.64" y="40.64" length="middle" direction="pwr" rot="R180"/>
+<pin name="XC1@A2" x="40.64" y="81.28" length="middle" rot="R180"/>
+<pin name="XC2@A3" x="40.64" y="78.74" length="middle" rot="R180"/>
+<pin name="DEC1@A4" x="40.64" y="27.94" length="middle" direction="pwr" rot="R180"/>
+<pin name="P0.21@A5" x="-5.08" y="27.94" length="middle"/>
+<pin name="P0.22@B5" x="-5.08" y="25.4" length="middle"/>
+<pin name="P0.23@B6" x="-5.08" y="22.86" length="middle"/>
+<pin name="P0.24@A6" x="-5.08" y="20.32" length="middle"/>
+<pin name="P0.25@C5" x="-5.08" y="17.78" length="middle"/>
+<pin name="P0.26@A7" x="-5.08" y="15.24" length="middle"/>
+<pin name="P0.27@A8" x="-5.08" y="12.7" length="middle"/>
+<pin name="P0.28@B7" x="-5.08" y="10.16" length="middle"/>
+<pin name="P0.29@C7" x="-5.08" y="7.62" length="middle"/>
+<text x="0" y="83.82" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VSS@B4" x="40.64" y="15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="P0.30@D8" x="-5.08" y="5.08" length="middle"/>
+<pin name="P0.31@E8" x="-5.08" y="2.54" length="middle"/>
+<pin name="VSS@G9" x="40.64" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="VSS@H3" x="40.64" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<wire x1="0" y1="0" x2="35.56" y2="0" width="0.254" layer="94"/>
+<wire x1="35.56" y1="0" x2="35.56" y2="83.82" width="0.254" layer="94"/>
+<wire x1="35.56" y1="83.82" x2="0" y2="83.82" width="0.254" layer="94"/>
+<wire x1="0" y1="83.82" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="VSS@C8" x="40.64" y="12.7" length="middle" direction="pwr" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="NRF51X22">
+<deviceset name="NRF51X22_QF">
 <description>&lt;h2&gt;nRF51x22&lt;/h2&gt;
 
 &lt;h3&gt;For devices:&lt;/h3&gt;
@@ -607,10 +954,10 @@ XTAL SMD 3.2 x 1.5 mm</description>
 
 &lt;/ul&gt;</description>
 <gates>
-<gate name="G$1" symbol="NRF51X22" x="0" y="0"/>
+<gate name="G$1" symbol="NRF51X22_QF" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="QFN40P600X600X90-48_N">
+<device name="QF" package="QFN40P600X600X90-48_N">
 <connects>
 <connect gate="G$1" pin="ANT1@31" pad="31"/>
 <connect gate="G$1" pin="ANT2@32" pad="32"/>
@@ -876,6 +1223,342 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <connects>
 <connect gate="X$1" pin="1" pad="P$1"/>
 <connect gate="X$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NRF51X22_CD">
+<description>&lt;h2&gt;nRF51x22&lt;/h2&gt;
+
+&lt;h3&gt;For devices:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;nRF51422&lt;/li&gt;
+&lt;li&gt;nRF51822&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Features&lt;/h3&gt;             
+
+&lt;ul&gt;
+
+&lt;li&gt;Single chip, highly flexible, 2.4 GHz multi-protocol device&lt;/li&gt;
+
+&lt;li&gt;32-bit ARM Cortex M0 CPU core&lt;/li&gt;
+
+&lt;li&gt;256kB/128kB flash + 32kB/16kB RAM&lt;/li&gt;
+
+&lt;li&gt;Supports Bluetooth low energy protocol stacks&lt;/li&gt;
+
+&lt;li&gt;Thread safe and run-time protected&lt;/li&gt;
+
+&lt;li&gt;Event driven API&lt;/li&gt;
+
+&lt;li&gt;On air compatible with nRF24L series&lt;/li&gt;
+
+&lt;li&gt;3 data rates (2Mbps/1Mbps/250kbps)&lt;/li&gt;
+
+&lt;li&gt;+4dBm output power&lt;/li&gt;
+
+&lt;li&gt;-93dBm sensitivity, Bluetooth low energy&lt;/li&gt;
+
+&lt;li&gt;PPI system for maximum power-efficient applications and code simplification&lt;/li&gt;
+
+&lt;li&gt;Flexible power management system with automatic power management of each peripheral&lt;/li&gt;
+
+&lt;li&gt;Configurable I/O mapping for analog and digital I/O&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;h3&gt;Applications&lt;/h3&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;Mobile phone accessories&lt;/li&gt;
+
+&lt;li&gt;Wearables&lt;/li&gt;
+
+&lt;li&gt;Beacons&lt;/li&gt;
+
+&lt;li&gt;Rezence wireless charging monitoring&lt;/li&gt;
+
+&lt;li&gt;PC peripherals&lt;/li&gt;
+
+&lt;li&gt;Consumer Electronics (CE) remote controls&lt;/li&gt;
+
+&lt;li&gt;Proximity/Alert sensors&lt;/li&gt;
+
+&lt;li&gt;Smart Home&lt;/li&gt;
+
+&lt;li&gt;Sports, fitness and healthcare sensors&lt;/li&gt;
+
+&lt;li&gt;Smart RF tags&lt;/li&gt;
+
+&lt;li&gt;Toys and electronic games&lt;/li&gt;
+
+&lt;li&gt;Intelligent domestic appliances&lt;/li&gt;
+
+&lt;li&gt;Industrial and commercial sensors&lt;/li&gt;
+
+&lt;li&gt;Lighting&lt;/li&gt;
+
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="NRF51X22_CD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CDAB_WLCSP_C56">
+<connects>
+<connect gate="G$1" pin="ANT1@D1" pad="P$D1"/>
+<connect gate="G$1" pin="ANT2@C1" pad="P$C1"/>
+<connect gate="G$1" pin="AVDD@A1" pad="P$A1"/>
+<connect gate="G$1" pin="DCC@B9" pad="P$B9"/>
+<connect gate="G$1" pin="DEC1@A4" pad="P$A4"/>
+<connect gate="G$1" pin="DEC2@F1" pad="P$F1"/>
+<connect gate="G$1" pin="P0.00@C9" pad="P$C9"/>
+<connect gate="G$1" pin="P0.01@E7" pad="P$E7"/>
+<connect gate="G$1" pin="P0.02@D9" pad="P$D9"/>
+<connect gate="G$1" pin="P0.03@E9" pad="P$E9"/>
+<connect gate="G$1" pin="P0.04@E8" pad="P$E8"/>
+<connect gate="G$1" pin="P0.05@G9" pad="P$G9"/>
+<connect gate="G$1" pin="P0.06@F8" pad="P$F8"/>
+<connect gate="G$1" pin="P0.07@G7" pad="P$G7"/>
+<connect gate="G$1" pin="P0.08@H8" pad="P$H8"/>
+<connect gate="G$1" pin="P0.09@H7" pad="P$H7"/>
+<connect gate="G$1" pin="P0.10@G6" pad="P$G6"/>
+<connect gate="G$1" pin="P0.11@H6" pad="P$H6"/>
+<connect gate="G$1" pin="P0.12@H5" pad="P$H5"/>
+<connect gate="G$1" pin="P0.13@G5" pad="P$G5"/>
+<connect gate="G$1" pin="P0.14@G4" pad="P$G4"/>
+<connect gate="G$1" pin="P0.15@H4" pad="P$H4"/>
+<connect gate="G$1" pin="P0.16@H3" pad="P$H3"/>
+<connect gate="G$1" pin="P0.17@G3" pad="P$G3"/>
+<connect gate="G$1" pin="P0.18@F3" pad="P$F3"/>
+<connect gate="G$1" pin="P0.19@F2" pad="P$F2"/>
+<connect gate="G$1" pin="P0.20@G1" pad="P$G1"/>
+<connect gate="G$1" pin="P0.21@A5" pad="P$A5"/>
+<connect gate="G$1" pin="P0.22@B5" pad="P$B5"/>
+<connect gate="G$1" pin="P0.23@B6" pad="P$B6"/>
+<connect gate="G$1" pin="P0.24@A6" pad="P$A6"/>
+<connect gate="G$1" pin="P0.25@C5" pad="P$C5"/>
+<connect gate="G$1" pin="P0.26@A7" pad="P$A7"/>
+<connect gate="G$1" pin="P0.27@A8" pad="P$A8"/>
+<connect gate="G$1" pin="P0.28@B7" pad="P$B7"/>
+<connect gate="G$1" pin="P0.29@C7" pad="P$C7"/>
+<connect gate="G$1" pin="P0.30@C8" pad="P$C8"/>
+<connect gate="G$1" pin="P0.31@D8" pad="P$D8"/>
+<connect gate="G$1" pin="SWDCLK@G2" pad="P$G2"/>
+<connect gate="G$1" pin="SWDIO/NRESET@H2" pad="P$H2"/>
+<connect gate="G$1" pin="VDD@B8" pad="P$B8"/>
+<connect gate="G$1" pin="VDD@G8" pad="P$G8"/>
+<connect gate="G$1" pin="VDD_PA@E1" pad="P$E1"/>
+<connect gate="G$1" pin="VSS@B1" pad="P$B1"/>
+<connect gate="G$1" pin="VSS@B4" pad="P$B4"/>
+<connect gate="G$1" pin="VSS@D7" pad="P$D7"/>
+<connect gate="G$1" pin="VSS@F4" pad="P$F4"/>
+<connect gate="G$1" pin="VSS@F6" pad="P$F6"/>
+<connect gate="G$1" pin="VSS@F9" pad="P$F9"/>
+<connect gate="G$1" pin="XC1@A2" pad="P$A2"/>
+<connect gate="G$1" pin="XC2@A3" pad="P$A3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NRF51X22_CE/CF">
+<description>&lt;h2&gt;nRF51x22&lt;/h2&gt;
+
+&lt;h3&gt;For devices:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;nRF51422&lt;/li&gt;
+&lt;li&gt;nRF51822&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Features&lt;/h3&gt;             
+
+&lt;ul&gt;
+
+&lt;li&gt;Single chip, highly flexible, 2.4 GHz multi-protocol device&lt;/li&gt;
+
+&lt;li&gt;32-bit ARM Cortex M0 CPU core&lt;/li&gt;
+
+&lt;li&gt;256kB/128kB flash + 32kB/16kB RAM&lt;/li&gt;
+
+&lt;li&gt;Supports Bluetooth low energy protocol stacks&lt;/li&gt;
+
+&lt;li&gt;Thread safe and run-time protected&lt;/li&gt;
+
+&lt;li&gt;Event driven API&lt;/li&gt;
+
+&lt;li&gt;On air compatible with nRF24L series&lt;/li&gt;
+
+&lt;li&gt;3 data rates (2Mbps/1Mbps/250kbps)&lt;/li&gt;
+
+&lt;li&gt;+4dBm output power&lt;/li&gt;
+
+&lt;li&gt;-93dBm sensitivity, Bluetooth low energy&lt;/li&gt;
+
+&lt;li&gt;PPI system for maximum power-efficient applications and code simplification&lt;/li&gt;
+
+&lt;li&gt;Flexible power management system with automatic power management of each peripheral&lt;/li&gt;
+
+&lt;li&gt;Configurable I/O mapping for analog and digital I/O&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;h3&gt;Applications&lt;/h3&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;Mobile phone accessories&lt;/li&gt;
+
+&lt;li&gt;Wearables&lt;/li&gt;
+
+&lt;li&gt;Beacons&lt;/li&gt;
+
+&lt;li&gt;Rezence wireless charging monitoring&lt;/li&gt;
+
+&lt;li&gt;PC peripherals&lt;/li&gt;
+
+&lt;li&gt;Consumer Electronics (CE) remote controls&lt;/li&gt;
+
+&lt;li&gt;Proximity/Alert sensors&lt;/li&gt;
+
+&lt;li&gt;Smart Home&lt;/li&gt;
+
+&lt;li&gt;Sports, fitness and healthcare sensors&lt;/li&gt;
+
+&lt;li&gt;Smart RF tags&lt;/li&gt;
+
+&lt;li&gt;Toys and electronic games&lt;/li&gt;
+
+&lt;li&gt;Intelligent domestic appliances&lt;/li&gt;
+
+&lt;li&gt;Industrial and commercial sensors&lt;/li&gt;
+
+&lt;li&gt;Lighting&lt;/li&gt;
+
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="NRF51X22_CE/CF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="CE" package="CEAA_WLCSP_C62">
+<connects>
+<connect gate="G$1" pin="ANT1@D1" pad="P$D1"/>
+<connect gate="G$1" pin="ANT2@C1" pad="P$C1"/>
+<connect gate="G$1" pin="AVDD@A1" pad="P$A1"/>
+<connect gate="G$1" pin="DCC@B9" pad="P$B9"/>
+<connect gate="G$1" pin="DEC1@A4" pad="P$A4"/>
+<connect gate="G$1" pin="DEC2@F1" pad="P$F1"/>
+<connect gate="G$1" pin="P0.00@C9" pad="P$C9"/>
+<connect gate="G$1" pin="P0.01@E9" pad="P$E9"/>
+<connect gate="G$1" pin="P0.02@D9" pad="P$D9"/>
+<connect gate="G$1" pin="P0.03@F9" pad="P$F9"/>
+<connect gate="G$1" pin="P0.04@F8" pad="P$F8"/>
+<connect gate="G$1" pin="P0.05@H9" pad="P$H9"/>
+<connect gate="G$1" pin="P0.06@G8" pad="P$G8"/>
+<connect gate="G$1" pin="P0.07@H7" pad="P$H7"/>
+<connect gate="G$1" pin="P0.08@J8" pad="P$J8"/>
+<connect gate="G$1" pin="P0.09@J7" pad="P$J7"/>
+<connect gate="G$1" pin="P0.10@H6" pad="P$H6"/>
+<connect gate="G$1" pin="P0.11@J6" pad="P$J6"/>
+<connect gate="G$1" pin="P0.12@J5" pad="P$J5"/>
+<connect gate="G$1" pin="P0.13@H5" pad="P$H5"/>
+<connect gate="G$1" pin="P0.14@H4" pad="P$H4"/>
+<connect gate="G$1" pin="P0.15@J4" pad="P$J4"/>
+<connect gate="G$1" pin="P0.16@J3" pad="P$J3"/>
+<connect gate="G$1" pin="P0.17@G2" pad="P$G2"/>
+<connect gate="G$1" pin="P0.18@H1" pad="P$H1"/>
+<connect gate="G$1" pin="P0.19@F2" pad="P$F2"/>
+<connect gate="G$1" pin="P0.20@G1" pad="P$G1"/>
+<connect gate="G$1" pin="P0.21@A5" pad="P$A5"/>
+<connect gate="G$1" pin="P0.22@B5" pad="P$B5"/>
+<connect gate="G$1" pin="P0.23@B6" pad="P$B6"/>
+<connect gate="G$1" pin="P0.24@A6" pad="P$A6"/>
+<connect gate="G$1" pin="P0.25@C5" pad="P$C5"/>
+<connect gate="G$1" pin="P0.26@A7" pad="P$A7"/>
+<connect gate="G$1" pin="P0.27@A8" pad="P$A8"/>
+<connect gate="G$1" pin="P0.28@B7" pad="P$B7"/>
+<connect gate="G$1" pin="P0.29@C7" pad="P$C7"/>
+<connect gate="G$1" pin="P0.30@D8" pad="P$D8"/>
+<connect gate="G$1" pin="P0.31@E8" pad="P$E8"/>
+<connect gate="G$1" pin="SWDCLK@H2" pad="P$H2"/>
+<connect gate="G$1" pin="SWDIO/NRESET@J2" pad="P$J2"/>
+<connect gate="G$1" pin="VDD@B8" pad="P$B8"/>
+<connect gate="G$1" pin="VDD@H8" pad="P$H8"/>
+<connect gate="G$1" pin="VDD_PA@E1" pad="P$E1"/>
+<connect gate="G$1" pin="VSS@B1" pad="P$B1"/>
+<connect gate="G$1" pin="VSS@B4" pad="P$B4"/>
+<connect gate="G$1" pin="VSS@C8" pad="P$C8"/>
+<connect gate="G$1" pin="VSS@D7" pad="P$D7"/>
+<connect gate="G$1" pin="VSS@G6" pad="P$G6"/>
+<connect gate="G$1" pin="VSS@G9" pad="P$G9"/>
+<connect gate="G$1" pin="VSS@H3" pad="P$H3"/>
+<connect gate="G$1" pin="XC1@A2" pad="P$A2"/>
+<connect gate="G$1" pin="XC2@A3" pad="P$A3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CF" package="CFAC_WLCSP_C62">
+<connects>
+<connect gate="G$1" pin="ANT1@D1" pad="P$D1"/>
+<connect gate="G$1" pin="ANT2@C1" pad="P$C1"/>
+<connect gate="G$1" pin="AVDD@A1" pad="P$A1"/>
+<connect gate="G$1" pin="DCC@B9" pad="P$B9"/>
+<connect gate="G$1" pin="DEC1@A4" pad="P$A4"/>
+<connect gate="G$1" pin="DEC2@F1" pad="P$F1"/>
+<connect gate="G$1" pin="P0.00@C9" pad="P$C9"/>
+<connect gate="G$1" pin="P0.01@E9" pad="P$E9"/>
+<connect gate="G$1" pin="P0.02@D9" pad="P$D9"/>
+<connect gate="G$1" pin="P0.03@F9" pad="P$F9"/>
+<connect gate="G$1" pin="P0.04@F8" pad="P$F8"/>
+<connect gate="G$1" pin="P0.05@H9" pad="P$H9"/>
+<connect gate="G$1" pin="P0.06@G8" pad="P$G8"/>
+<connect gate="G$1" pin="P0.07@H7" pad="P$H7"/>
+<connect gate="G$1" pin="P0.08@J8" pad="P$J8"/>
+<connect gate="G$1" pin="P0.09@J7" pad="P$J7"/>
+<connect gate="G$1" pin="P0.10@H6" pad="P$H6"/>
+<connect gate="G$1" pin="P0.11@J6" pad="P$J6"/>
+<connect gate="G$1" pin="P0.12@J5" pad="P$J5"/>
+<connect gate="G$1" pin="P0.13@H5" pad="P$H5"/>
+<connect gate="G$1" pin="P0.14@H4" pad="P$H4"/>
+<connect gate="G$1" pin="P0.15@J4" pad="P$J4"/>
+<connect gate="G$1" pin="P0.16@J3" pad="P$J3"/>
+<connect gate="G$1" pin="P0.17@G2" pad="P$G2"/>
+<connect gate="G$1" pin="P0.18@H1" pad="P$H1"/>
+<connect gate="G$1" pin="P0.19@F2" pad="P$F2"/>
+<connect gate="G$1" pin="P0.20@G1" pad="P$G1"/>
+<connect gate="G$1" pin="P0.21@A5" pad="P$A5"/>
+<connect gate="G$1" pin="P0.22@B5" pad="P$B5"/>
+<connect gate="G$1" pin="P0.23@B6" pad="P$B6"/>
+<connect gate="G$1" pin="P0.24@A6" pad="P$A6"/>
+<connect gate="G$1" pin="P0.25@C5" pad="P$C5"/>
+<connect gate="G$1" pin="P0.26@A7" pad="P$A7"/>
+<connect gate="G$1" pin="P0.27@A8" pad="P$A8"/>
+<connect gate="G$1" pin="P0.28@B7" pad="P$B7"/>
+<connect gate="G$1" pin="P0.29@C7" pad="P$C7"/>
+<connect gate="G$1" pin="P0.30@D8" pad="P$D8"/>
+<connect gate="G$1" pin="P0.31@E8" pad="P$E8"/>
+<connect gate="G$1" pin="SWDCLK@H2" pad="P$H2"/>
+<connect gate="G$1" pin="SWDIO/NRESET@J2" pad="P$J2"/>
+<connect gate="G$1" pin="VDD@B8" pad="P$B8"/>
+<connect gate="G$1" pin="VDD@H8" pad="P$H8"/>
+<connect gate="G$1" pin="VDD_PA@E1" pad="P$E1"/>
+<connect gate="G$1" pin="VSS@B1" pad="P$B1"/>
+<connect gate="G$1" pin="VSS@B4" pad="P$B4"/>
+<connect gate="G$1" pin="VSS@C8" pad="P$C8"/>
+<connect gate="G$1" pin="VSS@D7" pad="P$D7"/>
+<connect gate="G$1" pin="VSS@G6" pad="P$G6"/>
+<connect gate="G$1" pin="VSS@G9" pad="P$G9"/>
+<connect gate="G$1" pin="VSS@H3" pad="P$H3"/>
+<connect gate="G$1" pin="XC1@A2" pad="P$A2"/>
+<connect gate="G$1" pin="XC2@A3" pad="P$A3"/>
 </connects>
 <technologies>
 <technology name=""/>
