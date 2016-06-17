@@ -1528,6 +1528,25 @@ IPC Low Density</description>
 <wire x1="-2.4" y1="1.2" x2="-2.4" y2="-1.2" width="0.1" layer="39"/>
 <wire x1="-2.4" y1="-1.2" x2="2.4" y2="-1.2" width="0.1" layer="39"/>
 </package>
+<package name="SOT220P700-4_N">
+<smd name="4" x="2.9" y="0" dx="3.25" dy="2.15" layer="1" rot="R270"/>
+<smd name="1" x="-2.9" y="2.3" dx="0.95" dy="2.15" layer="1" rot="R270"/>
+<smd name="2" x="-2.9" y="0" dx="0.95" dy="2.15" layer="1" rot="R270"/>
+<smd name="3" x="-2.9" y="-2.3" dx="0.95" dy="2.15" layer="1" rot="R270"/>
+<wire x1="1.8" y1="3.3" x2="-1.8" y2="3.3" width="0.1" layer="51"/>
+<wire x1="-1.8" y1="3.3" x2="-1.8" y2="-3.3" width="0.1" layer="51"/>
+<wire x1="-1.8" y1="-3.3" x2="1.8" y2="-3.3" width="0.1" layer="51"/>
+<wire x1="1.8" y1="-3.3" x2="1.8" y2="3.3" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="3.6" x2="-4.3" y2="-3.6" width="0.1" layer="39"/>
+<wire x1="-4.3" y1="-3.6" x2="4.3" y2="-3.6" width="0.1" layer="39"/>
+<wire x1="4.3" y1="-3.6" x2="4.3" y2="3.6" width="0.1" layer="39"/>
+<wire x1="4.3" y1="3.6" x2="-4.3" y2="3.6" width="0.1" layer="39"/>
+<wire x1="1.4" y1="3.3" x2="1.4" y2="-3.3" width="0.2" layer="21"/>
+<wire x1="1.4" y1="-3.3" x2="-1.4" y2="-3.3" width="0.2" layer="21"/>
+<wire x1="-1.4" y1="-3.3" x2="-1.4" y2="3.3" width="0.2" layer="21"/>
+<wire x1="-1.4" y1="3.3" x2="1.4" y2="3.3" width="0.2" layer="21"/>
+<circle x="-2.9" y="3.3" radius="0.1" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="NRF51X22_QF">
@@ -1845,6 +1864,17 @@ IPC Low Density</description>
 <wire x1="35.56" y1="83.82" x2="0" y2="83.82" width="0.254" layer="94"/>
 <wire x1="0" y1="83.82" x2="0" y2="0" width="0.254" layer="94"/>
 <pin name="VSS@C8" x="40.64" y="12.7" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+<symbol name="REGULATOR">
+<pin name="IN" x="-5.08" y="5.08" length="middle" direction="pwr"/>
+<pin name="GND" x="10.16" y="-5.08" length="middle" direction="pwr" rot="R90"/>
+<pin name="OUT" x="25.4" y="5.08" length="middle" direction="sup" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="10.16" x2="20.32" y2="10.16" width="0.254" layer="94"/>
+<wire x1="20.32" y1="10.16" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="12.7" y="-1.778" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="10.668" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3110,6 +3140,23 @@ IPC Low Density</description>
 <connects>
 <connect gate="C$1" pin="1" pad="1"/>
 <connect gate="C$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLV1117">
+<gates>
+<gate name="U$1" symbol="REGULATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT220P700-4_N">
+<connects>
+<connect gate="U$1" pin="GND" pad="1"/>
+<connect gate="U$1" pin="IN" pad="3"/>
+<connect gate="U$1" pin="OUT" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
