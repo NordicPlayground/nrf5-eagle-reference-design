@@ -315,10 +315,10 @@ IPC High Density</description>
 <description>&lt;b&gt;BT-XTAL_2016&lt;/b&gt;&lt;p&gt;
 
 SMD XTAL 2.0 x 1.6 mm</description>
-<smd name="P$1" x="-0.725" y="-0.575" dx="0.95" dy="0.85" layer="1"/>
-<smd name="P$2" x="0.725" y="-0.575" dx="0.95" dy="0.85" layer="1"/>
-<smd name="P$3" x="0.725" y="0.575" dx="0.95" dy="0.85" layer="1"/>
-<smd name="P$4" x="-0.725" y="0.575" dx="0.95" dy="0.85" layer="1"/>
+<smd name="1" x="-0.725" y="-0.575" dx="0.95" dy="0.85" layer="1"/>
+<smd name="2" x="0.725" y="-0.575" dx="0.95" dy="0.85" layer="1"/>
+<smd name="3" x="0.725" y="0.575" dx="0.95" dy="0.85" layer="1"/>
+<smd name="4" x="-0.725" y="0.575" dx="0.95" dy="0.85" layer="1"/>
 <text x="-2.8" y="1.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.7" y="-2.9" size="1.27" layer="27">&gt;VALUE</text>
 <circle x="-1.5" y="-1.2" radius="0.1" width="0.2" layer="21"/>
@@ -2293,10 +2293,10 @@ IPC Low Density</description>
 <devices>
 <device name="" package="BT-XTAL_2016_N">
 <connects>
-<connect gate="X$1" pin="1" pad="P$1"/>
-<connect gate="X$1" pin="2" pad="P$2"/>
-<connect gate="X$1" pin="3" pad="P$3"/>
-<connect gate="X$1" pin="4" pad="P$4"/>
+<connect gate="X$1" pin="1" pad="1"/>
+<connect gate="X$1" pin="2" pad="2"/>
+<connect gate="X$1" pin="3" pad="3"/>
+<connect gate="X$1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
