@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -311,7 +311,7 @@ IPC High Density</description>
 <wire x1="0.5" y1="0.3" x2="-0.5" y2="0.3" width="0.1" layer="39"/>
 <wire x1="-0.5" y1="0.3" x2="-0.5" y2="-0.3" width="0.1" layer="39"/>
 </package>
-<package name="BT-XTAL_2016">
+<package name="BT-XTAL_2016_N">
 <description>&lt;b&gt;BT-XTAL_2016&lt;/b&gt;&lt;p&gt;
 
 SMD XTAL 2.0 x 1.6 mm</description>
@@ -331,12 +331,12 @@ SMD XTAL 2.0 x 1.6 mm</description>
 <wire x1="-1.45" y1="1.25" x2="-1.45" y2="-1.25" width="0.1" layer="39"/>
 <wire x1="-1.45" y1="-1.25" x2="1.45" y2="-1.25" width="0.1" layer="39"/>
 </package>
-<package name="XTAL_3215">
+<package name="XTAL_3215_N">
 <description>&lt;b&gt;XTAL_3215&lt;/b&gt;&lt;p&gt;
 
 XTAL SMD 3.2 x 1.5 mm</description>
-<smd name="P$1" x="-1.25" y="0" dx="1" dy="1.8" layer="1"/>
-<smd name="P$2" x="1.25" y="0" dx="1" dy="1.8" layer="1"/>
+<smd name="1" x="-1.25" y="0" dx="1" dy="1.8" layer="1"/>
+<smd name="2" x="1.25" y="0" dx="1" dy="1.8" layer="1"/>
 <text x="-2.7" y="1.3" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.1" y="-2.6" size="1.27" layer="27">&gt;VALUE</text>
 <wire x1="-1.6" y1="-0.75" x2="1.6" y2="-0.75" width="0.1" layer="51"/>
@@ -348,7 +348,7 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <wire x1="-2" y1="1.15" x2="-2" y2="-1.15" width="0.1" layer="39"/>
 <wire x1="-2" y1="-1.15" x2="2" y2="-1.15" width="0.1" layer="39"/>
 </package>
-<package name="CEAA_WLCSP_C62">
+<package name="CEAA_WLCSP_C62_N">
 <description>&lt;h2&gt;CEAA WLCSP package&lt;/h2&gt;</description>
 <smd name="P$A1" x="-1.6" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
 <smd name="P$A2" x="-1.2" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
@@ -426,7 +426,7 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <wire x1="-1.19" y1="2.14" x2="-1.99" y2="2.14" width="0.2" layer="21"/>
 <wire x1="-1.99" y1="2.14" x2="-1.99" y2="1.34" width="0.2" layer="21"/>
 </package>
-<package name="CFAC_WLCSP_C62">
+<package name="CFAC_WLCSP_C62_N">
 <description>&lt;h2&gt;CEAA WLCSP package&lt;/h2&gt;</description>
 <smd name="P$A1" x="-1.6" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
 <smd name="P$A2" x="-1.2" y="1.6" dx="0.18" dy="0.18" layer="1" roundness="100"/>
@@ -504,7 +504,7 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <wire x1="-1.22" y1="2.14" x2="-2.02" y2="2.14" width="0.2" layer="21"/>
 <wire x1="-2.02" y1="2.14" x2="-2.02" y2="1.34" width="0.2" layer="21"/>
 </package>
-<package name="CDAB_WLCSP_C56">
+<package name="CDAB_WLCSP_C56_N">
 <description>&lt;h2&gt;CDAB WLCSP package&lt;/h2&gt;</description>
 <smd name="P$A1" x="-1.6" y="1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
 <smd name="P$A2" x="-1.2" y="1.4" dx="0.18" dy="0.18" layer="1" roundness="100"/>
@@ -2291,7 +2291,7 @@ IPC Low Density</description>
 <gate name="X$1" symbol="XTAL_GND" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="BT-XTAL_2016">
+<device name="" package="BT-XTAL_2016_N">
 <connects>
 <connect gate="X$1" pin="1" pad="P$1"/>
 <connect gate="X$1" pin="2" pad="P$2"/>
@@ -2309,10 +2309,10 @@ IPC Low Density</description>
 <gate name="X$1" symbol="XTAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="XTAL_3215">
+<device name="" package="XTAL_3215_N">
 <connects>
-<connect gate="X$1" pin="1" pad="P$1"/>
-<connect gate="X$1" pin="2" pad="P$2"/>
+<connect gate="X$1" pin="1" pad="1"/>
+<connect gate="X$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2398,7 +2398,7 @@ IPC Low Density</description>
 <gate name="U$1" symbol="NRF51X22_CD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CDAB_WLCSP_C56">
+<device name="" package="CDAB_WLCSP_C56_N">
 <connects>
 <connect gate="U$1" pin="ANT1@D1" pad="P$D1"/>
 <connect gate="U$1" pin="ANT2@C1" pad="P$C1"/>
@@ -2536,7 +2536,7 @@ IPC Low Density</description>
 <gate name="U$1" symbol="NRF51X22_CE/CF" x="0" y="0"/>
 </gates>
 <devices>
-<device name="CE" package="CEAA_WLCSP_C62">
+<device name="CE" package="CEAA_WLCSP_C62_N">
 <connects>
 <connect gate="U$1" pin="ANT1@D1" pad="P$D1"/>
 <connect gate="U$1" pin="ANT2@C1" pad="P$C1"/>
@@ -2595,7 +2595,7 @@ IPC Low Density</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="CF" package="CFAC_WLCSP_C62">
+<device name="CF" package="CFAC_WLCSP_C62_N">
 <connects>
 <connect gate="U$1" pin="ANT1@D1" pad="P$D1"/>
 <connect gate="U$1" pin="ANT2@C1" pad="P$C1"/>
