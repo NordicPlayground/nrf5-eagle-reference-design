@@ -1583,6 +1583,49 @@ IPC Low Density</description>
 <wire x1="1.25" y1="-1.25" x2="-1.25" y2="-1.25" width="0.15" layer="51"/>
 <wire x1="-1.25" y1="-1.25" x2="-1.25" y2="1.25" width="0.15" layer="51"/>
 </package>
+<package name="FPC_05P-RA-SMD">
+<description>WCON 5141-05RZDNWR01</description>
+<smd name="2" x="-0.5" y="1.6" dx="0.35" dy="0.8" layer="1"/>
+<smd name="3" x="0" y="1.6" dx="0.35" dy="0.8" layer="1"/>
+<smd name="4" x="0.5" y="1.6" dx="0.35" dy="0.8" layer="1"/>
+<smd name="5" x="1" y="1.6" dx="0.35" dy="0.8" layer="1"/>
+<smd name="1" x="-1" y="1.6" dx="0.35" dy="0.8" layer="1"/>
+<smd name="0" x="-1.9" y="-0.7" dx="0.6" dy="2.6" layer="1"/>
+<smd name="00" x="1.9" y="-0.7" dx="0.6" dy="2.6" layer="1"/>
+<wire x1="-2.45" y1="1.6" x2="2.45" y2="1.6" width="0.1" layer="51"/>
+<wire x1="2.45" y1="1.6" x2="2.45" y2="-2.25" width="0.1" layer="51"/>
+<wire x1="2.45" y1="-2.25" x2="-2.45" y2="-2.25" width="0.1" layer="51"/>
+<wire x1="-2.45" y1="-2.25" x2="-2.45" y2="1.6" width="0.1" layer="51"/>
+<wire x1="-2.7" y1="-2.5" x2="2.7" y2="-2.5" width="0.1" layer="39"/>
+<wire x1="2.7" y1="-2.5" x2="2.7" y2="2.25" width="0.1" layer="39"/>
+<wire x1="2.7" y1="2.25" x2="-2.7" y2="2.25" width="0.1" layer="39"/>
+<wire x1="-2.7" y1="2.25" x2="-2.7" y2="-2.5" width="0.1" layer="39"/>
+</package>
+<package name="HDRV127P5X2-10_N">
+<smd name="2" x="-2.54" y="1.95" dx="0.76" dy="2.4" layer="1"/>
+<smd name="4" x="-1.27" y="1.95" dx="0.76" dy="2.4" layer="1"/>
+<smd name="6" x="0" y="1.95" dx="0.76" dy="2.4" layer="1"/>
+<smd name="8" x="1.27" y="1.95" dx="0.76" dy="2.4" layer="1"/>
+<smd name="10" x="2.54" y="1.95" dx="0.76" dy="2.4" layer="1"/>
+<smd name="1" x="-2.54" y="-1.95" dx="0.76" dy="2.4" layer="1"/>
+<smd name="3" x="-1.27" y="-1.95" dx="0.76" dy="2.4" layer="1"/>
+<smd name="5" x="0" y="-1.95" dx="0.76" dy="2.4" layer="1"/>
+<smd name="7" x="1.27" y="-1.95" dx="0.76" dy="2.4" layer="1"/>
+<smd name="9" x="2.54" y="-1.95" dx="0.76" dy="2.4" layer="1"/>
+<wire x1="-3.1" y1="2.9" x2="3.1" y2="2.9" width="0.1" layer="51"/>
+<wire x1="3.1" y1="2.9" x2="3.1" y2="-2.9" width="0.1" layer="51"/>
+<wire x1="3.1" y1="-2.9" x2="-3.1" y2="-2.9" width="0.1" layer="51"/>
+<wire x1="-3.1" y1="-2.9" x2="-3.1" y2="2.9" width="0.1" layer="51"/>
+<wire x1="3.35" y1="-3.4" x2="-3.35" y2="-3.4" width="0.1" layer="39"/>
+<wire x1="-3.35" y1="-3.4" x2="-3.35" y2="3.4" width="0.1" layer="39"/>
+<wire x1="-3.35" y1="3.4" x2="3.35" y2="3.4" width="0.1" layer="39"/>
+<wire x1="3.35" y1="3.4" x2="3.35" y2="-3.4" width="0.1" layer="39"/>
+<wire x1="-5" y1="3.4" x2="4.95" y2="3.4" width="0.2" layer="21"/>
+<wire x1="4.95" y1="3.4" x2="4.95" y2="-3.4" width="0.2" layer="21"/>
+<wire x1="4.95" y1="-3.4" x2="-4" y2="-3.4" width="0.2" layer="21"/>
+<wire x1="-5" y1="3.4" x2="-5" y2="-2.4" width="0.2" layer="21"/>
+<wire x1="-5" y1="-2.4" x2="-4" y2="-3.4" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="NRF51X22_QF">
@@ -1653,8 +1696,8 @@ IPC Low Density</description>
 <pin name="P0.06@08" x="-5.08" y="22.86" length="middle"/>
 <pin name="P0.07@09" x="-5.08" y="20.32" length="middle"/>
 <pin name="P0.08@10" x="-5.08" y="17.78" length="middle"/>
-<pin name="P0.09@11" x="-5.08" y="15.24" length="middle"/>
-<pin name="P0.10@12" x="-5.08" y="12.7" length="middle"/>
+<pin name="P0.09/NFC1@11" x="-5.08" y="15.24" length="middle"/>
+<pin name="P0.10/NFC2@12" x="-5.08" y="12.7" length="middle"/>
 <pin name="VDD@13" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R90"/>
 <pin name="P0.11@14" x="15.24" y="-5.08" length="middle" rot="R90"/>
 <pin name="P0.12@15" x="17.78" y="-5.08" length="middle" rot="R90"/>
@@ -1663,7 +1706,7 @@ IPC Low Density</description>
 <pin name="P0.15@18" x="25.4" y="-5.08" length="middle" rot="R90"/>
 <pin name="P0.16@19" x="27.94" y="-5.08" length="middle" rot="R90"/>
 <pin name="P0.17@20" x="30.48" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.18@21" x="33.02" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.18/SWO@21" x="33.02" y="-5.08" length="middle" rot="R90"/>
 <pin name="P0.19@22" x="35.56" y="-5.08" length="middle" rot="R90"/>
 <pin name="P0.20@23" x="38.1" y="-5.08" length="middle" rot="R90"/>
 <pin name="P0.21/RESET@24" x="40.64" y="-5.08" length="middle" rot="R90"/>
@@ -1926,6 +1969,37 @@ IPC Low Density</description>
 <wire x1="0" y1="0" x2="-1.016" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.524" y1="0" x2="-1.778" y2="0" width="0.254" layer="94"/>
 </symbol>
+<symbol name="HEADER5X1">
+<pin name="1" x="-5.08" y="12.7" visible="pin" length="middle"/>
+<pin name="2" x="-5.08" y="10.16" visible="pin" length="middle"/>
+<pin name="3" x="-5.08" y="7.62" visible="pin" length="middle"/>
+<pin name="4" x="-5.08" y="5.08" visible="pin" length="middle"/>
+<pin name="5" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="15.748" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-1.778" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="HEADER5X2">
+<pin name="1" x="-5.08" y="12.7" visible="pin" length="middle"/>
+<pin name="2" x="15.24" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="3" x="-5.08" y="10.16" visible="pin" length="middle"/>
+<pin name="4" x="15.24" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="5" x="-5.08" y="7.62" visible="pin" length="middle"/>
+<wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="15.748" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-1.778" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="6" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="7" x="-5.08" y="5.08" visible="pin" length="middle"/>
+<pin name="8" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="9" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<pin name="10" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="NRF51X22_QF">
@@ -2173,8 +2247,8 @@ IPC Low Density</description>
 <connect gate="U$1" pin="P0.06@08" pad="8"/>
 <connect gate="U$1" pin="P0.07@09" pad="9"/>
 <connect gate="U$1" pin="P0.08@10" pad="10"/>
-<connect gate="U$1" pin="P0.09@11" pad="11"/>
-<connect gate="U$1" pin="P0.10@12" pad="12"/>
+<connect gate="U$1" pin="P0.09/NFC1@11" pad="11"/>
+<connect gate="U$1" pin="P0.10/NFC2@12" pad="12"/>
 <connect gate="U$1" pin="P0.11@14" pad="14"/>
 <connect gate="U$1" pin="P0.12@15" pad="15"/>
 <connect gate="U$1" pin="P0.13@16" pad="16"/>
@@ -2182,7 +2256,7 @@ IPC Low Density</description>
 <connect gate="U$1" pin="P0.15@18" pad="18"/>
 <connect gate="U$1" pin="P0.16@19" pad="19"/>
 <connect gate="U$1" pin="P0.17@20" pad="20"/>
-<connect gate="U$1" pin="P0.18@21" pad="21"/>
+<connect gate="U$1" pin="P0.18/SWO@21" pad="21"/>
 <connect gate="U$1" pin="P0.19@22" pad="22"/>
 <connect gate="U$1" pin="P0.20@23" pad="23"/>
 <connect gate="U$1" pin="P0.21/RESET@24" pad="24"/>
@@ -3224,6 +3298,49 @@ IPC Low Density</description>
 <connect gate="U$1" pin="@GND" pad="1 2 3 4"/>
 <connect gate="U$1" pin="@IN" pad="IN"/>
 <connect gate="U$1" pin="@OUT" pad="OUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FPC_05P-RA-SMD">
+<gates>
+<gate name="J$1" symbol="HEADER5X1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FPC_05P-RA-SMD">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+<connect gate="J$1" pin="4" pad="4"/>
+<connect gate="J$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DEBUG_CONNECTOR">
+<gates>
+<gate name="G$1" symbol="HEADER5X2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HDRV127P5X2-10_N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
