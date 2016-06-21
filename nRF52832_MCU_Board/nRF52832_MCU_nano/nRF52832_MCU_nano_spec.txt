@@ -11,7 +11,9 @@ Reset button
 power led
 A couple of user buttons
 A couple of user leds
-Current measurement header
 Debug connector
-NFC connector
 Connector for measuring antenna
+
+
+NFC connector
+Current measurement header
