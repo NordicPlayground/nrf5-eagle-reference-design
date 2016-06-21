@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -191,7 +191,7 @@ DIN A4, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="nRF">
+<library name="Nordic_nRF">
 <packages>
 <package name="QFN40P600X600X90-48_N">
 <description>&lt;b&gt;QFN40P600X600X90-48N&lt;/b&gt;&lt;p&gt;
@@ -301,6 +301,311 @@ SMD XTAL 2.0 x 1.6 mm</description>
 <wire x1="-1.45" y1="1.25" x2="-1.45" y2="-1.25" width="0.1" layer="39"/>
 <wire x1="-1.45" y1="-1.25" x2="1.45" y2="-1.25" width="0.1" layer="39"/>
 </package>
+<package name="XTAL_3215_N">
+<description>&lt;b&gt;XTAL_3215&lt;/b&gt;&lt;p&gt;
+
+XTAL SMD 3.2 x 1.5 mm</description>
+<smd name="1" x="-1.25" y="0" dx="1" dy="1.8" layer="1"/>
+<smd name="2" x="1.25" y="0" dx="1" dy="1.8" layer="1"/>
+<text x="-2.7" y="1.3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.1" y="-2.6" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.6" y1="-0.75" x2="1.6" y2="-0.75" width="0.1" layer="51"/>
+<wire x1="1.6" y1="-0.75" x2="1.6" y2="0.75" width="0.1" layer="51"/>
+<wire x1="1.6" y1="0.75" x2="-1.6" y2="0.75" width="0.1" layer="51"/>
+<wire x1="-1.6" y1="0.75" x2="-1.6" y2="-0.75" width="0.1" layer="51"/>
+<wire x1="2" y1="-1.15" x2="2" y2="1.15" width="0.1" layer="39"/>
+<wire x1="2" y1="1.15" x2="-2" y2="1.15" width="0.1" layer="39"/>
+<wire x1="-2" y1="1.15" x2="-2" y2="-1.15" width="0.1" layer="39"/>
+<wire x1="-2" y1="-1.15" x2="2" y2="-1.15" width="0.1" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="NRF52832">
+<pin name="DEC1@01" x="-5.08" y="40.64" length="middle" direction="pwr"/>
+<pin name="P0.00/XL1@02" x="-5.08" y="38.1" length="middle"/>
+<pin name="P0.01/XL2@03" x="-5.08" y="35.56" length="middle"/>
+<pin name="P0.02/AIN0@04" x="-5.08" y="33.02" length="middle"/>
+<pin name="P0.03/AIN1@05" x="-5.08" y="30.48" length="middle"/>
+<pin name="P0.04/AIN2@06" x="-5.08" y="27.94" length="middle"/>
+<pin name="P0.05/AIN3@07" x="-5.08" y="25.4" length="middle"/>
+<pin name="P0.06@08" x="-5.08" y="22.86" length="middle"/>
+<pin name="P0.07@09" x="-5.08" y="20.32" length="middle"/>
+<pin name="P0.08@10" x="-5.08" y="17.78" length="middle"/>
+<pin name="P0.09/NFC1@11" x="-5.08" y="15.24" length="middle"/>
+<pin name="P0.10/NFC2@12" x="-5.08" y="12.7" length="middle"/>
+<pin name="VDD@13" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R90"/>
+<pin name="P0.11@14" x="15.24" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.12@15" x="17.78" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.13@16" x="20.32" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.14@17" x="22.86" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.15@18" x="25.4" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.16@19" x="27.94" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.17@20" x="30.48" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.18/SWO@21" x="33.02" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.19@22" x="35.56" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.20@23" x="38.1" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.21/RESET@24" x="40.64" y="-5.08" length="middle" rot="R90"/>
+<pin name="SWDCLK@25" x="58.42" y="12.7" length="middle" direction="in" rot="R180"/>
+<pin name="SWDIO@26" x="58.42" y="15.24" length="middle" rot="R180"/>
+<pin name="P0.22@27" x="58.42" y="17.78" length="middle" rot="R180"/>
+<pin name="P0.23@28" x="58.42" y="20.32" length="middle" rot="R180"/>
+<pin name="P0.24@29" x="58.42" y="22.86" length="middle" rot="R180"/>
+<pin name="ANT@30" x="58.42" y="25.4" length="middle" rot="R180"/>
+<pin name="VSS@31" x="58.42" y="27.94" length="middle" rot="R180"/>
+<pin name="DEC2@32" x="58.42" y="30.48" length="middle" rot="R180"/>
+<pin name="DEC3@33" x="58.42" y="33.02" length="middle" rot="R180"/>
+<pin name="XC1@34" x="58.42" y="35.56" length="middle" direction="in" rot="R180"/>
+<pin name="XC2@35" x="58.42" y="38.1" length="middle" direction="out" rot="R180"/>
+<pin name="VDD@36" x="58.42" y="40.64" length="middle" direction="pwr" rot="R180"/>
+<pin name="P0.25@37" x="40.64" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.26@38" x="38.1" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.27@39" x="35.56" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.28@40" x="33.02" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.29@41" x="30.48" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.30@42" x="27.94" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.31@43" x="25.4" y="58.42" length="middle" rot="R270"/>
+<pin name="N.C.@44" x="22.86" y="58.42" length="middle" direction="nc" rot="R270"/>
+<pin name="VSS@45" x="20.32" y="58.42" length="middle" direction="pwr" rot="R270"/>
+<pin name="DEC4@46" x="17.78" y="58.42" length="middle" direction="pwr" rot="R270"/>
+<pin name="DCC@47" x="15.24" y="58.42" length="middle" direction="out" rot="R270"/>
+<pin name="VDD@48" x="12.7" y="58.42" length="middle" direction="pwr" rot="R270"/>
+<wire x1="53.34" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="53.34" width="0.254" layer="94"/>
+<wire x1="0" y1="53.34" x2="53.34" y2="53.34" width="0.254" layer="94"/>
+<wire x1="53.34" y1="53.34" x2="53.34" y2="0" width="0.254" layer="94"/>
+<text x="21.59" y="26.67" size="1.778" layer="94">nRF52832</text>
+<text x="48.26" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="48.26" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="XTAL_GND">
+<wire x1="4.826" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.794" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="3.429" y1="4.064" x2="3.429" y2="1.016" width="0.254" layer="94"/>
+<wire x1="3.429" y1="1.016" x2="4.191" y2="1.016" width="0.254" layer="94"/>
+<wire x1="4.191" y1="1.016" x2="4.191" y2="4.064" width="0.254" layer="94"/>
+<wire x1="4.191" y1="4.064" x2="3.429" y2="4.064" width="0.254" layer="94"/>
+<wire x1="4.826" y1="4.318" x2="4.826" y2="2.54" width="0.254" layer="94"/>
+<wire x1="4.826" y1="2.54" x2="4.826" y2="0.762" width="0.254" layer="94"/>
+<wire x1="2.794" y1="4.318" x2="2.794" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.794" y1="2.54" x2="2.794" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="4.445" x2="0.762" y2="5.08" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="5.08" x2="6.858" y2="5.08" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="6.858" y1="5.08" x2="6.858" y2="4.445" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="6.858" y1="0.635" x2="6.858" y2="0" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="0" x2="6.858" y2="0" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="0.635" width="0.1524" layer="94" style="shortdash"/>
+<text x="0" y="8.636" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="3" x="7.62" y="2.54" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="0" y="2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="4" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="XTAL">
+<wire x1="2.286" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0.254" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.889" y1="1.524" x2="0.889" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.889" y1="-1.524" x2="1.651" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="1.651" y1="-1.524" x2="1.651" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.651" y1="1.524" x2="0.889" y2="1.524" width="0.254" layer="94"/>
+<wire x1="2.286" y1="1.778" x2="2.286" y2="0" width="0.254" layer="94"/>
+<wire x1="2.286" y1="0" x2="2.286" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0.254" y1="1.778" x2="0.254" y2="0" width="0.254" layer="94"/>
+<wire x1="0.254" y1="0" x2="0.254" y2="-1.778" width="0.254" layer="94"/>
+<text x="0" y="6.096" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NRF52832">
+<description>&lt;h2&gt;nRF52832&lt;/h2&gt;&lt;p&gt;
+
+ &lt;h3&gt;Features&lt;/h3&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;Single chip, highly flexible, 2.4 GHz multi-protocol SoC&lt;/li&gt;
+
+&lt;li&gt;32-bit ARM Cortex-M4F Processor&lt;/li&gt;
+
+&lt;li&gt;1.7v to 3.6v operation&lt;/li&gt;
+
+&lt;li&gt;512kB flash + 64kB RAM&lt;/li&gt;
+
+&lt;li&gt;Supports concurrent Bluetooth Smart/ANT protocol operation&lt;/li&gt;
+
+&lt;li&gt;On-chip NFC tag for Out-of-Band (OOB) pairing&lt;/li&gt;
+
+&lt;li&gt;Up to +4dBm output power&lt;/li&gt;
+
+&lt;li&gt;-96dBm sensitivity, Bluetooth Smart&lt;/li&gt;
+
+&lt;li&gt;Thread safe and run-time protected&lt;/li&gt;
+
+&lt;li&gt;Event driven API&lt;/li&gt;
+
+&lt;li&gt;On air compatible with nRF24L and nRF24AP series&lt;/li&gt;
+
+&lt;li&gt;2 data rates (2Mbps/1Mbps)&lt;/li&gt;
+
+&lt;li&gt;PPI - maximum flexibility for power-efficient applications and code simplification&lt;/li&gt;
+
+&lt;li&gt;Automated power management system with automatic power management of each peripheral&lt;/li&gt;
+
+&lt;li&gt;Configurable I/O mapping for analog and digital I/O&lt;/li&gt;
+
+&lt;li&gt;3 x Master/Slave SPI&lt;/li&gt;
+
+&lt;li&gt;2 x Two-wire interface (I²C)&lt;/li&gt;
+
+&lt;li&gt;UART (RTS/CTS)&lt;/li&gt;
+
+&lt;li&gt;3 x PWM&lt;/li&gt;
+
+&lt;li&gt;AES HW encryption&lt;/li&gt;
+
+&lt;li&gt;Real Time Counter (RTC)&lt;/li&gt;
+
+&lt;li&gt;Digital microphone interface (PDM)&lt;/li&gt;
+
+&lt;li&gt;On-chip balun&lt;/li&gt;
+
+&lt;/ul&gt;
+
+ &lt;h3&gt;Applications&lt;/h3&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;Internet of Things (IoT)&lt;/li&gt;
+
+&lt;li&gt;Wearables&lt;/li&gt;
+
+&lt;li&gt;SmartHome sensors&lt;/li&gt;
+
+&lt;li&gt;Connected white goods&lt;/li&gt;
+
+&lt;li&gt;Computer peripherals&lt;/li&gt;
+
+&lt;li&gt;Voice-command smart remotes&lt;/li&gt;
+
+&lt;li&gt;A4WP ‘Rezence’ wireless charging&lt;/li&gt;
+
+&lt;li&gt;Beacons&lt;/li&gt;
+
+&lt;li&gt;Sports and fitness sensors and hubs&lt;/li&gt;
+
+&lt;li&gt;Connected health products&lt;/li&gt;
+
+&lt;li&gt;Smart watches&lt;/li&gt;
+
+&lt;li&gt;RC Toys&lt;/li&gt;
+
+&lt;li&gt;Interactive games&lt;/li&gt;
+
+&lt;li&gt;Building automation and sensor networks&lt;/li&gt;
+
+&lt;/ul&gt;</description>
+<gates>
+<gate name="U$1" symbol="NRF52832" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN40P600X600X90-48_N">
+<connects>
+<connect gate="U$1" pin="ANT@30" pad="30"/>
+<connect gate="U$1" pin="DCC@47" pad="47"/>
+<connect gate="U$1" pin="DEC1@01" pad="1"/>
+<connect gate="U$1" pin="DEC2@32" pad="32"/>
+<connect gate="U$1" pin="DEC3@33" pad="33"/>
+<connect gate="U$1" pin="DEC4@46" pad="46"/>
+<connect gate="U$1" pin="N.C.@44" pad="44"/>
+<connect gate="U$1" pin="P0.00/XL1@02" pad="2"/>
+<connect gate="U$1" pin="P0.01/XL2@03" pad="3"/>
+<connect gate="U$1" pin="P0.02/AIN0@04" pad="4"/>
+<connect gate="U$1" pin="P0.03/AIN1@05" pad="5"/>
+<connect gate="U$1" pin="P0.04/AIN2@06" pad="6"/>
+<connect gate="U$1" pin="P0.05/AIN3@07" pad="7"/>
+<connect gate="U$1" pin="P0.06@08" pad="8"/>
+<connect gate="U$1" pin="P0.07@09" pad="9"/>
+<connect gate="U$1" pin="P0.08@10" pad="10"/>
+<connect gate="U$1" pin="P0.09/NFC1@11" pad="11"/>
+<connect gate="U$1" pin="P0.10/NFC2@12" pad="12"/>
+<connect gate="U$1" pin="P0.11@14" pad="14"/>
+<connect gate="U$1" pin="P0.12@15" pad="15"/>
+<connect gate="U$1" pin="P0.13@16" pad="16"/>
+<connect gate="U$1" pin="P0.14@17" pad="17"/>
+<connect gate="U$1" pin="P0.15@18" pad="18"/>
+<connect gate="U$1" pin="P0.16@19" pad="19"/>
+<connect gate="U$1" pin="P0.17@20" pad="20"/>
+<connect gate="U$1" pin="P0.18/SWO@21" pad="21"/>
+<connect gate="U$1" pin="P0.19@22" pad="22"/>
+<connect gate="U$1" pin="P0.20@23" pad="23"/>
+<connect gate="U$1" pin="P0.21/RESET@24" pad="24"/>
+<connect gate="U$1" pin="P0.22@27" pad="27"/>
+<connect gate="U$1" pin="P0.23@28" pad="28"/>
+<connect gate="U$1" pin="P0.24@29" pad="29"/>
+<connect gate="U$1" pin="P0.25@37" pad="37"/>
+<connect gate="U$1" pin="P0.26@38" pad="38"/>
+<connect gate="U$1" pin="P0.27@39" pad="39"/>
+<connect gate="U$1" pin="P0.28@40" pad="40"/>
+<connect gate="U$1" pin="P0.29@41" pad="41"/>
+<connect gate="U$1" pin="P0.30@42" pad="42"/>
+<connect gate="U$1" pin="P0.31@43" pad="43"/>
+<connect gate="U$1" pin="SWDCLK@25" pad="25"/>
+<connect gate="U$1" pin="SWDIO@26" pad="26"/>
+<connect gate="U$1" pin="VDD@13" pad="13"/>
+<connect gate="U$1" pin="VDD@36" pad="36"/>
+<connect gate="U$1" pin="VDD@48" pad="48"/>
+<connect gate="U$1" pin="VSS@31" pad="31"/>
+<connect gate="U$1" pin="VSS@45" pad="45 PAD PAD@VIA01 PAD@VIA02 PAD@VIA03 PAD@VIA04 PAD@VIA05 PAD@VIA06 PAD@VIA07 PAD@VIA08 PAD@VIA09 PAD@VIA10 PAD@VIA11 PAD@VIA12 PAD@VIA13 PAD@VIA14 PAD@VIA15 PAD@VIA16"/>
+<connect gate="U$1" pin="XC1@34" pad="34"/>
+<connect gate="U$1" pin="XC2@35" pad="35"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XTAL_32MHZ" uservalue="yes">
+<gates>
+<gate name="X$1" symbol="XTAL_GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BT-XTAL_2016_N">
+<connects>
+<connect gate="X$1" pin="1" pad="1"/>
+<connect gate="X$1" pin="2" pad="2"/>
+<connect gate="X$1" pin="3" pad="3"/>
+<connect gate="X$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XTAL_32KHZ" uservalue="yes">
+<gates>
+<gate name="X$1" symbol="XTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XTAL_3215_N">
+<connects>
+<connect gate="X$1" pin="1" pad="1"/>
+<connect gate="X$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="Nordic_misc">
+<packages>
 <package name="QWMP_MEANDERED_LEFT_+6">
 <wire x1="0" y1="0" x2="4" y2="0" width="0.254" layer="1"/>
 <wire x1="4" y1="0" x2="4" y2="2" width="0.254" layer="1"/>
@@ -579,23 +884,6 @@ IPC Nominal Density</description>
 <wire x1="-1.4" y1="3.3" x2="1.4" y2="3.3" width="0.2" layer="21"/>
 <circle x="-2.9" y="3.3" radius="0.1" width="0.2" layer="21"/>
 </package>
-<package name="XTAL_3215_N">
-<description>&lt;b&gt;XTAL_3215&lt;/b&gt;&lt;p&gt;
-
-XTAL SMD 3.2 x 1.5 mm</description>
-<smd name="1" x="-1.25" y="0" dx="1" dy="1.8" layer="1"/>
-<smd name="2" x="1.25" y="0" dx="1" dy="1.8" layer="1"/>
-<text x="-2.7" y="1.3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.1" y="-2.6" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="-1.6" y1="-0.75" x2="1.6" y2="-0.75" width="0.1" layer="51"/>
-<wire x1="1.6" y1="-0.75" x2="1.6" y2="0.75" width="0.1" layer="51"/>
-<wire x1="1.6" y1="0.75" x2="-1.6" y2="0.75" width="0.1" layer="51"/>
-<wire x1="-1.6" y1="0.75" x2="-1.6" y2="-0.75" width="0.1" layer="51"/>
-<wire x1="2" y1="-1.15" x2="2" y2="1.15" width="0.1" layer="39"/>
-<wire x1="2" y1="1.15" x2="-2" y2="1.15" width="0.1" layer="39"/>
-<wire x1="-2" y1="1.15" x2="-2" y2="-1.15" width="0.1" layer="39"/>
-<wire x1="-2" y1="-1.15" x2="2" y2="-1.15" width="0.1" layer="39"/>
-</package>
 <package name="MM8130-2600">
 <description>Murara MM8130-2600RA2</description>
 <smd name="1" x="-1.025" y="0.95" dx="0.75" dy="0.8" layer="1"/>
@@ -727,63 +1015,6 @@ XTAL SMD 3.2 x 1.5 mm</description>
 </package>
 </packages>
 <symbols>
-<symbol name="NRF52832">
-<pin name="DEC1@01" x="-5.08" y="40.64" length="middle" direction="pwr"/>
-<pin name="P0.00/XL1@02" x="-5.08" y="38.1" length="middle"/>
-<pin name="P0.01/XL2@03" x="-5.08" y="35.56" length="middle"/>
-<pin name="P0.02/AIN0@04" x="-5.08" y="33.02" length="middle"/>
-<pin name="P0.03/AIN1@05" x="-5.08" y="30.48" length="middle"/>
-<pin name="P0.04/AIN2@06" x="-5.08" y="27.94" length="middle"/>
-<pin name="P0.05/AIN3@07" x="-5.08" y="25.4" length="middle"/>
-<pin name="P0.06@08" x="-5.08" y="22.86" length="middle"/>
-<pin name="P0.07@09" x="-5.08" y="20.32" length="middle"/>
-<pin name="P0.08@10" x="-5.08" y="17.78" length="middle"/>
-<pin name="P0.09/NFC1@11" x="-5.08" y="15.24" length="middle"/>
-<pin name="P0.10/NFC2@12" x="-5.08" y="12.7" length="middle"/>
-<pin name="VDD@13" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R90"/>
-<pin name="P0.11@14" x="15.24" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.12@15" x="17.78" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.13@16" x="20.32" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.14@17" x="22.86" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.15@18" x="25.4" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.16@19" x="27.94" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.17@20" x="30.48" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.18/SWO@21" x="33.02" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.19@22" x="35.56" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.20@23" x="38.1" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.21/RESET@24" x="40.64" y="-5.08" length="middle" rot="R90"/>
-<pin name="SWDCLK@25" x="58.42" y="12.7" length="middle" direction="in" rot="R180"/>
-<pin name="SWDIO@26" x="58.42" y="15.24" length="middle" rot="R180"/>
-<pin name="P0.22@27" x="58.42" y="17.78" length="middle" rot="R180"/>
-<pin name="P0.23@28" x="58.42" y="20.32" length="middle" rot="R180"/>
-<pin name="P0.24@29" x="58.42" y="22.86" length="middle" rot="R180"/>
-<pin name="ANT@30" x="58.42" y="25.4" length="middle" rot="R180"/>
-<pin name="VSS@31" x="58.42" y="27.94" length="middle" rot="R180"/>
-<pin name="DEC2@32" x="58.42" y="30.48" length="middle" rot="R180"/>
-<pin name="DEC3@33" x="58.42" y="33.02" length="middle" rot="R180"/>
-<pin name="XC1@34" x="58.42" y="35.56" length="middle" direction="in" rot="R180"/>
-<pin name="XC2@35" x="58.42" y="38.1" length="middle" direction="out" rot="R180"/>
-<pin name="VDD@36" x="58.42" y="40.64" length="middle" direction="pwr" rot="R180"/>
-<pin name="P0.25@37" x="40.64" y="58.42" length="middle" rot="R270"/>
-<pin name="P0.26@38" x="38.1" y="58.42" length="middle" rot="R270"/>
-<pin name="P0.27@39" x="35.56" y="58.42" length="middle" rot="R270"/>
-<pin name="P0.28@40" x="33.02" y="58.42" length="middle" rot="R270"/>
-<pin name="P0.29@41" x="30.48" y="58.42" length="middle" rot="R270"/>
-<pin name="P0.30@42" x="27.94" y="58.42" length="middle" rot="R270"/>
-<pin name="P0.31@43" x="25.4" y="58.42" length="middle" rot="R270"/>
-<pin name="N.C.@44" x="22.86" y="58.42" length="middle" direction="nc" rot="R270"/>
-<pin name="VSS@45" x="20.32" y="58.42" length="middle" direction="pwr" rot="R270"/>
-<pin name="DEC4@46" x="17.78" y="58.42" length="middle" direction="pwr" rot="R270"/>
-<pin name="DCC@47" x="15.24" y="58.42" length="middle" direction="out" rot="R270"/>
-<pin name="VDD@48" x="12.7" y="58.42" length="middle" direction="pwr" rot="R270"/>
-<wire x1="53.34" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="53.34" width="0.254" layer="94"/>
-<wire x1="0" y1="53.34" x2="53.34" y2="53.34" width="0.254" layer="94"/>
-<wire x1="53.34" y1="53.34" x2="53.34" y2="0" width="0.254" layer="94"/>
-<text x="21.59" y="26.67" size="1.778" layer="94">nRF52832</text>
-<text x="48.26" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="48.26" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
 <symbol name="ANT">
 <pin name="P$1" x="0" y="0" visible="off" length="point" rot="R90"/>
 <wire x1="0" y1="0" x2="0" y2="7.62" width="0.254" layer="94"/>
@@ -792,30 +1023,6 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <wire x1="0" y1="7.62" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
 <text x="2.54" y="5.08" size="1.27" layer="95">&gt;NAME</text>
 <text x="2.54" y="2.54" size="1.27" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="XTAL_GND">
-<wire x1="4.826" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.794" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="3.429" y1="4.064" x2="3.429" y2="1.016" width="0.254" layer="94"/>
-<wire x1="3.429" y1="1.016" x2="4.191" y2="1.016" width="0.254" layer="94"/>
-<wire x1="4.191" y1="1.016" x2="4.191" y2="4.064" width="0.254" layer="94"/>
-<wire x1="4.191" y1="4.064" x2="3.429" y2="4.064" width="0.254" layer="94"/>
-<wire x1="4.826" y1="4.318" x2="4.826" y2="2.54" width="0.254" layer="94"/>
-<wire x1="4.826" y1="2.54" x2="4.826" y2="0.762" width="0.254" layer="94"/>
-<wire x1="2.794" y1="4.318" x2="2.794" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.794" y1="2.54" x2="2.794" y2="0.762" width="0.254" layer="94"/>
-<wire x1="0.762" y1="4.445" x2="0.762" y2="5.08" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.762" y1="5.08" x2="6.858" y2="5.08" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="6.858" y1="5.08" x2="6.858" y2="4.445" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="6.858" y1="0.635" x2="6.858" y2="0" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.762" y1="0" x2="6.858" y2="0" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.762" y1="0" x2="0.762" y2="0.635" width="0.1524" layer="94" style="shortdash"/>
-<text x="0" y="8.636" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="3" x="7.62" y="2.54" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="0" y="2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
-<pin name="4" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="2" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
 </symbol>
 <symbol name="L-US">
 <wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90"/>
@@ -851,22 +1058,6 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <text x="12.7" y="-1.778" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="10.668" size="1.27" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="XTAL">
-<wire x1="2.286" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0.254" y2="0" width="0.1524" layer="94"/>
-<wire x1="0.889" y1="1.524" x2="0.889" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0.889" y1="-1.524" x2="1.651" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="1.651" y1="-1.524" x2="1.651" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.651" y1="1.524" x2="0.889" y2="1.524" width="0.254" layer="94"/>
-<wire x1="2.286" y1="1.778" x2="2.286" y2="0" width="0.254" layer="94"/>
-<wire x1="2.286" y1="0" x2="2.286" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="0.254" y1="1.778" x2="0.254" y2="0" width="0.254" layer="94"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="-1.778" width="0.254" layer="94"/>
-<text x="0" y="6.096" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 <symbol name="R-EU">
 <wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
@@ -998,173 +1189,6 @@ XTAL SMD 3.2 x 1.5 mm</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="NRF52832">
-<description>&lt;h2&gt;nRF52832&lt;/h2&gt;&lt;p&gt;
-
- &lt;h3&gt;Features&lt;/h3&gt;
-
-&lt;ul&gt;
-
-&lt;li&gt;Single chip, highly flexible, 2.4 GHz multi-protocol SoC&lt;/li&gt;
-
-&lt;li&gt;32-bit ARM Cortex-M4F Processor&lt;/li&gt;
-
-&lt;li&gt;1.7v to 3.6v operation&lt;/li&gt;
-
-&lt;li&gt;512kB flash + 64kB RAM&lt;/li&gt;
-
-&lt;li&gt;Supports concurrent Bluetooth Smart/ANT protocol operation&lt;/li&gt;
-
-&lt;li&gt;On-chip NFC tag for Out-of-Band (OOB) pairing&lt;/li&gt;
-
-&lt;li&gt;Up to +4dBm output power&lt;/li&gt;
-
-&lt;li&gt;-96dBm sensitivity, Bluetooth Smart&lt;/li&gt;
-
-&lt;li&gt;Thread safe and run-time protected&lt;/li&gt;
-
-&lt;li&gt;Event driven API&lt;/li&gt;
-
-&lt;li&gt;On air compatible with nRF24L and nRF24AP series&lt;/li&gt;
-
-&lt;li&gt;2 data rates (2Mbps/1Mbps)&lt;/li&gt;
-
-&lt;li&gt;PPI - maximum flexibility for power-efficient applications and code simplification&lt;/li&gt;
-
-&lt;li&gt;Automated power management system with automatic power management of each peripheral&lt;/li&gt;
-
-&lt;li&gt;Configurable I/O mapping for analog and digital I/O&lt;/li&gt;
-
-&lt;li&gt;3 x Master/Slave SPI&lt;/li&gt;
-
-&lt;li&gt;2 x Two-wire interface (I²C)&lt;/li&gt;
-
-&lt;li&gt;UART (RTS/CTS)&lt;/li&gt;
-
-&lt;li&gt;3 x PWM&lt;/li&gt;
-
-&lt;li&gt;AES HW encryption&lt;/li&gt;
-
-&lt;li&gt;Real Time Counter (RTC)&lt;/li&gt;
-
-&lt;li&gt;Digital microphone interface (PDM)&lt;/li&gt;
-
-&lt;li&gt;On-chip balun&lt;/li&gt;
-
-&lt;/ul&gt;
-
- &lt;h3&gt;Applications&lt;/h3&gt;
-
-&lt;ul&gt;
-
-&lt;li&gt;Internet of Things (IoT)&lt;/li&gt;
-
-&lt;li&gt;Wearables&lt;/li&gt;
-
-&lt;li&gt;SmartHome sensors&lt;/li&gt;
-
-&lt;li&gt;Connected white goods&lt;/li&gt;
-
-&lt;li&gt;Computer peripherals&lt;/li&gt;
-
-&lt;li&gt;Voice-command smart remotes&lt;/li&gt;
-
-&lt;li&gt;A4WP ‘Rezence’ wireless charging&lt;/li&gt;
-
-&lt;li&gt;Beacons&lt;/li&gt;
-
-&lt;li&gt;Sports and fitness sensors and hubs&lt;/li&gt;
-
-&lt;li&gt;Connected health products&lt;/li&gt;
-
-&lt;li&gt;Smart watches&lt;/li&gt;
-
-&lt;li&gt;RC Toys&lt;/li&gt;
-
-&lt;li&gt;Interactive games&lt;/li&gt;
-
-&lt;li&gt;Building automation and sensor networks&lt;/li&gt;
-
-&lt;/ul&gt;</description>
-<gates>
-<gate name="U$1" symbol="NRF52832" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="QFN40P600X600X90-48_N">
-<connects>
-<connect gate="U$1" pin="ANT@30" pad="30"/>
-<connect gate="U$1" pin="DCC@47" pad="47"/>
-<connect gate="U$1" pin="DEC1@01" pad="1"/>
-<connect gate="U$1" pin="DEC2@32" pad="32"/>
-<connect gate="U$1" pin="DEC3@33" pad="33"/>
-<connect gate="U$1" pin="DEC4@46" pad="46"/>
-<connect gate="U$1" pin="N.C.@44" pad="44"/>
-<connect gate="U$1" pin="P0.00/XL1@02" pad="2"/>
-<connect gate="U$1" pin="P0.01/XL2@03" pad="3"/>
-<connect gate="U$1" pin="P0.02/AIN0@04" pad="4"/>
-<connect gate="U$1" pin="P0.03/AIN1@05" pad="5"/>
-<connect gate="U$1" pin="P0.04/AIN2@06" pad="6"/>
-<connect gate="U$1" pin="P0.05/AIN3@07" pad="7"/>
-<connect gate="U$1" pin="P0.06@08" pad="8"/>
-<connect gate="U$1" pin="P0.07@09" pad="9"/>
-<connect gate="U$1" pin="P0.08@10" pad="10"/>
-<connect gate="U$1" pin="P0.09/NFC1@11" pad="11"/>
-<connect gate="U$1" pin="P0.10/NFC2@12" pad="12"/>
-<connect gate="U$1" pin="P0.11@14" pad="14"/>
-<connect gate="U$1" pin="P0.12@15" pad="15"/>
-<connect gate="U$1" pin="P0.13@16" pad="16"/>
-<connect gate="U$1" pin="P0.14@17" pad="17"/>
-<connect gate="U$1" pin="P0.15@18" pad="18"/>
-<connect gate="U$1" pin="P0.16@19" pad="19"/>
-<connect gate="U$1" pin="P0.17@20" pad="20"/>
-<connect gate="U$1" pin="P0.18/SWO@21" pad="21"/>
-<connect gate="U$1" pin="P0.19@22" pad="22"/>
-<connect gate="U$1" pin="P0.20@23" pad="23"/>
-<connect gate="U$1" pin="P0.21/RESET@24" pad="24"/>
-<connect gate="U$1" pin="P0.22@27" pad="27"/>
-<connect gate="U$1" pin="P0.23@28" pad="28"/>
-<connect gate="U$1" pin="P0.24@29" pad="29"/>
-<connect gate="U$1" pin="P0.25@37" pad="37"/>
-<connect gate="U$1" pin="P0.26@38" pad="38"/>
-<connect gate="U$1" pin="P0.27@39" pad="39"/>
-<connect gate="U$1" pin="P0.28@40" pad="40"/>
-<connect gate="U$1" pin="P0.29@41" pad="41"/>
-<connect gate="U$1" pin="P0.30@42" pad="42"/>
-<connect gate="U$1" pin="P0.31@43" pad="43"/>
-<connect gate="U$1" pin="SWDCLK@25" pad="25"/>
-<connect gate="U$1" pin="SWDIO@26" pad="26"/>
-<connect gate="U$1" pin="VDD@13" pad="13"/>
-<connect gate="U$1" pin="VDD@36" pad="36"/>
-<connect gate="U$1" pin="VDD@48" pad="48"/>
-<connect gate="U$1" pin="VSS@31" pad="31"/>
-<connect gate="U$1" pin="VSS@45" pad="45 PAD PAD@VIA01 PAD@VIA02 PAD@VIA03 PAD@VIA04 PAD@VIA05 PAD@VIA06 PAD@VIA07 PAD@VIA08 PAD@VIA09 PAD@VIA10 PAD@VIA11 PAD@VIA12 PAD@VIA13 PAD@VIA14 PAD@VIA15 PAD@VIA16"/>
-<connect gate="U$1" pin="XC1@34" pad="34"/>
-<connect gate="U$1" pin="XC2@35" pad="35"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="XTAL_32MHZ" uservalue="yes">
-<gates>
-<gate name="X$1" symbol="XTAL_GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="BT-XTAL_2016_N">
-<connects>
-<connect gate="X$1" pin="1" pad="1"/>
-<connect gate="X$1" pin="2" pad="2"/>
-<connect gate="X$1" pin="3" pad="3"/>
-<connect gate="X$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ANTENNA_QUARTER-WAVE_MONOPOLE_MEANDERED_LEFT">
 <gates>
 <gate name="G$1" symbol="ANT" x="0" y="0"/>
@@ -1422,22 +1446,6 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <connect gate="U$1" pin="GND" pad="1"/>
 <connect gate="U$1" pin="IN" pad="3"/>
 <connect gate="U$1" pin="OUT" pad="2 4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="XTAL_32KHZ" uservalue="yes">
-<gates>
-<gate name="X$1" symbol="XTAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="XTAL_3215_N">
-<connects>
-<connect gate="X$1" pin="1" pad="1"/>
-<connect gate="X$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2124,7 +2132,7 @@ Source: Samtec TSW.pdf</description>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
-<part name="U1" library="nRF" deviceset="NRF52832" device=""/>
+<part name="U1" library="Nordic_nRF" deviceset="NRF52832" device=""/>
 <part name="VDD_NRF" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -2142,54 +2150,54 @@ Source: Samtec TSW.pdf</description>
 <part name="J2" library="con-samtec" deviceset="TSW-116-02-S-S" device=""/>
 <part name="J1" library="con-samtec" deviceset="TSW-116-02-S-S" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="X1" library="nRF" deviceset="XTAL_32MHZ" device="" value="32MHz"/>
-<part name="ANT1" library="nRF" deviceset="ANTENNA_QUARTER-WAVE_MONOPOLE_MEANDERED_LEFT" device="" value=""/>
-<part name="L1" library="nRF" deviceset="INDUCTOR" device="_0402_N" value="3.9nH"/>
-<part name="U$2" library="nRF" deviceset="TLV1117" device=""/>
-<part name="L3" library="nRF" deviceset="INDUCTOR" device="_0402_N" value="15nH"/>
-<part name="L2" library="nRF" deviceset="INDUCTOR" device="_0603_N" value="10µH"/>
-<part name="C1" library="nRF" deviceset="CAPACITOR" device="_0402_N" value="12pF"/>
-<part name="C2" library="nRF" deviceset="CAPACITOR" device="_0402_N" value="12pF"/>
-<part name="C3" library="nRF" deviceset="CAPACITOR" device="_0402_N" value="0.8pF"/>
-<part name="C4" library="nRF" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
-<part name="C5" library="nRF" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
-<part name="C8" library="nRF" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
-<part name="C6" library="nRF" deviceset="CAPACITOR" device="_0402_N" value="N.M."/>
-<part name="C7" library="nRF" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
-<part name="C9" library="nRF" deviceset="CAPACITOR" device="_0603_N" value="4.7µF"/>
-<part name="C10" library="nRF" deviceset="CAPACITOR" device="_0603_N" value="1.0µF"/>
-<part name="C20" library="nRF" deviceset="CAPACITOR" device="_0402_N"/>
-<part name="X2" library="nRF" deviceset="XTAL_32KHZ" device="" value="32.768kHz"/>
-<part name="R1" library="nRF" deviceset="RESISTOR" device="_0402_N" value="0R"/>
-<part name="R2" library="nRF" deviceset="RESISTOR" device="_0402_N" value="0R"/>
-<part name="J3" library="nRF" deviceset="MM8130-2600" device=""/>
+<part name="X1" library="Nordic_nRF" deviceset="XTAL_32MHZ" device="" value="32MHz"/>
+<part name="ANT1" library="Nordic_misc" deviceset="ANTENNA_QUARTER-WAVE_MONOPOLE_MEANDERED_LEFT" device="" value=""/>
+<part name="L1" library="Nordic_misc" deviceset="INDUCTOR" device="_0402_N" value="3.9nH"/>
+<part name="U$2" library="Nordic_misc" deviceset="TLV1117" device=""/>
+<part name="L3" library="Nordic_misc" deviceset="INDUCTOR" device="_0402_N" value="15nH"/>
+<part name="L2" library="Nordic_misc" deviceset="INDUCTOR" device="_0603_N" value="10µH"/>
+<part name="C1" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="12pF"/>
+<part name="C2" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="12pF"/>
+<part name="C3" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="0.8pF"/>
+<part name="C4" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
+<part name="C5" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
+<part name="C8" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
+<part name="C6" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="N.M."/>
+<part name="C7" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
+<part name="C9" library="Nordic_misc" deviceset="CAPACITOR" device="_0603_N" value="4.7µF"/>
+<part name="C10" library="Nordic_misc" deviceset="CAPACITOR" device="_0603_N" value="1.0µF"/>
+<part name="C20" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N"/>
+<part name="X2" library="Nordic_nRF" deviceset="XTAL_32KHZ" device="" value="32.768kHz"/>
+<part name="R1" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="0R"/>
+<part name="R2" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="0R"/>
+<part name="J3" library="Nordic_misc" deviceset="MM8130-2600" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="J4" library="nRF" deviceset="FPC_05P-RA-SMD" device=""/>
-<part name="R3" library="nRF" deviceset="RESISTOR" device="_0402_N" value="0R"/>
-<part name="R4" library="nRF" deviceset="RESISTOR" device="_0402_N" value="0R"/>
-<part name="C15" library="nRF" deviceset="CAPACITOR" device="_0402_N" value="300pF"/>
-<part name="C14" library="nRF" deviceset="CAPACITOR" device="_0402_N" value="300pF"/>
+<part name="J4" library="Nordic_misc" deviceset="FPC_05P-RA-SMD" device=""/>
+<part name="R3" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="0R"/>
+<part name="R4" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="0R"/>
+<part name="C15" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="300pF"/>
+<part name="C14" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="300pF"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="J5" library="nRF" deviceset="DEBUG_CONNECTOR" device=""/>
+<part name="J5" library="Nordic_misc" deviceset="DEBUG_CONNECTOR" device=""/>
 <part name="VDD_NRF3" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="VDD_NRF4" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 <part name="VDD_NRF5" library="supply2" deviceset="VCC" device="" value="VDD_P5V0"/>
-<part name="C17" library="nRF" deviceset="CAPACITOR" device="_0603_N" value="10µF"/>
-<part name="C18" library="nRF" deviceset="CAPACITOR" device="_0603_N" value="10µF"/>
-<part name="C16" library="nRF" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
-<part name="C19" library="nRF" deviceset="CAPACITOR" device="_0805_N" value="100µF"/>
+<part name="C17" library="Nordic_misc" deviceset="CAPACITOR" device="_0603_N" value="10µF"/>
+<part name="C18" library="Nordic_misc" deviceset="CAPACITOR" device="_0603_N" value="10µF"/>
+<part name="C16" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
+<part name="C19" library="Nordic_misc" deviceset="CAPACITOR" device="_0805_N" value="100µF"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="C13" library="nRF" deviceset="CAPACITOR" device="_0402_N"/>
+<part name="C13" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="C11" library="nRF" deviceset="CAPACITOR" device="_0402_N" value="12pF"/>
-<part name="C12" library="nRF" deviceset="CAPACITOR" device="_0402_N" value="12pF"/>
-<part name="U$1" library="nRF" deviceset="MICROUSB" device=""/>
+<part name="C11" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="12pF"/>
+<part name="C12" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="12pF"/>
+<part name="U$1" library="Nordic_misc" deviceset="MICROUSB" device=""/>
 <part name="VDD_NRF6" library="supply2" deviceset="VCC" device="" value="VDD_P5V0_USB"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="X3" library="con-samtec" deviceset="TSW-102-02-S-S" device="-RA"/>
@@ -2202,25 +2210,25 @@ Source: Samtec TSW.pdf</description>
 <part name="VDD_NRF9" library="supply2" deviceset="VCC" device="" value="VDD_P5V0"/>
 <part name="VDD_NRF10" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
-<part name="U$3" library="nRF" deviceset="CR1632" device=""/>
-<part name="U$4" library="nRF" deviceset="PANASONIC_EVQPT5A15" device=""/>
-<part name="U$5" library="nRF" deviceset="PANASONIC_EVQPT5A15" device=""/>
-<part name="R7" library="nRF" deviceset="RESISTOR" device="_0402_N" value="100k"/>
-<part name="R8" library="nRF" deviceset="RESISTOR" device="_0402_N" value="100k"/>
+<part name="U$3" library="Nordic_misc" deviceset="CR1632" device=""/>
+<part name="U$4" library="Nordic_misc" deviceset="PANASONIC_EVQPT5A15" device=""/>
+<part name="U$5" library="Nordic_misc" deviceset="PANASONIC_EVQPT5A15" device=""/>
+<part name="R7" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="100k"/>
+<part name="R8" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="100k"/>
 <part name="VDD_NRF11" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 <part name="VDD_NRF12" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
-<part name="R5" library="nRF" deviceset="RESISTOR" device="_0402_N" value="330R"/>
-<part name="R6" library="nRF" deviceset="RESISTOR" device="_0402_N" value="330R"/>
-<part name="D1" library="nRF" deviceset="LED" device=""/>
-<part name="D3" library="nRF" deviceset="LED" device=""/>
-<part name="D2" library="nRF" deviceset="LED" device=""/>
-<part name="R9" library="nRF" deviceset="RESISTOR" device="_0402_N" value="330R"/>
-<part name="R10" library="nRF" deviceset="RESISTOR" device="_0402_N" value="330R"/>
-<part name="R11" library="nRF" deviceset="RESISTOR" device="_0402_N" value="330R"/>
+<part name="R5" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="330R"/>
+<part name="R6" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="330R"/>
+<part name="D1" library="Nordic_misc" deviceset="LED" device=""/>
+<part name="D3" library="Nordic_misc" deviceset="LED" device=""/>
+<part name="D2" library="Nordic_misc" deviceset="LED" device=""/>
+<part name="R9" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="330R"/>
+<part name="R10" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="330R"/>
+<part name="R11" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="330R"/>
 </parts>
 <sheets>
 <sheet>

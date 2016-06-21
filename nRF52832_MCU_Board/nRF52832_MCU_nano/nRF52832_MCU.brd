@@ -153,7 +153,7 @@
 <rectangle x1="40.74" y1="9.6" x2="44.34" y2="13.4" layer="41"/>
 </plain>
 <libraries>
-<library name="nRF">
+<library name="Nordic_nRF">
 <packages>
 <package name="QFN40P600X600X90-48_N">
 <description>&lt;b&gt;QFN40P600X600X90-48N&lt;/b&gt;&lt;p&gt;
@@ -263,6 +263,27 @@ SMD XTAL 2.0 x 1.6 mm</description>
 <wire x1="-1.45" y1="1.25" x2="-1.45" y2="-1.25" width="0.1" layer="39"/>
 <wire x1="-1.45" y1="-1.25" x2="1.45" y2="-1.25" width="0.1" layer="39"/>
 </package>
+<package name="XTAL_3215_N">
+<description>&lt;b&gt;XTAL_3215&lt;/b&gt;&lt;p&gt;
+
+XTAL SMD 3.2 x 1.5 mm</description>
+<smd name="1" x="-1.25" y="0" dx="1" dy="1.8" layer="1"/>
+<smd name="2" x="1.25" y="0" dx="1" dy="1.8" layer="1"/>
+<text x="-2.7" y="1.3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.1" y="-2.6" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.6" y1="-0.75" x2="1.6" y2="-0.75" width="0.1" layer="51"/>
+<wire x1="1.6" y1="-0.75" x2="1.6" y2="0.75" width="0.1" layer="51"/>
+<wire x1="1.6" y1="0.75" x2="-1.6" y2="0.75" width="0.1" layer="51"/>
+<wire x1="-1.6" y1="0.75" x2="-1.6" y2="-0.75" width="0.1" layer="51"/>
+<wire x1="2" y1="-1.15" x2="2" y2="1.15" width="0.1" layer="39"/>
+<wire x1="2" y1="1.15" x2="-2" y2="1.15" width="0.1" layer="39"/>
+<wire x1="-2" y1="1.15" x2="-2" y2="-1.15" width="0.1" layer="39"/>
+<wire x1="-2" y1="-1.15" x2="2" y2="-1.15" width="0.1" layer="39"/>
+</package>
+</packages>
+</library>
+<library name="Nordic_misc">
+<packages>
 <package name="QWMP_MEANDERED_LEFT_+6">
 <wire x1="0" y1="0" x2="4" y2="0" width="0.254" layer="1"/>
 <wire x1="4" y1="0" x2="4" y2="2" width="0.254" layer="1"/>
@@ -346,23 +367,6 @@ IPC Nominal Density</description>
 <wire x1="1.6" y1="0.7" x2="-1.6" y2="0.7" width="0.1" layer="39"/>
 <wire x1="-1.6" y1="0.7" x2="-1.6" y2="-0.7" width="0.1" layer="39"/>
 <wire x1="-1.6" y1="-0.7" x2="1.6" y2="-0.7" width="0.1" layer="39"/>
-</package>
-<package name="XTAL_3215_N">
-<description>&lt;b&gt;XTAL_3215&lt;/b&gt;&lt;p&gt;
-
-XTAL SMD 3.2 x 1.5 mm</description>
-<smd name="1" x="-1.25" y="0" dx="1" dy="1.8" layer="1"/>
-<smd name="2" x="1.25" y="0" dx="1" dy="1.8" layer="1"/>
-<text x="-2.7" y="1.3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.1" y="-2.6" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="-1.6" y1="-0.75" x2="1.6" y2="-0.75" width="0.1" layer="51"/>
-<wire x1="1.6" y1="-0.75" x2="1.6" y2="0.75" width="0.1" layer="51"/>
-<wire x1="1.6" y1="0.75" x2="-1.6" y2="0.75" width="0.1" layer="51"/>
-<wire x1="-1.6" y1="0.75" x2="-1.6" y2="-0.75" width="0.1" layer="51"/>
-<wire x1="2" y1="-1.15" x2="2" y2="1.15" width="0.1" layer="39"/>
-<wire x1="2" y1="1.15" x2="-2" y2="1.15" width="0.1" layer="39"/>
-<wire x1="-2" y1="1.15" x2="-2" y2="-1.15" width="0.1" layer="39"/>
-<wire x1="-2" y1="-1.15" x2="2" y2="-1.15" width="0.1" layer="39"/>
 </package>
 <package name="MM8130-2600">
 <description>Murara MM8130-2600RA2</description>
@@ -787,7 +791,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U1" library="nRF" package="QFN40P600X600X90-48_N" value="NRF52832" x="37.34" y="11.4" smashed="yes">
+<element name="U1" library="Nordic_nRF" package="QFN40P600X600X90-48_N" value="NRF52832" x="37.34" y="11.4" smashed="yes">
 <attribute name="NAME" x="36.94" y="11.1" size="0.6" layer="25" ratio="11"/>
 <attribute name="VALUE" x="35.34" y="15" size="0.889" layer="27" ratio="11"/>
 </element>
@@ -807,128 +811,128 @@ design rules under a new name.</description>
 <attribute name="NAME" x="29.72" y="0.775" size="1.27" layer="25"/>
 <attribute name="VALUE" x="8.255" y="2.54" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="X1" library="nRF" package="BT-XTAL_2016_N" value="32MHz" x="43.14" y="16.6" smashed="yes" rot="R180">
+<element name="X1" library="Nordic_nRF" package="BT-XTAL_2016_N" value="32MHz" x="43.14" y="16.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="42.74" y="16.3" size="0.6" layer="25"/>
 <attribute name="VALUE" x="45.84" y="19.5" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="ANT1" library="nRF" package="QWMP_MEANDERED_LEFT_+6" value="" x="50.94" y="10.85"/>
-<element name="L1" library="nRF" package="RESC0402_N" value="3.9nH" x="44.14" y="10.85" smashed="yes">
+<element name="ANT1" library="Nordic_misc" package="QWMP_MEANDERED_LEFT_+6" value="" x="50.94" y="10.85"/>
+<element name="L1" library="Nordic_misc" package="RESC0402_N" value="3.9nH" x="44.14" y="10.85" smashed="yes">
 <attribute name="NAME" x="43.64" y="10.55" size="0.6" layer="25"/>
 <attribute name="VALUE" x="43.44" y="8.85" size="1.27" layer="27"/>
 </element>
-<element name="U$2" library="nRF" package="SOT220P700-4_N" value="TLV1117" x="24.9" y="11.4" smashed="yes" rot="MR0"/>
-<element name="L3" library="nRF" package="RESC0402_N" value="15nH" x="32.74" y="17.9" smashed="yes">
+<element name="U$2" library="Nordic_misc" package="SOT220P700-4_N" value="TLV1117" x="24.9" y="11.4" smashed="yes" rot="MR0"/>
+<element name="L3" library="Nordic_misc" package="RESC0402_N" value="15nH" x="32.74" y="17.9" smashed="yes">
 <attribute name="NAME" x="32.24" y="17.6" size="0.6" layer="25"/>
 <attribute name="VALUE" x="32.04" y="15.9" size="1.27" layer="27"/>
 </element>
-<element name="L2" library="nRF" package="RESC0603_N" value="10µH" x="32.74" y="16.6" smashed="yes" rot="R180">
+<element name="L2" library="Nordic_misc" package="RESC0603_N" value="10µH" x="32.74" y="16.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.44" y="16.9" size="0.6" layer="25" rot="R180"/>
 <attribute name="VALUE" x="33.74" y="19.1" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C1" library="nRF" package="RESC0402_N" value="12pF" x="41.14" y="16.6" smashed="yes" rot="R90">
+<element name="C1" library="Nordic_misc" package="RESC0402_N" value="12pF" x="41.14" y="16.6" smashed="yes" rot="R90">
 <attribute name="NAME" x="41.44" y="16.1" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="43.14" y="15.9" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C2" library="nRF" package="RESC0402_N" value="12pF" x="45.14" y="16.6" smashed="yes" rot="R270">
+<element name="C2" library="Nordic_misc" package="RESC0402_N" value="12pF" x="45.14" y="16.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="45.44" y="16.1" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="43.14" y="17.3" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C3" library="nRF" package="RESC0402_N" value="0.8pF" x="42.54" y="11.4" smashed="yes" rot="R90">
+<element name="C3" library="Nordic_misc" package="RESC0402_N" value="0.8pF" x="42.54" y="11.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="42.84" y="10.9" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="44.54" y="10.7" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C4" library="nRF" package="RESC0402_N" value="100nF" x="32.74" y="13.8" smashed="yes" rot="R180">
+<element name="C4" library="Nordic_misc" package="RESC0402_N" value="100nF" x="32.74" y="13.8" smashed="yes" rot="R180">
 <attribute name="NAME" x="32.24" y="13.5" size="0.6" layer="25"/>
 <attribute name="VALUE" x="33.44" y="15.8" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C5" library="nRF" package="RESC0402_N" value="100nF" x="34.34" y="6.5" smashed="yes" rot="R225">
+<element name="C5" library="Nordic_misc" package="RESC0402_N" value="100nF" x="34.34" y="6.5" smashed="yes" rot="R225">
 <attribute name="NAME" x="34.481421875" y="7.0656875" size="0.6" layer="25" rot="R225"/>
 <attribute name="VALUE" x="33.4207625" y="8.409190625" size="1.27" layer="27" rot="R225"/>
 </element>
-<element name="C8" library="nRF" package="RESC0402_N" value="100nF" x="40.14" y="16.6" smashed="yes" rot="R90">
+<element name="C8" library="Nordic_misc" package="RESC0402_N" value="100nF" x="40.14" y="16.6" smashed="yes" rot="R90">
 <attribute name="NAME" x="40.44" y="16.1" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="42.14" y="15.9" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C6" library="nRF" package="RESC0402_N" value="N.M." x="43.14" y="13.7" smashed="yes">
+<element name="C6" library="Nordic_misc" package="RESC0402_N" value="N.M." x="43.14" y="13.7" smashed="yes">
 <attribute name="NAME" x="42.64" y="13.4" size="0.6" layer="25"/>
 <attribute name="VALUE" x="42.44" y="11.7" size="1.27" layer="27"/>
 </element>
-<element name="C7" library="nRF" package="RESC0402_N" value="100nF" x="43.14" y="14.7" smashed="yes">
+<element name="C7" library="Nordic_misc" package="RESC0402_N" value="100nF" x="43.14" y="14.7" smashed="yes">
 <attribute name="NAME" x="42.64" y="14.4" size="0.6" layer="25"/>
 <attribute name="VALUE" x="42.44" y="12.7" size="1.27" layer="27"/>
 </element>
-<element name="C9" library="nRF" package="RESC0603_N" value="4.7µF" x="32.74" y="15.1" smashed="yes" rot="R180">
+<element name="C9" library="Nordic_misc" package="RESC0603_N" value="4.7µF" x="32.74" y="15.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.24" y="15.4" size="0.6" layer="25" rot="R180"/>
 <attribute name="VALUE" x="33.74" y="17.6" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C10" library="nRF" package="RESC0603_N" value="1.0µF" x="35.54" y="16.7" smashed="yes" rot="R90">
+<element name="C10" library="Nordic_misc" package="RESC0603_N" value="1.0µF" x="35.54" y="16.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="35.84" y="16" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="38.04" y="15.7" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C20" library="nRF" package="RESC0402_N" value="" x="50.34" y="11.35" smashed="yes" rot="R90">
+<element name="C20" library="Nordic_misc" package="RESC0402_N" value="" x="50.34" y="11.35" smashed="yes" rot="R90">
 <attribute name="NAME" x="50.04" y="12.05" size="0.6" layer="25" rot="R270"/>
 <attribute name="VALUE" x="52.34" y="10.65" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="X2" library="nRF" package="XTAL_3215_N" value="32.768kHz" x="28.74" y="15" smashed="yes" rot="R270">
+<element name="X2" library="Nordic_nRF" package="XTAL_3215_N" value="32.768kHz" x="28.74" y="15" smashed="yes" rot="R270">
 <attribute name="NAME" x="29.04" y="14.6" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="26.14" y="18.1" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R1" library="nRF" package="RESC0402_N" value="0R" x="26.04" y="16.8" smashed="yes" rot="R90">
+<element name="R1" library="Nordic_misc" package="RESC0402_N" value="0R" x="26.04" y="16.8" smashed="yes" rot="R90">
 <attribute name="NAME" x="26.34" y="16.2" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="28.04" y="16.1" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R2" library="nRF" package="RESC0402_N" value="0R" x="26.04" y="14.3" smashed="yes" rot="R270">
+<element name="R2" library="Nordic_misc" package="RESC0402_N" value="0R" x="26.04" y="14.3" smashed="yes" rot="R270">
 <attribute name="NAME" x="26.34" y="13.7" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="24.04" y="15" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="J3" library="nRF" package="MM8130-2600" value="MM8130-2600" x="48.04" y="10.85" smashed="yes" rot="R90"/>
-<element name="J4" library="nRF" package="FPC_05P-RA-SMD" value="FPC_05P-RA-SMD" x="28.99" y="27.66" smashed="yes" rot="R180"/>
-<element name="R3" library="nRF" package="RESC0402_N" value="0R" x="31.74" y="8.2" smashed="yes" rot="R90">
+<element name="J3" library="Nordic_misc" package="MM8130-2600" value="MM8130-2600" x="48.04" y="10.85" smashed="yes" rot="R90"/>
+<element name="J4" library="Nordic_misc" package="FPC_05P-RA-SMD" value="FPC_05P-RA-SMD" x="28.99" y="27.66" smashed="yes" rot="R180"/>
+<element name="R3" library="Nordic_misc" package="RESC0402_N" value="0R" x="31.74" y="8.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="31.44" y="8.7" size="0.6" layer="25" rot="R270"/>
 <attribute name="VALUE" x="33.74" y="7.5" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R4" library="nRF" package="RESC0402_N" value="0R" x="31.74" y="6.1" smashed="yes" rot="R90">
+<element name="R4" library="Nordic_misc" package="RESC0402_N" value="0R" x="31.74" y="6.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="32.04" y="5.6" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="33.74" y="5.4" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C15" library="nRF" package="RESC0402_N" value="300pF" x="32.74" y="6.1" smashed="yes" rot="R270">
+<element name="C15" library="Nordic_misc" package="RESC0402_N" value="300pF" x="32.74" y="6.1" smashed="yes" rot="R270">
 <attribute name="NAME" x="32.44" y="6.8" size="0.6" layer="25" rot="R270"/>
 <attribute name="VALUE" x="30.74" y="6.8" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C14" library="nRF" package="RESC0402_N" value="300pF" x="32.74" y="8.2" smashed="yes" rot="R270">
+<element name="C14" library="Nordic_misc" package="RESC0402_N" value="300pF" x="32.74" y="8.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="32.44" y="8.9" size="0.6" layer="25" rot="R270"/>
 <attribute name="VALUE" x="30.74" y="8.9" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="J5" library="nRF" package="HDRV127P5X2-10_N" value="DEBUG_CONNECTOR" x="8.89" y="11.43" smashed="yes" rot="R270"/>
-<element name="C17" library="nRF" package="RESC0603_N" value="10µF" x="27.6" y="5.9" smashed="yes" rot="MR0">
+<element name="J5" library="Nordic_misc" package="HDRV127P5X2-10_N" value="DEBUG_CONNECTOR" x="8.89" y="11.43" smashed="yes" rot="R270"/>
+<element name="C17" library="Nordic_misc" package="RESC0603_N" value="10µF" x="27.6" y="5.9" smashed="yes" rot="MR0">
 <attribute name="NAME" x="28.3" y="5.6" size="0.6" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="28.6" y="3.4" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C18" library="nRF" package="RESC0603_N" value="10µF" x="30.1" y="12.2" smashed="yes" rot="MR90">
+<element name="C18" library="Nordic_misc" package="RESC0603_N" value="10µF" x="30.1" y="12.2" smashed="yes" rot="MR90">
 <attribute name="NAME" x="29.8" y="11.5" size="0.6" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="27.6" y="11.2" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="C16" library="nRF" package="RESC0402_N" value="100nF" x="27.6" y="7.2" smashed="yes" rot="MR0">
+<element name="C16" library="Nordic_misc" package="RESC0402_N" value="100nF" x="27.6" y="7.2" smashed="yes" rot="MR0">
 <attribute name="NAME" x="28.3" y="6.9" size="0.6" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="28.3" y="5.2" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C19" library="nRF" package="RESC0805_N" value="100µF" x="19.5" y="12.5" smashed="yes" rot="MR90">
+<element name="C19" library="Nordic_misc" package="RESC0805_N" value="100µF" x="19.5" y="12.5" smashed="yes" rot="MR90">
 <attribute name="NAME" x="19.2" y="11.8" size="0.6" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="17" y="11.5" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="C13" library="nRF" package="RESC0402_N" value="" x="45.74" y="10.2" smashed="yes" rot="R270">
+<element name="C13" library="Nordic_misc" package="RESC0402_N" value="" x="45.74" y="10.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="46.04" y="9.5" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="43.74" y="10.9" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C11" library="nRF" package="RESC0402_N" value="12pF" x="27.04" y="16.8" smashed="yes" rot="R270">
+<element name="C11" library="Nordic_misc" package="RESC0402_N" value="12pF" x="27.04" y="16.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="27.34" y="16.2" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="25.04" y="17.5" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C12" library="nRF" package="RESC0402_N" value="12pF" x="27.04" y="14.3" smashed="yes" rot="R270">
+<element name="C12" library="Nordic_misc" package="RESC0402_N" value="12pF" x="27.04" y="14.3" smashed="yes" rot="R270">
 <attribute name="NAME" x="27.34" y="13.7" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="25.04" y="15" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="U$1" library="nRF" package="USB-MICRO-B-RA-SMD-PIP" value="MICROUSB" x="3.81" y="11.43"/>
+<element name="U$1" library="Nordic_misc" package="USB-MICRO-B-RA-SMD-PIP" value="MICROUSB" x="3.81" y="11.43"/>
 <element name="X3" library="con-samtec" package="TSW-102-02-S-S-RA" value="TSW-102-02-S-S-RA" x="2.48" y="28.42" rot="R270">
 <attribute name="OC_FARNELL" value="unknown" x="2.48" y="28.42" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="2.48" y="28.42" size="1.778" layer="27" rot="R270" display="off"/>
@@ -953,43 +957,43 @@ design rules under a new name.</description>
 <attribute name="MPN" value="" x="3.81" y="21.59" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="3.81" y="21.59" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U$3" library="nRF" package="CR1632_HOLDER_TH" value="CR1632" x="8.89" y="11.43" rot="MR270"/>
-<element name="U$4" library="nRF" package="PANASONIC_EVQPT5A15" value="PANASONIC_EVQPT5A15" x="18" y="15" smashed="yes"/>
-<element name="U$5" library="nRF" package="PANASONIC_EVQPT5A15" value="PANASONIC_EVQPT5A15" x="18" y="8" smashed="yes"/>
-<element name="R7" library="nRF" package="RESC0402_N" value="100k" x="14.3" y="13.7" smashed="yes" rot="R270">
+<element name="U$3" library="Nordic_misc" package="CR1632_HOLDER_TH" value="CR1632" x="8.89" y="11.43" rot="MR270"/>
+<element name="U$4" library="Nordic_misc" package="PANASONIC_EVQPT5A15" value="PANASONIC_EVQPT5A15" x="18" y="15" smashed="yes"/>
+<element name="U$5" library="Nordic_misc" package="PANASONIC_EVQPT5A15" value="PANASONIC_EVQPT5A15" x="18" y="8" smashed="yes"/>
+<element name="R7" library="Nordic_misc" package="RESC0402_N" value="100k" x="14.3" y="13.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.6" y="13.2" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="12.3" y="14.4" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R8" library="nRF" package="RESC0402_N" value="100k" x="14.3" y="9.1" smashed="yes" rot="R90">
+<element name="R8" library="Nordic_misc" package="RESC0402_N" value="100k" x="14.3" y="9.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="14.6" y="8.6" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="16.3" y="8.4" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R5" library="nRF" package="RESC0402_N" value="330R" x="14.3" y="16.1" smashed="yes" rot="R90">
+<element name="R5" library="Nordic_misc" package="RESC0402_N" value="330R" x="14.3" y="16.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="14.6" y="15.6" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="16.3" y="15.4" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R6" library="nRF" package="RESC0402_N" value="330R" x="14.3" y="6.9" smashed="yes" rot="R270">
+<element name="R6" library="Nordic_misc" package="RESC0402_N" value="330R" x="14.3" y="6.9" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.6" y="6.4" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="12.3" y="7.6" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="D1" library="nRF" package="RESC0603_N" value="LED" x="2.3" y="17" smashed="yes">
+<element name="D1" library="Nordic_misc" package="RESC0603_N" value="LED" x="2.3" y="17" smashed="yes">
 <attribute name="NAME" x="1.7" y="16.7" size="0.6" layer="25"/>
 <attribute name="VALUE" x="1.3" y="14.5" size="1.27" layer="27"/>
 </element>
-<element name="D3" library="nRF" package="RESC0603_N" value="LED" x="21.9" y="15" smashed="yes" rot="R90">
+<element name="D3" library="Nordic_misc" package="RESC0603_N" value="LED" x="21.9" y="15" smashed="yes" rot="R90">
 <attribute name="NAME" x="22.2" y="14.4" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="24.4" y="14" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="D2" library="nRF" package="RESC0603_N" value="LED" x="21.9" y="8" smashed="yes" rot="R90">
+<element name="D2" library="Nordic_misc" package="RESC0603_N" value="LED" x="21.9" y="8" smashed="yes" rot="R90">
 <attribute name="NAME" x="22.2" y="7.4" size="0.6" layer="25" rot="R90"/>
 <attribute name="VALUE" x="24.4" y="7" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R9" library="nRF" package="RESC0402_N" value="330R" x="2.3" y="18.3" smashed="yes">
+<element name="R9" library="Nordic_misc" package="RESC0402_N" value="330R" x="2.3" y="18.3" smashed="yes">
 <attribute name="NAME" x="1.8" y="18" size="0.6" layer="25"/>
 <attribute name="VALUE" x="1.6" y="16.3" size="1.27" layer="27"/>
 </element>
-<element name="R10" library="nRF" package="RESC0402_N" value="330R" x="-4.9" y="-19.5"/>
-<element name="R11" library="nRF" package="RESC0402_N" value="330R" x="-4.9" y="-24.9"/>
+<element name="R10" library="Nordic_misc" package="RESC0402_N" value="330R" x="-4.9" y="-19.5"/>
+<element name="R11" library="Nordic_misc" package="RESC0402_N" value="330R" x="-4.9" y="-24.9"/>
 </elements>
 <signals>
 <signal name="GND">
