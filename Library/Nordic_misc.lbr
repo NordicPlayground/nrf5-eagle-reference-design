@@ -2299,8 +2299,8 @@ Farnell: 1650698</description>
 <devices>
 <device name="" package="CR1632_HOLDER_TH">
 <connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2 3"/>
+<connect gate="G$1" pin="+" pad="2 3"/>
+<connect gate="G$1" pin="-" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
