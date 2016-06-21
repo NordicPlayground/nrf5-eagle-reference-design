@@ -785,6 +785,37 @@ IPC High Density</description>
 <wire x1="-2" y1="1" x2="-2" y2="-1" width="0.1" layer="39"/>
 <wire x1="-2" y1="-1" x2="2" y2="-1" width="0.1" layer="39"/>
 </package>
+<package name="DIOC0603_N">
+<description>&lt;b&gt;0603&lt;/b&gt; chip &lt;p&gt;
+
+0603 (imperial)&lt;br/&gt;
+1608 (metric)&lt;br/&gt;
+IPC Nominal Density</description>
+<smd name="1" x="-0.8" y="0" dx="1.05" dy="0.9" layer="1"/>
+<smd name="2" x="0.8" y="0" dx="1.05" dy="0.9" layer="1"/>
+<text x="-1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-2.5" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-0.8" y1="0.4" x2="-0.3" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0.4" x2="0.1" y2="0.4" width="0.127" layer="51"/>
+<wire x1="0.1" y1="0.4" x2="0.4" y2="0.4" width="0.127" layer="51"/>
+<wire x1="0.4" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="0.1" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.1" y1="-0.4" x2="-0.3" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-0.7" x2="1.6" y2="0.7" width="0.1" layer="39"/>
+<wire x1="1.6" y1="0.7" x2="-1.6" y2="0.7" width="0.1" layer="39"/>
+<wire x1="-1.6" y1="0.7" x2="-1.6" y2="-0.7" width="0.1" layer="39"/>
+<wire x1="-1.6" y1="-0.7" x2="1.6" y2="-0.7" width="0.1" layer="39"/>
+<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.2" layer="21"/>
+<wire x1="0.4" y1="0.4" x2="0.1" y2="0.4" width="0.127" layer="51"/>
+<wire x1="0.1" y1="0.4" x2="-0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0" x2="0.1" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.1" y1="-0.4" x2="0.1" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0.4" x2="-0.3" y2="-0.4" width="0.127" layer="51"/>
+</package>
 <package name="RESC0603_N">
 <description>&lt;b&gt;0603&lt;/b&gt; chip &lt;p&gt;
 
@@ -1691,10 +1722,10 @@ Farnell: 1650698</description>
 <gate name="D$1" symbol="LED" x="2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="RESC0603_N">
+<device name="" package="DIOC0603_N">
 <connects>
-<connect gate="D$1" pin="A" pad="1"/>
-<connect gate="D$1" pin="C" pad="2"/>
+<connect gate="D$1" pin="A" pad="2"/>
+<connect gate="D$1" pin="C" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2229,6 +2260,12 @@ Source: Samtec TSW.pdf</description>
 <part name="R9" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="330R"/>
 <part name="R10" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="330R"/>
 <part name="R11" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="330R"/>
+<part name="VDD_NRF13" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
+<part name="VDD_NRF14" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
+<part name="VDD_NRF15" library="supply2" deviceset="VCC" device="" value="VDD_P5V0"/>
+<part name="VDD_NRF16" library="supply2" deviceset="VCC" device="" value="VDD_P5V0"/>
+<part name="R12" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="0R"/>
+<part name="GND29" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2408,7 +2445,7 @@ Source: Samtec TSW.pdf</description>
 <wire x1="205.74" y1="73.66" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VCC_P3V3" class="0">
+<net name="VDD_P3V3" class="0">
 <segment>
 <pinref part="VDD_NRF" gate="G$1" pin="VCC"/>
 <pinref part="U1" gate="U$1" pin="VDD@13"/>
@@ -2970,25 +3007,31 @@ Source: Samtec TSW.pdf</description>
 <instance part="VDD_NRF9" gate="G$1" x="35.56" y="127" rot="R180"/>
 <instance part="VDD_NRF10" gate="G$1" x="40.64" y="124.46" rot="R180"/>
 <instance part="GND24" gate="1" x="45.72" y="127" rot="MR0"/>
-<instance part="U$3" gate="G$1" x="96.52" y="30.48"/>
+<instance part="U$3" gate="G$1" x="81.28" y="22.86"/>
 <instance part="U$4" gate="G$1" x="160.02" y="132.08"/>
 <instance part="U$5" gate="G$1" x="223.52" y="132.08"/>
 <instance part="R7" gate="R$1" x="149.86" y="149.86" rot="R90"/>
 <instance part="R8" gate="R$1" x="213.36" y="149.86" rot="R90"/>
-<instance part="VDD_NRF11" gate="G$1" x="213.36" y="157.48"/>
-<instance part="VDD_NRF12" gate="G$1" x="149.86" y="157.48"/>
+<instance part="VDD_NRF11" gate="G$1" x="213.36" y="160.02"/>
+<instance part="VDD_NRF12" gate="G$1" x="149.86" y="160.02"/>
 <instance part="GND25" gate="1" x="167.64" y="124.46" rot="MR0"/>
 <instance part="GND26" gate="1" x="180.34" y="124.46" rot="MR0"/>
 <instance part="GND27" gate="1" x="231.14" y="124.46" rot="MR0"/>
 <instance part="GND28" gate="1" x="243.84" y="124.46" rot="MR0"/>
 <instance part="R5" gate="R$1" x="139.7" y="142.24"/>
 <instance part="R6" gate="R$1" x="203.2" y="142.24"/>
-<instance part="D1" gate="D$1" x="88.9" y="58.42"/>
-<instance part="D3" gate="D$1" x="228.6" y="106.68"/>
-<instance part="D2" gate="D$1" x="157.48" y="91.44"/>
-<instance part="R9" gate="R$1" x="78.74" y="50.8"/>
-<instance part="R10" gate="R$1" x="144.78" y="91.44"/>
-<instance part="R11" gate="R$1" x="215.9" y="106.68"/>
+<instance part="D1" gate="D$1" x="104.14" y="60.96" rot="R90"/>
+<instance part="D3" gate="D$1" x="213.36" y="101.6" rot="R270"/>
+<instance part="D2" gate="D$1" x="195.58" y="101.6" rot="R270"/>
+<instance part="R9" gate="R$1" x="104.14" y="48.26" rot="R90"/>
+<instance part="R10" gate="R$1" x="195.58" y="91.44" rot="R90"/>
+<instance part="R11" gate="R$1" x="213.36" y="91.44" rot="R90"/>
+<instance part="VDD_NRF13" gate="G$1" x="213.36" y="111.76"/>
+<instance part="VDD_NRF14" gate="G$1" x="195.58" y="111.76"/>
+<instance part="VDD_NRF15" gate="G$1" x="104.14" y="68.58"/>
+<instance part="VDD_NRF16" gate="G$1" x="88.9" y="63.5"/>
+<instance part="R12" gate="R$1" x="78.74" y="58.42"/>
+<instance part="GND29" gate="1" x="104.14" y="38.1" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -3041,6 +3084,12 @@ Source: Samtec TSW.pdf</description>
 <label x="58.42" y="129.54" size="1.27" layer="95" rot="MR270" xref="yes"/>
 <pinref part="J2" gate="-3" pin="1"/>
 </segment>
+<segment>
+<pinref part="R11" gate="R$1" pin="1"/>
+<wire x1="213.36" y1="86.36" x2="213.36" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="81.28" x2="177.8" y2="81.28" width="0.1524" layer="91"/>
+<label x="177.8" y="81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="P0.07" class="0">
 <segment>
@@ -3048,12 +3097,23 @@ Source: Samtec TSW.pdf</description>
 <label x="55.88" y="129.54" size="1.27" layer="95" rot="MR270" xref="yes"/>
 <pinref part="J2" gate="-2" pin="1"/>
 </segment>
+<segment>
+<pinref part="R10" gate="R$1" pin="1"/>
+<wire x1="195.58" y1="86.36" x2="195.58" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="83.82" x2="177.8" y2="83.82" width="0.1524" layer="91"/>
+<label x="177.8" y="83.82" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="P0.08" class="0">
 <segment>
 <wire x1="53.34" y1="133.35" x2="53.34" y2="129.54" width="0.1524" layer="91"/>
 <label x="53.34" y="129.54" size="1.27" layer="95" rot="MR270" xref="yes"/>
 <pinref part="J2" gate="-1" pin="1"/>
+</segment>
+<segment>
+<pinref part="R5" gate="R$1" pin="1"/>
+<wire x1="129.54" y1="142.24" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
+<label x="129.54" y="142.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="P0.09" class="0">
@@ -3146,6 +3206,11 @@ Source: Samtec TSW.pdf</description>
 <label x="83.82" y="96.52" size="1.27" layer="95" rot="MR90" xref="yes"/>
 <pinref part="J1" gate="-13" pin="1"/>
 </segment>
+<segment>
+<pinref part="R6" gate="R$1" pin="1"/>
+<wire x1="198.12" y1="142.24" x2="190.5" y2="142.24" width="0.1524" layer="91"/>
+<label x="190.5" y="142.24" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="P0.24" class="0">
 <segment>
@@ -3215,31 +3280,6 @@ Source: Samtec TSW.pdf</description>
 <wire x1="91.44" y1="133.35" x2="91.44" y2="129.54" width="0.1524" layer="91"/>
 <label x="91.44" y="129.54" size="1.27" layer="95" rot="MR270" xref="yes"/>
 <pinref part="J2" gate="-16" pin="1"/>
-</segment>
-</net>
-<net name="VCC_P3V3" class="0">
-<segment>
-<pinref part="U$2" gate="U$1" pin="OUT"/>
-<pinref part="VDD_NRF4" gate="G$1" pin="VCC"/>
-<wire x1="195.58" y1="55.88" x2="203.2" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="C18" gate="C$1" pin="1"/>
-<wire x1="203.2" y1="55.88" x2="218.44" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="55.88" x2="226.06" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="53.34" x2="203.2" y2="55.88" width="0.1524" layer="91"/>
-<junction x="203.2" y="55.88"/>
-<pinref part="C19" gate="C$1" pin="1"/>
-<wire x1="218.44" y1="53.34" x2="218.44" y2="55.88" width="0.1524" layer="91"/>
-<junction x="218.44" y="55.88"/>
-</segment>
-<segment>
-<pinref part="VDD_NRF8" gate="G$1" pin="VCC"/>
-<pinref part="X5" gate="-2" pin="1"/>
-<wire x1="40.64" y1="96.52" x2="40.64" y2="92.71" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="VDD_NRF10" gate="G$1" pin="VCC"/>
-<pinref part="X6" gate="-2" pin="1"/>
-<wire x1="40.64" y1="127" x2="40.64" y2="133.35" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -3312,8 +3352,13 @@ Source: Samtec TSW.pdf</description>
 <junction x="243.84" y="134.62"/>
 <pinref part="GND28" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="R9" gate="R$1" pin="1"/>
+<wire x1="104.14" y1="43.18" x2="104.14" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="GND29" gate="1" pin="GND"/>
+</segment>
 </net>
-<net name="VCC_P5V0" class="0">
+<net name="VDD_P5V0" class="0">
 <segment>
 <pinref part="U$2" gate="U$1" pin="IN"/>
 <pinref part="VDD_NRF5" gate="G$1" pin="VCC"/>
@@ -3337,6 +3382,17 @@ Source: Samtec TSW.pdf</description>
 <pinref part="X6" gate="-1" pin="1"/>
 <wire x1="35.56" y1="129.54" x2="35.56" y2="133.35" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R12" gate="R$1" pin="2"/>
+<pinref part="VDD_NRF16" gate="G$1" pin="VCC"/>
+<wire x1="83.82" y1="58.42" x2="88.9" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="58.42" x2="88.9" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="VDD_NRF15" gate="G$1" pin="VCC"/>
+<pinref part="D1" gate="D$1" pin="C"/>
+<wire x1="104.14" y1="66.04" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC_P5V0_USB" class="0">
 <segment>
@@ -3344,16 +3400,9 @@ Source: Samtec TSW.pdf</description>
 <pinref part="VDD_NRF6" gate="G$1" pin="VCC"/>
 <wire x1="66.04" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="58.42" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="R8" gate="R$1" pin="2"/>
-<pinref part="VDD_NRF11" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="R7" gate="R$1" pin="2"/>
-<pinref part="VDD_NRF12" gate="G$1" pin="VCC"/>
+<pinref part="R12" gate="R$1" pin="1"/>
+<wire x1="68.58" y1="58.42" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
+<junction x="68.58" y="58.42"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -3382,6 +3431,72 @@ Source: Samtec TSW.pdf</description>
 <junction x="149.86" y="142.24"/>
 <pinref part="R5" gate="R$1" pin="2"/>
 <wire x1="149.86" y1="142.24" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VDD_P3V3" class="0">
+<segment>
+<pinref part="R7" gate="R$1" pin="2"/>
+<pinref part="VDD_NRF12" gate="G$1" pin="VCC"/>
+<wire x1="149.86" y1="157.48" x2="149.86" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R8" gate="R$1" pin="2"/>
+<pinref part="VDD_NRF11" gate="G$1" pin="VCC"/>
+<wire x1="213.36" y1="157.48" x2="213.36" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="U$1" pin="OUT"/>
+<pinref part="VDD_NRF4" gate="G$1" pin="VCC"/>
+<wire x1="195.58" y1="55.88" x2="203.2" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="C18" gate="C$1" pin="1"/>
+<wire x1="203.2" y1="55.88" x2="218.44" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="55.88" x2="226.06" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="53.34" x2="203.2" y2="55.88" width="0.1524" layer="91"/>
+<junction x="203.2" y="55.88"/>
+<pinref part="C19" gate="C$1" pin="1"/>
+<wire x1="218.44" y1="53.34" x2="218.44" y2="55.88" width="0.1524" layer="91"/>
+<junction x="218.44" y="55.88"/>
+</segment>
+<segment>
+<pinref part="VDD_NRF8" gate="G$1" pin="VCC"/>
+<pinref part="X5" gate="-2" pin="1"/>
+<wire x1="40.64" y1="96.52" x2="40.64" y2="92.71" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="VDD_NRF10" gate="G$1" pin="VCC"/>
+<pinref part="X6" gate="-2" pin="1"/>
+<wire x1="40.64" y1="127" x2="40.64" y2="133.35" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D2" gate="D$1" pin="A"/>
+<pinref part="VDD_NRF14" gate="G$1" pin="VCC"/>
+<wire x1="195.58" y1="106.68" x2="195.58" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D3" gate="D$1" pin="A"/>
+<pinref part="VDD_NRF13" gate="G$1" pin="VCC"/>
+<wire x1="213.36" y1="106.68" x2="213.36" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="R10" gate="R$1" pin="2"/>
+<pinref part="D2" gate="D$1" pin="C"/>
+<wire x1="195.58" y1="96.52" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="R11" gate="R$1" pin="2"/>
+<pinref part="D3" gate="D$1" pin="C"/>
+<wire x1="213.36" y1="96.52" x2="213.36" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VDD_LED" class="0">
+<segment>
+<pinref part="D1" gate="D$1" pin="A"/>
+<pinref part="R9" gate="R$1" pin="2"/>
+<wire x1="104.14" y1="55.88" x2="104.14" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
