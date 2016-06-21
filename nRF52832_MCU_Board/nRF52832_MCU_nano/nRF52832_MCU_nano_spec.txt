@@ -1,0 +1,19 @@
+nRF52 MCU-board-nano spec
+
+UNIQUE
+Fit on breadboard
+
+COMMON
+Powerful 3.3V powersupply
+µ-USB for power
+Coin cell battery for wireless power
+Reset button
+power led
+A couple of user buttons
+A couple of user leds
+Debug connector
+Connector for measuring antenna
+
+
+NFC connector
+Current measurement header
