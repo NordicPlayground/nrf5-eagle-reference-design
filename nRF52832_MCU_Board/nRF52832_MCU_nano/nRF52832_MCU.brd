@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -1218,7 +1218,7 @@ design rules under a new name.</description>
 <via x="16.7" y="9.1" extent="1-16" drill="0.4"/>
 <via x="4.2" y="4.4" extent="1-16" drill="0.4"/>
 <via x="4.5" y="18" extent="1-16" drill="0.4"/>
-<wire x1="19.85" y1="17.2" x2="20.525" y2="15" width="0" layer="19" extent="1-1"/>
+<via x="20.9" y="16.9" extent="1-16" drill="0.4"/>
 </signal>
 <signal name="DEC1">
 <contactref element="U1" pad="1"/>
@@ -1889,7 +1889,8 @@ design rules under a new name.</description>
 <wire x1="14.3" y1="15.95" x2="14.3" y2="13.95" width="0.2" layer="1"/>
 <wire x1="14.3" y1="13.95" x2="15.45" y2="12.8" width="0.2" layer="1"/>
 <wire x1="15.45" y1="12.8" x2="16.15" y2="12.8" width="0.2" layer="1"/>
-<wire x1="14.3" y1="15.95" x2="16.15" y2="17.2" width="0" layer="19" extent="1-1"/>
+<wire x1="14.3" y1="15.95" x2="15.55" y2="17.2" width="0.2" layer="1"/>
+<wire x1="15.55" y1="17.2" x2="16.15" y2="17.2" width="0.2" layer="1"/>
 </signal>
 <signal name="VDD_P3V3">
 <contactref element="R7" pad="2"/>
