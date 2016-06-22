@@ -667,6 +667,15 @@ design rules under a new name.</description>
 <vertex x="20" y="14"/>
 <vertex x="20" y="0"/>
 </polygon>
+<via x="0.9" y="13.1" extent="1-16" drill="0.4" diameter="0.8"/>
+<via x="4.8" y="13.1" extent="1-16" drill="0.4" diameter="0.8"/>
+<via x="19.1" y="13.1" extent="1-16" drill="0.4" diameter="0.8"/>
+<via x="16.7" y="3.7" extent="1-16" drill="0.4" diameter="0.8"/>
+<via x="19.1" y="0.9" extent="1-16" drill="0.4" diameter="0.8"/>
+<via x="16.7" y="0.9" extent="1-16" drill="0.4" diameter="0.8"/>
+<via x="6.4" y="1.9" extent="1-16" drill="0.4" diameter="0.8"/>
+<via x="0.9" y="0.9" extent="1-16" drill="0.4" diameter="0.8"/>
+<via x="0.9" y="2.9" extent="1-16" drill="0.4" diameter="0.8"/>
 </signal>
 <signal name="DEC1">
 <contactref element="U1" pad="1"/>
