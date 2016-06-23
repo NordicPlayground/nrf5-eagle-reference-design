@@ -13,7 +13,7 @@ A couple of user buttons
 A couple of user leds
 Debug connector
 Connector for measuring antenna
-
-
 NFC connector
+
+MISSING
 Current measurement header
