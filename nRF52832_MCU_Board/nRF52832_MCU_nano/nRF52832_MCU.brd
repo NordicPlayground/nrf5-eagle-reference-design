@@ -1225,8 +1225,16 @@ design rules under a new name.</description>
 <wire x1="2.286" y1="11.43" x2="8.89" y2="18.034" width="0.4" layer="16" curve="-90"/>
 <wire x1="8.89" y1="18.034" x2="15.494" y2="11.43" width="0.4" layer="16" curve="-90"/>
 <wire x1="15.494" y1="11.43" x2="8.89" y2="4.826" width="0.4" layer="16" curve="-90"/>
+<via x="11.8" y="15.8" extent="1-16" drill="0.4" diameter="0.8"/>
+<via x="6.4" y="15.4" extent="1-16" drill="0.4" diameter="0.8"/>
+<via x="1.6" y="5.1" extent="1-16" drill="0.4" diameter="0.8"/>
+<via x="4.2" y="2.9" extent="1-16" drill="0.4" diameter="0.8"/>
+<via x="6.4" y="3.1" extent="1-16" drill="0.4" diameter="0.8"/>
+<via x="15.5" y="9.2" extent="1-16" drill="0.4" diameter="0.8"/>
+<via x="19.5" y="8.3" extent="1-16" drill="0.4" diameter="0.8"/>
+<via x="21" y="5.9" extent="1-16" drill="0.4" diameter="0.8"/>
+<via x="30" y="18.6" extent="1-16" drill="0.4"/>
 <wire x1="8.89" y1="11.43" x2="7.64" y2="11.43" width="0" layer="19" extent="1-16"/>
-<wire x1="15.475" y1="8" x2="15.494" y2="11.43" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="DEC1">
 <contactref element="U1" pad="1"/>
@@ -1887,14 +1895,12 @@ design rules under a new name.</description>
 <wire x1="5.2" y1="13.2" x2="5.2" y2="17.3" width="0.4" layer="1"/>
 </signal>
 <signal name="N$6">
-<contactref element="U$5" pad="2"/>
 <contactref element="R8" pad="1"/>
 <contactref element="U$5" pad="1"/>
 <contactref element="R6" pad="2"/>
 <wire x1="14.3" y1="9.05" x2="15.45" y2="10.2" width="0.2" layer="1"/>
 <wire x1="15.45" y1="10.2" x2="16.15" y2="10.2" width="0.2" layer="1"/>
 <wire x1="14.3" y1="9.05" x2="14.3" y2="8.05" width="0.2" layer="1"/>
-<wire x1="14.3" y1="8.05" x2="16.15" y2="5.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="U$4" pad="2"/>
@@ -2026,13 +2032,8 @@ design rules under a new name.</description>
 <signal name="VDD_P3V3_BATT">
 <contactref element="BATT1" pad="2"/>
 <contactref element="R13" pad="1"/>
-<contactref element="BATT1" pad="3"/>
 <wire x1="8.9" y1="17.3" x2="8.9" y2="19.855" width="0.4" layer="1"/>
 <wire x1="8.9" y1="19.855" x2="8.89" y2="19.865" width="0.4" layer="1"/>
-<wire x1="8.89" y1="2.995" x2="8.9" y2="17.3" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$15">
-<via x="30" y="18.6" extent="1-16" drill="0.4"/>
 </signal>
 </signals>
 </board>

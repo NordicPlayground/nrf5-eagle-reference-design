@@ -1170,6 +1170,8 @@ IPC Nominal Density</description>
 <wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
 <text x="2.54" y="5.08" size="1.27" layer="95">&gt;NAME</text>
 <text x="2.54" y="-5.08" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="+2" x="-2.54" y="7.62" visible="off" length="short" rot="R270"/>
+<wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="BTN">
 <pin name="A" x="-5.08" y="10.16" visible="off" length="middle"/>
@@ -1689,7 +1691,8 @@ Farnell: 1650698</description>
 <devices>
 <device name="" package="CR1632_HOLDER_TH">
 <connects>
-<connect gate="G$1" pin="+" pad="2 3"/>
+<connect gate="G$1" pin="+" pad="2"/>
+<connect gate="G$1" pin="+2" pad="3"/>
 <connect gate="G$1" pin="-" pad="1"/>
 </connects>
 <technologies>
@@ -3427,10 +3430,7 @@ Source: Samtec TSW.pdf</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="A'"/>
 <pinref part="R8" gate="R$1" pin="1"/>
-<wire x1="218.44" y1="134.62" x2="213.36" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="134.62" x2="213.36" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="A"/>
 <wire x1="213.36" y1="142.24" x2="213.36" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="142.24" x2="213.36" y2="142.24" width="0.1524" layer="91"/>
