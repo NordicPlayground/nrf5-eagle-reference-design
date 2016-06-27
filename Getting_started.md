@@ -5,13 +5,48 @@ Nordic Semiconductor already provides [reference designs][altiumreference] for A
 This quick guide assumes you are familiar with doing PCB designs in EAGLE, if not; both [Adafruit] and [SparkFun] has guides on how to get started
 
 
-1. First clone or download the reference designs and libraries from [Github].
-2. Select the reference-design that fits your application the best (if you have no idea; use *nRF52832_qfaa_dcdc*)
+1. First clone or download the reference designs and libraries from [Github]
+2. Select the reference-design that fits your application (if you have no idea; use *nRF52832_qfaa_dcdc*)
 3. Add your own parts in the circuit diagram
 4. Do the layout and routing
 5. Do not modify the geometry of the rf part
 
 Please refer to the general pcb design guidelines for [nRF51][designguidenrf51] or [nRF52][designguidenrf52]
+
+## 1. First clone or download the reference designs and libraries from [Github]
+
+If you are familiar with [git] this is self explanatory, if not press the (green) "Clone or download" button and then "Download ZIP". If you are not familiar with [git] it is higly reccomended to learn version control, there is a lot of guides available online.
+
+
+## 2. Select the reference-design that fits your application (if you have no idea; use *nRF52832_qfaa_dcdc*)
+
+All reference designs supplied here are for the qfn package.
+If you want to use the internal ldo (not reccomended) select nRF5\*_qfaa, if you want an example of nfc antenna usage select nRF5\*_qfaa_nfc.
+You probably want the nRF51x2_qfaa_dcdc or nRF52832_qfaa_dcdc, for nRF51 or nRF52 respectively.
+
+
+## 3. Add your own parts in the circuit diagram
+
+Here is the part where you do your design, use your own libraries, use libraries supplied with eagle, use parts from the Nordic_misc library, make your own parts, etc.
+
+
+## 4. Do the layout and routing
+
+This is also a part of your regular workflow. Lay out your design next to or around the reference layout.
+
+
+## 5. Do not modify the geometry of the rf part
+
+Now, the important part: Do not add components close to the rf layout. This means around where you attach the antenna (the signal named RF).
+The cutout in the ground plane is there for a reason. Add cutouts to any internal layers of the pcb as well. There should be a ground plane on the bottom layer.
+Add a generous amound of ground stiching vias (remember vias are free).
+
+## 6. Done
+
+There. You are done with your nRF5 design in eagle, dont forget to run design reviews before ordering pcbs. And dont forget to tune the antenna when you have your prototype in hand.
+
+
+# Some info on the git repository
 
 ## Antenna
 In the Nordic_misc library there is supplied some suggestions for antennas, please note that antenna characteristics depends greatly on the board layout. These antennas are made according to the [whitepaper][monopole] on quarter wave monopole 2.45 GHz antennas. Remember to [tune][antuning] the antenna
@@ -33,7 +68,7 @@ This library contains the nRF51 and nRF52 in qfn and bga packages, as well as; c
 This library contains the rest of the components used in the sample eagle design(s) in the github repository, as well as some simple antenna suggestions.
 
 [sparkfun]: <https://www.sparkfun.com/>
-[addafruit]: <https://www.adafruit.com/>
+[adafruit]: <https://www.adafruit.com/>
 [github]: <https://github.com/NordicSemiconductor/nrf5-eagle-reference-design>
 [designguidenrf51]: <https://devzone.nordicsemi.com/blogs/655/general-pcb-design-guidelines-for-nrf51/>
 [designguidenrf52]: <https://devzone.nordicsemi.com/blogs/870/general-pcb-design-guidelines-for-nrf52/>
@@ -44,3 +79,4 @@ This library contains the rest of the components used in the sample eagle design
 [dcdc_reference]: <nRF52832_qfaa_dcdc_reference.png>
 [monopole]: <http://infocenter.nordicsemi.com/topic/com.nordic.infocenter.whitepapers/dita/whitepapers/pdflinks/nwp_008.html?cp=10_12>
 [antuning]: <https://infocenter.nordicsemi.com/topic/com.nordic.infocenter.whitepapers/dita/whitepapers/pdflinks/nwp_017.html?cp=11_4>
+[git]: <https://git-scm.com/>
