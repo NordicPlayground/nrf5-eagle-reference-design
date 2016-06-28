@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -2173,8 +2173,8 @@ Source: Samtec TSW.pdf</description>
 <part name="VDD_NRF10" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="BATT1" library="Nordic_misc" deviceset="CR1632" device=""/>
-<part name="U$4" library="Nordic_misc" deviceset="PANASONIC_EVQPT5A15" device=""/>
-<part name="U$5" library="Nordic_misc" deviceset="PANASONIC_EVQPT5A15" device=""/>
+<part name="BNT2" library="Nordic_misc" deviceset="PANASONIC_EVQPT5A15" device=""/>
+<part name="BTN1" library="Nordic_misc" deviceset="PANASONIC_EVQPT5A15" device=""/>
 <part name="R7" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="100k"/>
 <part name="R8" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="100k"/>
 <part name="VDD_NRF11" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
@@ -2961,8 +2961,8 @@ Source: Samtec TSW.pdf</description>
 <instance part="VDD_NRF10" gate="G$1" x="35.56" y="129.54" rot="R180"/>
 <instance part="GND24" gate="1" x="40.64" y="132.08" rot="MR0"/>
 <instance part="BATT1" gate="G$1" x="86.36" y="38.1"/>
-<instance part="U$4" gate="G$1" x="218.44" y="88.9"/>
-<instance part="U$5" gate="G$1" x="218.44" y="132.08"/>
+<instance part="BNT2" gate="G$1" x="218.44" y="88.9"/>
+<instance part="BTN1" gate="G$1" x="218.44" y="132.08"/>
 <instance part="R7" gate="R$1" x="208.28" y="106.68" rot="R90"/>
 <instance part="R8" gate="R$1" x="208.28" y="149.86" rot="R90"/>
 <instance part="VDD_NRF11" gate="G$1" x="208.28" y="160.02"/>
@@ -3282,28 +3282,28 @@ Source: Samtec TSW.pdf</description>
 <wire x1="40.64" y1="134.62" x2="40.64" y2="138.43" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="GND"/>
+<pinref part="BNT2" gate="G$1" pin="GND"/>
 <pinref part="GND25" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="B"/>
+<pinref part="BNT2" gate="G$1" pin="B"/>
 <wire x1="236.22" y1="99.06" x2="238.76" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="99.06" x2="238.76" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="B'"/>
+<pinref part="BNT2" gate="G$1" pin="B'"/>
 <wire x1="238.76" y1="91.44" x2="238.76" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="91.44" x2="238.76" y2="91.44" width="0.1524" layer="91"/>
 <junction x="238.76" y="91.44"/>
 <pinref part="GND26" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="GND"/>
+<pinref part="BTN1" gate="G$1" pin="GND"/>
 <pinref part="GND27" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="B"/>
+<pinref part="BTN1" gate="G$1" pin="B"/>
 <wire x1="236.22" y1="142.24" x2="238.76" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="142.24" x2="238.76" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="B'"/>
+<pinref part="BTN1" gate="G$1" pin="B'"/>
 <wire x1="238.76" y1="134.62" x2="238.76" y2="127" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="134.62" x2="238.76" y2="134.62" width="0.1524" layer="91"/>
 <junction x="238.76" y="134.62"/>
@@ -3370,7 +3370,7 @@ Source: Samtec TSW.pdf</description>
 <net name="N$6" class="0">
 <segment>
 <pinref part="R8" gate="R$1" pin="1"/>
-<pinref part="U$5" gate="G$1" pin="A"/>
+<pinref part="BTN1" gate="G$1" pin="A"/>
 <wire x1="208.28" y1="142.24" x2="208.28" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="142.24" x2="208.28" y2="142.24" width="0.1524" layer="91"/>
 <junction x="208.28" y="142.24"/>
@@ -3380,11 +3380,11 @@ Source: Samtec TSW.pdf</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="A'"/>
+<pinref part="BNT2" gate="G$1" pin="A'"/>
 <pinref part="R7" gate="R$1" pin="1"/>
 <wire x1="213.36" y1="91.44" x2="208.28" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="91.44" x2="208.28" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="A"/>
+<pinref part="BNT2" gate="G$1" pin="A"/>
 <wire x1="208.28" y1="99.06" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="99.06" x2="208.28" y2="99.06" width="0.1524" layer="91"/>
 <junction x="208.28" y="99.06"/>

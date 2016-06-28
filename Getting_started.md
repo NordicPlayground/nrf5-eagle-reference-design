@@ -13,35 +13,35 @@ This quick guide assumes you are familiar with doing PCB designs in EAGLE, if no
 
 Please refer to the general pcb design guidelines for [nRF51][designguidenrf51] or [nRF52][designguidenrf52]
 
-## 1. First clone or download the reference designs and libraries from [Github]
+### 1. First clone or download the reference designs and libraries from [Github]
 
 If you are familiar with [git] this is self explanatory, if not press the (green) "Clone or download" button and then "Download ZIP". If you are not familiar with [git] it is higly reccomended to learn version control, there is a lot of guides available online.
 
 
-## 2. Select the reference-design that fits your application (if you have no idea; use *nRF52832_qfaa_dcdc*)
+### 2. Select the reference-design that fits your application
 
 All reference designs supplied here are for the qfn package.
 If you want to use the internal ldo (not reccomended) select nRF5\*_qfaa, if you want an example of nfc antenna usage select nRF5\*_qfaa_nfc.
 You probably want the nRF51x2_qfaa_dcdc or nRF52832_qfaa_dcdc, for nRF51 or nRF52 respectively.
 
 
-## 3. Add your own parts in the circuit diagram
+### 3. Add your own parts in the circuit diagram
 
 Here is the part where you do your design, use your own libraries, use libraries supplied with eagle, use parts from the Nordic_misc library, make your own parts, etc.
 
 
-## 4. Do the layout and routing
+### 4. Do the layout and routing
 
 This is also a part of your regular workflow. Lay out your design next to or around the reference layout.
 
 
-## 5. Do not modify the geometry of the rf part
+### 5. Do not modify the geometry of the rf part
 
 Now, the important part: Do not add components close to the rf layout. This means around where you attach the antenna (the signal named RF).
 The cutout in the ground plane is there for a reason. Add cutouts to any internal layers of the pcb as well. There should be a ground plane on the bottom layer.
 Add a generous amound of ground stiching vias (remember vias are free).
 
-## 6. Done
+### 6. Done
 
 There. You are done with your nRF5 design in eagle, dont forget to run design reviews before ordering pcbs. And dont forget to tune the antenna when you have your prototype in hand.
 
