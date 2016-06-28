@@ -1,21 +1,21 @@
 # Getting started with nRF5 and CadSoft EAGLE (R)
 
-Nordic Semiconductor already provides [reference designs][altiumreference] for Altium Designer (R), but if you cant afford Altium or simply prefer EAGLE here is a quick guide on how to use the EAGLE reference design.
+Nordic Semiconductor already provides [reference designs][altiumreference] for Altium Designer (R), but if you prefer EAGLE here is a quick guide on how to use the EAGLE reference design.
 
-This quick guide assumes you are familiar with doing PCB designs in EAGLE, if not; both [Adafruit] and [SparkFun] has guides on how to get started
+This quick guide assumes you are familiar with doing PCB designs in EAGLE, otherwise both [Adafruit] and [SparkFun] has guides on how to get started
 
 
 1. First clone or download the reference designs and libraries from [Github]
-2. Select the reference-design that fits your application (if you have no idea; use *nRF52832_qfaa_dcdc*)
+2. Select the reference-design that fits your application (if you are uncertain use *nRF52832_qfaa_dcdc*)
 3. Add your own parts in the circuit diagram
-4. Do the layout and routing
+4. Create the layout and routing
 5. Do not modify the geometry of the rf part
 
 Please refer to the general pcb design guidelines for [nRF51][designguidenrf51] or [nRF52][designguidenrf52]
 
 ### 1. First clone or download the reference designs and libraries from [Github]
 
-If you are familiar with [git] this is self explanatory, if not press the (green) "Clone or download" button and then "Download ZIP". If you are not familiar with [git] it is higly reccomended to learn version control, there is a lot of guides available online.
+If you are familiar with [git] this is self explanatory, if not press the (green) "Clone or download" button and then "Download ZIP".
 
 
 ### 2. Select the reference-design that fits your application
