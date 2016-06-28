@@ -50,7 +50,6 @@ There. You are done with your nRF5 design in eagle, dont forget to run design re
 
 ## Reference designs
 ![alt-text][dcdc_reference]
-Picture of one of the reference layouts here
 
 The reference designs supplied for eagle are made by following the [general pcb design guidelines][designguidenrf52] and referencing the [altium reference layout][altiumreference]
 The reference designs include eagle files as well as pdf printouts. For BOM see the altium reference designs.
