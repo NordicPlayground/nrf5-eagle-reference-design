@@ -48,16 +48,18 @@ There. You are done with your nRF5 design in eagle, dont forget to run design re
 
 # Some info on the git repository
 
-## Antenna
-In the Nordic_misc library there is supplied some suggestions for antennas, please note that antenna characteristics depends greatly on the board layout. These antennas are made according to the [whitepaper][monopole] on quarter wave monopole 2.45 GHz antennas. Remember to [tune][antuning] the antenna
-
-## NFC
-An NFC listener antenna suggestion is supplied in the Nordic_misc library, this is the antenna used in the [nRF52-DK] development kit. Remember to [tune][nfctune] the antenna.
-
 ## Reference designs
 ![alt-text][dcdc_reference]
+Picture of one of the reference layouts here
 
 The reference designs supplied for eagle are made by following the [general pcb design guidelines][designguidenrf52] and referencing the [altium reference layout][altiumreference]
+The reference designs include eagle files as well as pdf printouts. For BOM see the altium reference designs.
+
+* nRF51x22_qfaa
+* nRF51x22_qfaa_dcdc
+* nRF52832_qfaa
+* nRF52832_qfaa_dcdc
+* nRF52832_qfaa_nfc
 
 ## Libraries
 
@@ -66,6 +68,14 @@ This library contains the nRF51 and nRF52 in qfn and bga packages, as well as; c
 
 ### Nordic_misc
 This library contains the rest of the components used in the sample eagle design(s) in the github repository, as well as some simple antenna suggestions.
+
+
+## Antenna
+In the Nordic_misc library there is supplied some suggestions for antennas, please note that antenna characteristics depends greatly on the board layout. These antennas are made according to the [whitepaper][monopole] on quarter wave monopole 2.45 GHz antennas. Remember to [tune][antuning] the antenna
+
+## NFC
+An NFC listener antenna suggestion is supplied in the Nordic_misc library, this is the antenna used in the [nRF52-DK] development kit. Remember to [tune][nfctune] the antenna.
+
 
 [sparkfun]: <https://www.sparkfun.com/>
 [adafruit]: <https://www.adafruit.com/>
