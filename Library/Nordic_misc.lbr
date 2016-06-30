@@ -1332,12 +1332,20 @@ IPC Low Density</description>
 <wire x1="-1" y1="1.8" x2="-1.8" y2="1" width="0.1" layer="51"/>
 <wire x1="-1.8" y1="1" x2="-1.8" y2="-1" width="0.1" layer="51"/>
 <wire x1="-1.8" y1="-1" x2="-1" y2="-1.8" width="0.1" layer="51"/>
-<wire x1="-3.05" y1="-3.05" x2="3" y2="-3.05" width="0.1" layer="39"/>
-<wire x1="3" y1="-3.05" x2="3" y2="2.95" width="0.1" layer="39"/>
+<wire x1="-3.05" y1="-2.95" x2="3" y2="-2.95" width="0.1" layer="39"/>
+<wire x1="3" y1="-2.95" x2="3" y2="2.95" width="0.1" layer="39"/>
 <wire x1="3" y1="2.95" x2="-3.05" y2="2.95" width="0.1" layer="39"/>
-<wire x1="-3.05" y1="2.95" x2="-3.05" y2="-3.05" width="0.1" layer="39"/>
+<wire x1="-3.05" y1="2.95" x2="-3.05" y2="-2.95" width="0.1" layer="39"/>
 <text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-2" y1="-3" x2="-3" y2="-3" width="0.2" layer="21"/>
+<wire x1="-3" y1="-3" x2="-3" y2="-2" width="0.2" layer="21"/>
+<wire x1="2" y1="3" x2="3" y2="3" width="0.2" layer="21"/>
+<wire x1="3" y1="3" x2="3" y2="2" width="0.2" layer="21"/>
+<wire x1="-3" y1="2" x2="-3" y2="3" width="0.2" layer="21"/>
+<wire x1="-3" y1="3" x2="-2" y2="3" width="0.2" layer="21"/>
+<wire x1="3" y1="-2" x2="3" y2="-3" width="0.2" layer="21"/>
+<wire x1="3" y1="-3" x2="2" y2="-3" width="0.2" layer="21"/>
 </package>
 <package name="DIOC0603_N">
 <description>&lt;b&gt;0603&lt;/b&gt; chip &lt;p&gt;
