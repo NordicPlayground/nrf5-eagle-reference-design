@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="6.25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
@@ -186,8 +186,8 @@
 <text x="11.43" y="20.32" size="1" layer="21" font="vector" ratio="15" rot="R270" align="center-left">08</text>
 <text x="21.4" y="10.5" size="1" layer="21" font="vector" ratio="15" align="center-left">RESET</text>
 <text x="21.4" y="12.5" size="1" layer="21" font="vector" ratio="15" align="center-left">BTN1</text>
-<text x="23.4" y="13.2" size="1" layer="21" font="vector" ratio="15" rot="R90" align="center-left">LED1</text>
-<text x="23.1" y="7.1" size="0.5" layer="21" font="vector" ratio="15" rot="R90" align="center-left">LED2</text>
+<text x="23.2" y="13.5" size="0.8" layer="21" font="vector" ratio="15" rot="R90" align="center-left">LED1</text>
+<text x="23" y="6.5" size="0.8" layer="21" font="vector" ratio="15" rot="R90" align="center-left">LED2</text>
 <text x="26.3" y="9.9" size="1" layer="21" font="vector" ratio="15" align="center-left">NFCT</text>
 <text x="1" y="19.4" size="1" layer="21" font="vector" ratio="15" align="center-left">PWR</text>
 <text x="47" y="13.1" size="1" layer="21" font="vector" ratio="15" align="center-left">J8</text>
