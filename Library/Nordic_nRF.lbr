@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -320,8 +320,8 @@ SMD XTAL 2.0 x 1.6 mm</description>
 <smd name="3" x="0.725" y="0.575" dx="0.95" dy="0.85" layer="1"/>
 <smd name="4" x="-0.725" y="0.575" dx="0.95" dy="0.85" layer="1"/>
 <text x="-2.8" y="1.5" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.7" y="-2.9" size="1.27" layer="27">&gt;VALUE</text>
-<circle x="-1.5" y="-1.2" radius="0.1" width="0.2" layer="21"/>
+<text x="-2.7" y="-3.3" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-1.4" y="-1.7" radius="0.1" width="0.2" layer="21"/>
 <wire x1="-1" y1="-0.8" x2="1" y2="-0.8" width="0.1" layer="51"/>
 <wire x1="1" y1="-0.8" x2="1" y2="0.8" width="0.1" layer="51"/>
 <wire x1="1" y1="0.8" x2="-1" y2="0.8" width="0.1" layer="51"/>
@@ -330,6 +330,14 @@ SMD XTAL 2.0 x 1.6 mm</description>
 <wire x1="1.45" y1="1.25" x2="-1.45" y2="1.25" width="0.1" layer="39"/>
 <wire x1="-1.45" y1="1.25" x2="-1.45" y2="-1.25" width="0.1" layer="39"/>
 <wire x1="-1.45" y1="-1.25" x2="1.45" y2="-1.25" width="0.1" layer="39"/>
+<wire x1="1" y1="-1.3" x2="1.5" y2="-1.3" width="0.15" layer="21"/>
+<wire x1="1.5" y1="-1.3" x2="1.5" y2="-0.8" width="0.15" layer="21"/>
+<wire x1="-1" y1="1.3" x2="-1.5" y2="1.3" width="0.15" layer="21"/>
+<wire x1="-1.5" y1="1.3" x2="-1.5" y2="0.8" width="0.15" layer="21"/>
+<wire x1="1.5" y1="0.8" x2="1.5" y2="1.3" width="0.15" layer="21"/>
+<wire x1="1.5" y1="1.3" x2="1" y2="1.3" width="0.15" layer="21"/>
+<wire x1="-1.5" y1="-0.8" x2="-1.5" y2="-1.3" width="0.15" layer="21"/>
+<wire x1="-1.5" y1="-1.3" x2="-1" y2="-1.3" width="0.15" layer="21"/>
 </package>
 <package name="XTAL_3215_N">
 <description>&lt;b&gt;XTAL_3215&lt;/b&gt;&lt;p&gt;

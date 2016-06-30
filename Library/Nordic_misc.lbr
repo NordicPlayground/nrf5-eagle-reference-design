@@ -1301,6 +1301,8 @@ IPC Low Density</description>
 <wire x1="1" y1="-4.4" x2="1" y2="-3.4" width="0.2" layer="21"/>
 <wire x1="0" y1="4.4" x2="1" y2="4.4" width="0.2" layer="21"/>
 <wire x1="1" y1="4.4" x2="1" y2="3.4" width="0.2" layer="21"/>
+<text x="-4.2" y="5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.2" y="-6.1" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="CR1632_HOLDER_TH">
 <smd name="1" x="0" y="0" dx="13" dy="13" layer="1" roundness="100"/>
