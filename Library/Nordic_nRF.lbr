@@ -355,6 +355,8 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <wire x1="2" y1="1.15" x2="-2" y2="1.15" width="0.1" layer="39"/>
 <wire x1="-2" y1="1.15" x2="-2" y2="-1.15" width="0.1" layer="39"/>
 <wire x1="-2" y1="-1.15" x2="2" y2="-1.15" width="0.1" layer="39"/>
+<wire x1="-0.5" y1="-0.8" x2="0.5" y2="-0.8" width="0.15" layer="21"/>
+<wire x1="-0.5" y1="0.8" x2="0.5" y2="0.8" width="0.15" layer="21"/>
 </package>
 <package name="CEAA_WLCSP_C62_N">
 <description>&lt;h2&gt;CEAA WLCSP package&lt;/h2&gt;</description>
