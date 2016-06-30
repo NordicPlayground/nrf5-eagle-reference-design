@@ -290,8 +290,8 @@ SMD XTAL 2.0 x 1.6 mm</description>
 <smd name="3" x="0.725" y="0.575" dx="0.95" dy="0.85" layer="1"/>
 <smd name="4" x="-0.725" y="0.575" dx="0.95" dy="0.85" layer="1"/>
 <text x="-2.8" y="1.5" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.7" y="-2.9" size="1.27" layer="27">&gt;VALUE</text>
-<circle x="-1.5" y="-1.2" radius="0.1" width="0.2" layer="21"/>
+<text x="-2.7" y="-3.3" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-1.4" y="-1.7" radius="0.1" width="0.2" layer="21"/>
 <wire x1="-1" y1="-0.8" x2="1" y2="-0.8" width="0.1" layer="51"/>
 <wire x1="1" y1="-0.8" x2="1" y2="0.8" width="0.1" layer="51"/>
 <wire x1="1" y1="0.8" x2="-1" y2="0.8" width="0.1" layer="51"/>
@@ -300,6 +300,14 @@ SMD XTAL 2.0 x 1.6 mm</description>
 <wire x1="1.45" y1="1.25" x2="-1.45" y2="1.25" width="0.1" layer="39"/>
 <wire x1="-1.45" y1="1.25" x2="-1.45" y2="-1.25" width="0.1" layer="39"/>
 <wire x1="-1.45" y1="-1.25" x2="1.45" y2="-1.25" width="0.1" layer="39"/>
+<wire x1="1" y1="-1.3" x2="1.5" y2="-1.3" width="0.15" layer="21"/>
+<wire x1="1.5" y1="-1.3" x2="1.5" y2="-0.8" width="0.15" layer="21"/>
+<wire x1="-1" y1="1.3" x2="-1.5" y2="1.3" width="0.15" layer="21"/>
+<wire x1="-1.5" y1="1.3" x2="-1.5" y2="0.8" width="0.15" layer="21"/>
+<wire x1="1.5" y1="0.8" x2="1.5" y2="1.3" width="0.15" layer="21"/>
+<wire x1="1.5" y1="1.3" x2="1" y2="1.3" width="0.15" layer="21"/>
+<wire x1="-1.5" y1="-0.8" x2="-1.5" y2="-1.3" width="0.15" layer="21"/>
+<wire x1="-1.5" y1="-1.3" x2="-1" y2="-1.3" width="0.15" layer="21"/>
 </package>
 <package name="XTAL_3215_N">
 <description>&lt;b&gt;XTAL_3215&lt;/b&gt;&lt;p&gt;
@@ -317,6 +325,8 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <wire x1="2" y1="1.15" x2="-2" y2="1.15" width="0.1" layer="39"/>
 <wire x1="-2" y1="1.15" x2="-2" y2="-1.15" width="0.1" layer="39"/>
 <wire x1="-2" y1="-1.15" x2="2" y2="-1.15" width="0.1" layer="39"/>
+<wire x1="-0.5" y1="-0.8" x2="0.5" y2="-0.8" width="0.15" layer="21"/>
+<wire x1="-0.5" y1="0.8" x2="0.5" y2="0.8" width="0.15" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -925,15 +935,13 @@ IPC Nominal Density</description>
 <smd name="OUT" x="0" y="-1.16" dx="0.5" dy="0.58" layer="1"/>
 <rectangle x1="-0.65" y1="-1.35" x2="0.65" y2="-0.55" layer="41"/>
 <rectangle x1="-0.65" y1="0.55" x2="0.65" y2="1.35" layer="41"/>
-<wire x1="-0.35" y1="-1.2" x2="-0.55" y2="-1.2" width="0.15" layer="21"/>
-<wire x1="-0.55" y1="-1.2" x2="-0.55" y2="-0.55" width="0.15" layer="21"/>
-<wire x1="-0.55" y1="-0.55" x2="0.55" y2="-0.55" width="0.15" layer="21"/>
-<wire x1="0.55" y1="-0.55" x2="0.55" y2="-1.2" width="0.15" layer="21"/>
-<wire x1="0.55" y1="-1.2" x2="0.35" y2="-1.2" width="0.15" layer="21"/>
-<wire x1="-1.3" y1="-0.4" x2="-1.3" y2="0.4" width="0.15" layer="21"/>
-<wire x1="1.3" y1="-0.4" x2="1.3" y2="0.4" width="0.15" layer="21"/>
-<wire x1="-0.55" y1="1.3" x2="-0.35" y2="1.1" width="0.15" layer="21"/>
-<wire x1="0.55" y1="1.3" x2="0.35" y2="1.1" width="0.15" layer="21"/>
+<wire x1="-0.45" y1="-1.2" x2="-0.45" y2="-0.55" width="0.15" layer="21"/>
+<wire x1="-0.45" y1="-0.55" x2="0.45" y2="-0.55" width="0.15" layer="21"/>
+<wire x1="0.45" y1="-0.55" x2="0.45" y2="-1.2" width="0.15" layer="21"/>
+<wire x1="-1.3" y1="-0.3" x2="-1.3" y2="0.3" width="0.15" layer="21"/>
+<wire x1="1.3" y1="-0.3" x2="1.3" y2="0.3" width="0.15" layer="21"/>
+<wire x1="-0.45" y1="0.7" x2="-0.25" y2="0.5" width="0.15" layer="21"/>
+<wire x1="0.45" y1="0.7" x2="0.25" y2="0.5" width="0.15" layer="21"/>
 <wire x1="1.65" y1="-1.7" x2="1.65" y2="1.7" width="0.15" layer="39"/>
 <wire x1="1.65" y1="1.7" x2="-1.65" y2="1.7" width="0.15" layer="39"/>
 <wire x1="-1.65" y1="1.7" x2="-1.65" y2="-1.7" width="0.15" layer="39"/>
@@ -942,6 +950,8 @@ IPC Nominal Density</description>
 <wire x1="1.25" y1="1.25" x2="1.25" y2="-1.25" width="0.15" layer="51"/>
 <wire x1="1.25" y1="-1.25" x2="-1.25" y2="-1.25" width="0.15" layer="51"/>
 <wire x1="-1.25" y1="-1.25" x2="-1.25" y2="1.25" width="0.15" layer="51"/>
+<text x="-2.9" y="2.1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.2" y="-3.3" size="1.27" layer="25">&gt;VALUE</text>
 </package>
 <package name="FPC_05P-RA-SMD">
 <description>WCON 5141-05RZDNWR01</description>
@@ -960,6 +970,12 @@ IPC Nominal Density</description>
 <wire x1="2.7" y1="-2.5" x2="2.7" y2="2.25" width="0.1" layer="39"/>
 <wire x1="2.7" y1="2.25" x2="-2.7" y2="2.25" width="0.1" layer="39"/>
 <wire x1="-2.7" y1="2.25" x2="-2.7" y2="-2.5" width="0.1" layer="39"/>
+<wire x1="-1.7" y1="1.9" x2="-2.7" y2="1.9" width="0.127" layer="21"/>
+<wire x1="-2.7" y1="1.9" x2="-2.7" y2="0.9" width="0.127" layer="21"/>
+<wire x1="1.7" y1="1.9" x2="2.7" y2="1.9" width="0.127" layer="21"/>
+<wire x1="2.7" y1="1.9" x2="2.7" y2="0.9" width="0.127" layer="21"/>
+<text x="-2.9" y="2.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-4" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="HDRV127P5X2-10_N">
 <smd name="2" x="-2.54" y="1.95" dx="0.76" dy="2.4" layer="1"/>
@@ -985,6 +1001,8 @@ IPC Nominal Density</description>
 <wire x1="4.95" y1="-3.4" x2="-4" y2="-3.4" width="0.2" layer="21"/>
 <wire x1="-5" y1="3.4" x2="-5" y2="-2.4" width="0.2" layer="21"/>
 <wire x1="-5" y1="-2.4" x2="-4" y2="-3.4" width="0.2" layer="21"/>
+<text x="-3.4" y="-5" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-3.2" y="3.8" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="USB-MICRO-B-RA-SMD-PIP">
 <smd name="1" x="0" y="1.3" dx="0.4" dy="1.35" layer="1" rot="R90"/>
@@ -1002,6 +1020,12 @@ IPC Nominal Density</description>
 <wire x1="0.95" y1="4.45" x2="-3.85" y2="4.45" width="0.127" layer="39"/>
 <wire x1="-3.85" y1="4.45" x2="-3.85" y2="-4.45" width="0.127" layer="39"/>
 <wire x1="-3.85" y1="-4.45" x2="0.95" y2="-4.45" width="0.127" layer="39"/>
+<wire x1="1" y1="-4.4" x2="0" y2="-4.4" width="0.2" layer="21"/>
+<wire x1="1" y1="-4.4" x2="1" y2="-3.4" width="0.2" layer="21"/>
+<wire x1="0" y1="4.4" x2="1" y2="4.4" width="0.2" layer="21"/>
+<wire x1="1" y1="4.4" x2="1" y2="3.4" width="0.2" layer="21"/>
+<text x="-4.2" y="5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.2" y="-6.1" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="CR1632_HOLDER_TH">
 <smd name="1" x="0" y="0" dx="13" dy="13" layer="1" roundness="100"/>
@@ -1037,12 +1061,20 @@ IPC Nominal Density</description>
 <wire x1="-1" y1="1.8" x2="-1.8" y2="1" width="0.1" layer="51"/>
 <wire x1="-1.8" y1="1" x2="-1.8" y2="-1" width="0.1" layer="51"/>
 <wire x1="-1.8" y1="-1" x2="-1" y2="-1.8" width="0.1" layer="51"/>
-<wire x1="-3.05" y1="-3.05" x2="3" y2="-3.05" width="0.1" layer="39"/>
-<wire x1="3" y1="-3.05" x2="3" y2="2.95" width="0.1" layer="39"/>
+<wire x1="-3.05" y1="-2.95" x2="3" y2="-2.95" width="0.1" layer="39"/>
+<wire x1="3" y1="-2.95" x2="3" y2="2.95" width="0.1" layer="39"/>
 <wire x1="3" y1="2.95" x2="-3.05" y2="2.95" width="0.1" layer="39"/>
-<wire x1="-3.05" y1="2.95" x2="-3.05" y2="-3.05" width="0.1" layer="39"/>
+<wire x1="-3.05" y1="2.95" x2="-3.05" y2="-2.95" width="0.1" layer="39"/>
 <text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-2" y1="-3" x2="-3" y2="-3" width="0.2" layer="21"/>
+<wire x1="-3" y1="-3" x2="-3" y2="-2" width="0.2" layer="21"/>
+<wire x1="2" y1="3" x2="3" y2="3" width="0.2" layer="21"/>
+<wire x1="3" y1="3" x2="3" y2="2" width="0.2" layer="21"/>
+<wire x1="-3" y1="2" x2="-3" y2="3" width="0.2" layer="21"/>
+<wire x1="-3" y1="3" x2="-2" y2="3" width="0.2" layer="21"/>
+<wire x1="3" y1="-2" x2="3" y2="-3" width="0.2" layer="21"/>
+<wire x1="3" y1="-3" x2="2" y2="-3" width="0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
