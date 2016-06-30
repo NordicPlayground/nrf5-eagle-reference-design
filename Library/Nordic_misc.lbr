@@ -1230,7 +1230,7 @@ IPC Low Density</description>
 <wire x1="1.25" y1="-1.25" x2="-1.25" y2="-1.25" width="0.15" layer="51"/>
 <wire x1="-1.25" y1="-1.25" x2="-1.25" y2="1.25" width="0.15" layer="51"/>
 <text x="-2.9" y="2.1" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.2" y="-3.3" size="1.27" layer="25">&gt;VALUE</text>
+<text x="-3.2" y="-3.3" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="FPC_05P-RA-SMD">
 <description>WCON 5141-05RZDNWR01</description>
