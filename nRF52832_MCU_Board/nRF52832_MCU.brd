@@ -18,8 +18,8 @@
 <layer number="22" name="bPlace" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
@@ -198,7 +198,7 @@
 <text x="6.37" y="2.54" size="1" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">GND</text>
 <text x="3.81" y="2.54" size="1" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">3V3</text>
 <text x="1.25" y="2.54" size="1" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">5V0</text>
-<text x="6.33" y="20.36" size="1" layer="22" font="vector" ratio="15" rot="MR270" align="center-left">GND</text>
+<text x="6.33" y="20.46" size="1" layer="22" font="vector" ratio="15" rot="MR270" align="center-left">GND</text>
 <text x="3.79" y="20.36" size="1" layer="22" font="vector" ratio="15" rot="MR270" align="center-left">3V3</text>
 <text x="1.25" y="20.36" size="1" layer="22" font="vector" ratio="15" rot="MR270" align="center-left">5V0</text>
 <text x="11.43" y="2.54" size="1" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">09</text>
@@ -2136,25 +2136,27 @@ design rules under a new name.</description>
 </signals>
 <errors>
 <approved hash="5,1,880e6fa30cb9887d"/>
+<approved hash="19,16,9cd43cb4308890e8"/>
+<approved hash="19,16,c5d915b91159c139"/>
+<approved hash="6,1,d3740deccdd25cd8"/>
+<approved hash="6,1,9ee8d2911188a196"/>
+<approved hash="6,1,fa70b28d38748dee"/>
+<approved hash="6,1,91d4d3e11168afa2"/>
 <approved hash="6,1,8c1cc2ff241697ba"/>
 <approved hash="6,1,8008bc1f5a86e5b6"/>
-<approved hash="6,1,cb44816ee4275212"/>
-<approved hash="6,1,d3740deccdd25cd8"/>
-<approved hash="6,1,f5acb21d3834824a"/>
-<approved hash="6,1,91d4d3e11168afa2"/>
 <approved hash="6,1,c578813ee4075c66"/>
-<approved hash="6,1,9ee8d2911188a196"/>
 <approved hash="6,1,83c0c20f2496987e"/>
-<approved hash="6,1,fa70b28d38748dee"/>
+<approved hash="6,1,f5acb21d3834824a"/>
+<approved hash="6,1,cb44816ee4275212"/>
 <approved hash="6,1,93971422af50d7f1"/>
 <approved hash="6,1,d2eeeca5d374d41d"/>
-<approved hash="6,1,c300c32eb0cab0fc"/>
 <approved hash="6,1,371f3881d36baad3"/>
-<approved hash="6,1,be3e41cc418cbe78"/>
+<approved hash="6,1,c300c32eb0cab0fc"/>
 <approved hash="6,1,570c572cc8c8d8f0"/>
+<approved hash="6,1,be3e41cc418cbe78"/>
 <approved hash="6,1,cd53d43d2ad16ce8"/>
-<approved hash="6,1,66ed67efdb2b9956"/>
 <approved hash="6,1,17e55427eb16e811"/>
+<approved hash="6,1,66ed67efdb2b9956"/>
 <approved hash="6,1,b3580fa2069cbd18"/>
 <approved hash="6,1,ecd99975038939d9"/>
 <approved hash="6,1,f98bbfad1d486a7f"/>
@@ -2163,12 +2165,12 @@ design rules under a new name.</description>
 <approved hash="6,1,cb87d5a40958006b"/>
 <approved hash="6,1,c71c76e467a7c463"/>
 <approved hash="6,1,e23d19c71e86e372"/>
-<approved hash="6,1,948015e0ce04dc75"/>
 <approved hash="6,1,dd34ced515209468"/>
-<approved hash="6,1,fcec01100137fccb"/>
+<approved hash="6,1,948015e0ce04dc75"/>
 <approved hash="6,1,b60f818bca035aab"/>
 <approved hash="6,1,66392c70c329f6e0"/>
 <approved hash="6,1,f0d256f7eb1332c9"/>
+<approved hash="6,1,fcec01100137fccb"/>
 <approved hash="6,1,951ef82cf8339501"/>
 <approved hash="6,1,98bff34df35298a0"/>
 <approved hash="6,1,f5a13741336ff18f"/>
@@ -2178,20 +2180,30 @@ design rules under a new name.</description>
 <approved hash="6,1,0d2b4494177ea30b"/>
 <approved hash="6,1,1a42d30612f82676"/>
 <approved hash="6,1,2cb06515f97f4d10"/>
-<approved hash="6,1,480501b2ecff5a7e"/>
 <approved hash="6,1,480501b2dcff6a7e"/>
-<approved hash="6,1,bff2c18cc161bf1f"/>
-<approved hash="6,1,bc4ac234c2e1bc9f"/>
+<approved hash="6,1,480501b2ecff5a7e"/>
 <approved hash="6,1,97d215ac15e2979c"/>
-<approved hash="6,1,bf62c11cc161bf1f"/>
-<approved hash="6,1,bc6ac214cc21b25f"/>
-<approved hash="6,1,bd72c30cc321bd5f"/>
 <approved hash="6,1,94e2169c1702957c"/>
+<approved hash="6,1,bc4ac234c2e1bc9f"/>
+<approved hash="6,1,bff2c18cc161bf1f"/>
+<approved hash="6,1,bd72c30cc321bd5f"/>
+<approved hash="6,1,bc6ac214cc21b25f"/>
+<approved hash="6,1,bf62c11cc161bf1f"/>
 <approved hash="6,1,57cd15b315775709"/>
-<approved hash="6,1,55ed179317d755a9"/>
 <approved hash="6,1,54ed169319575b29"/>
-<approved hash="19,16,9cd43cb4308890e8"/>
-<approved hash="19,16,c5d915b91159c139"/>
+<approved hash="6,1,55ed179317d755a9"/>
+<approved hash="19,16,5879660d89320788"/>
+<approved hash="19,16,448b5699da371637"/>
+<approved hash="19,16,2c3afc554503258d"/>
+<approved hash="19,16,a68e427924ab9c85"/>
+<approved hash="19,16,498dcd3b3af6cd99"/>
+<approved hash="19,16,b256e236e17ab11a"/>
+<approved hash="19,16,b656e636e19ab1fa"/>
+<approved hash="19,16,d0d8f0b8fca4dcc4"/>
+<approved hash="19,16,eab80ad8369fd6ff"/>
+<approved hash="19,16,0cd66cb6609600f6"/>
+<approved hash="19,16,1052703277aa17ca"/>
+<approved hash="19,16,0ec71ea722a632c6"/>
 <approved hash="19,16,d3c733a7362bd64b"/>
 <approved hash="5,16,e54ea1b897a0fd54"/>
 </errors>
