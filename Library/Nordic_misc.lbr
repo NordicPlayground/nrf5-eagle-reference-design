@@ -1481,6 +1481,7 @@ IPC Nominal Density</description>
 <pad name="P$1" x="-2.54" y="0" drill="0.9" diameter="1.6" shape="square"/>
 <pad name="P$2" x="0" y="0" drill="0.9" diameter="1.6"/>
 <pad name="P$3" x="2.54" y="0" drill="0.9" diameter="1.6"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
 </package>
 <package name="HDRV16W64P254_1X16_4064X254X900B_NO_SILK">
 <pad name="P$1" x="-19.05" y="0" drill="0.9" diameter="1.6" shape="square"/>
@@ -1499,6 +1500,7 @@ IPC Nominal Density</description>
 <pad name="P$14" x="13.97" y="0" drill="0.9" diameter="1.6"/>
 <pad name="P$15" x="16.51" y="0" drill="0.9" diameter="1.6"/>
 <pad name="P$16" x="19.05" y="0" drill="0.9" diameter="1.6"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
