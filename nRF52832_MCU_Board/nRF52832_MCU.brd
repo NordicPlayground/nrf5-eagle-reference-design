@@ -249,6 +249,7 @@
 <wire x1="10.16" y1="21.59" x2="10.16" y2="21.11375" width="0.2" layer="21"/>
 <text x="19.05" y="20.32" size="1" layer="21" font="vector" ratio="15" rot="R270" align="center-left">5</text>
 <text x="16.51" y="20.32" size="1" layer="21" font="vector" ratio="15" rot="R270" align="center-left">4</text>
+<rectangle x1="49.4" y1="9.3" x2="50.9" y2="11.7" layer="41"/>
 </plain>
 <libraries>
 <library name="Nordic_nRF">
