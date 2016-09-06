@@ -1194,7 +1194,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C4" library="Nordic_nRF" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
 <part name="C5" library="Nordic_nRF" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
 <part name="C6" library="Nordic_nRF" deviceset="CAPACITOR" device="_0402_N" value="N.M."/>
-<part name="C7" library="Nordic_nRF" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
+<part name="C7" library="Nordic_nRF" deviceset="CAPACITOR" device="_0402_N" value="100pF"/>
 <part name="C8" library="Nordic_nRF" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
 <part name="C9" library="Nordic_nRF" deviceset="CAPACITOR" device="_0603_N" value="4.7µF"/>
 <part name="C10" library="Nordic_nRF" deviceset="CAPACITOR" device="_0603_N" value="1.0µF"/>
