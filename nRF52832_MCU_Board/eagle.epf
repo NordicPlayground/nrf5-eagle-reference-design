@@ -43,18 +43,11 @@ UsedLibrary="C:/Program Files/Eagle7.6.0/lbr/v-reg-micrel.lbr"
 UsedLibrary="C:/Program Files/Eagle7.6.0/lbr/v-reg.lbr"
 UsedLibrary="C:/Program Files/Eagle7.6.0/lbr/varistor.lbr"
 UsedLibrary="C:/Program Files/Eagle7.6.0/lbr/wirepad.lbr"
-UsedLibrary="C:/Program Files/Eagle7.6.0/lbr/Nordic/nRF.lbr"
 
 [Win_1]
-Type="Control Panel"
-Loc="1912 -8 3831 1169"
-State=1
-Number=0
-
-[Win_2]
 Type="Library Editor"
-Loc="-8 -8 1911 1129"
-State=1
+Loc="0 0 1919 1137"
+State=3
 Number=3
 File="C:/Users/oysm/Documents/eagle/nrf51-eagle-reference-design/Library/nRF.lbr"
 View="2.70178 -8.38673 54.8 43.7115"
@@ -96,7 +89,12 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=94
-Symbol="NRF52832"
+
+[Win_2]
+Type="Control Panel"
+Loc="-8 -8 1911 1129"
+State=1
+Number=0
 
 [Desktop]
 Screen="3840 1200"
