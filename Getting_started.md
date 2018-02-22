@@ -78,7 +78,7 @@ An NFC listener antenna suggestion is supplied in the Nordic_misc library, this 
 
 [sparkfun]: <https://www.sparkfun.com/>
 [adafruit]: <https://www.adafruit.com/>
-[github]: <https://github.com/NordicSemiconductor/nrf5-eagle-reference-design>
+[github]: <https://github.com/NordicPlayground/nrf5-eagle-reference-design>
 [designguidenrf51]: <https://devzone.nordicsemi.com/blogs/655/general-pcb-design-guidelines-for-nrf51/>
 [designguidenrf52]: <https://devzone.nordicsemi.com/blogs/870/general-pcb-design-guidelines-for-nrf52/>
 [referencecircuitry]: <https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.nrf52832.ps.v1.0%2Fref_circuitry.html&cp=1_2_0_51&anchor=concept_aqp_fd1_fq>

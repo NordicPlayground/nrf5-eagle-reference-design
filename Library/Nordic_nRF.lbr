@@ -149,7 +149,7 @@
 &lt;br&gt;
 &lt;a href=http://www.nordicsemi.com&gt;www.nordicsemi.com&lt;/a&gt;
 &lt;br&gt;
-To report issues with this library go to &lt;a href=https://github.com/NordicSemiconductor/nrf5-eagle-reference-design/blob/master/Library/Nordic_nRF.lbr&gt;github&lt;/a&gt;</description>
+To report issues with this library go to &lt;a href=https://github.com/NordicPlayground/nrf5-eagle-reference-design/blob/master/Library/Nordic_nRF.lbr&gt;github&lt;/a&gt;</description>
 <packages>
 <package name="QFN40P600X600X90-48_N">
 <description>&lt;b&gt;QFN40P600X600X90-48N&lt;/b&gt;&lt;p&gt;
