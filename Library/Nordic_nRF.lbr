@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1370,7 +1370,7 @@ IPC Low Density</description>
 <pin name="P0.24@AD20" x="50.8" y="-5.08" length="middle" rot="R90"/>
 <pin name="ANT@H23" x="73.66" y="45.72" length="middle" rot="R180"/>
 <pin name="VSS_PA@F23" x="73.66" y="48.26" length="middle" rot="R180"/>
-<pin name="DEC2@E24" x="73.66" y="50.8" length="middle" rot="R180"/>
+<pin name="DEC6@E24" x="73.66" y="50.8" length="middle" rot="R180"/>
 <pin name="DEC3@D23" x="73.66" y="53.34" length="middle" rot="R180"/>
 <pin name="XC1@B24" x="73.66" y="55.88" length="middle" direction="in" rot="R180"/>
 <pin name="XC2@A23" x="73.66" y="58.42" length="middle" direction="out" rot="R180"/>
@@ -2656,11 +2656,11 @@ IPC Low Density</description>
 <connect gate="G$1" pin="DCCH@AB2" pad="P$AB2"/>
 <connect gate="G$1" pin="DEC1@C1" pad="P$C1"/>
 <connect gate="G$1" pin="DEC2@A18" pad="P$A18"/>
-<connect gate="G$1" pin="DEC2@E24" pad="P$E24"/>
 <connect gate="G$1" pin="DEC3@D23" pad="P$D23"/>
 <connect gate="G$1" pin="DEC3V3@AC5" pad="P$AC5"/>
 <connect gate="G$1" pin="DEC4@B5" pad="P$B5"/>
 <connect gate="G$1" pin="DEC5@N24" pad="P$N24"/>
+<connect gate="G$1" pin="DEC6@E24" pad="P$E24"/>
 <connect gate="G$1" pin="P0.00/XL1@D2" pad="P$D2"/>
 <connect gate="G$1" pin="P0.01/XL2@F2" pad="P$F2"/>
 <connect gate="G$1" pin="P0.02/AIN0@A12" pad="P$A12"/>
