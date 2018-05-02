@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -1339,8 +1340,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="L1" library="Nordic_nRF" deviceset="INDUCTOR" device="_0402_N" value="3.9nH"/>
 <part name="L2" library="Nordic_nRF" deviceset="INDUCTOR" device="_0603_N" value="10µH"/>
 <part name="L3" library="Nordic_nRF" deviceset="INDUCTOR" device="_0402_N" value="15nH"/>
-<part name="C1" library="Nordic_nRF" deviceset="CAPACITOR" device="_0402_N" value="12pF"/>
 <part name="C2" library="Nordic_nRF" deviceset="CAPACITOR" device="_0402_N" value="12pF"/>
+<part name="C1" library="Nordic_nRF" deviceset="CAPACITOR" device="_0402_N" value="12pF"/>
 <part name="C3" library="Nordic_nRF" deviceset="CAPACITOR" device="_0402_N" value="0.8pF"/>
 <part name="C4" library="Nordic_nRF" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
 <part name="C5" library="Nordic_nRF" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
@@ -1381,8 +1382,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="L1" gate="L$1" x="193.04" y="86.36" rot="R90"/>
 <instance part="L3" gate="L$1" x="104.14" y="149.86" rot="R180"/>
 <instance part="L2" gate="L$1" x="104.14" y="134.62" rot="R180"/>
-<instance part="C1" gate="C$1" x="213.36" y="114.3" rot="R90"/>
-<instance part="C2" gate="C$1" x="213.36" y="96.52" rot="R90"/>
+<instance part="C2" gate="C$1" x="213.36" y="114.3" rot="R90"/>
+<instance part="C1" gate="C$1" x="213.36" y="96.52" rot="R90"/>
 <instance part="C3" gate="C$1" x="182.88" y="81.28"/>
 <instance part="C4" gate="C$1" x="68.58" y="132.08"/>
 <instance part="C5" gate="C$1" x="88.9" y="45.72"/>
@@ -1448,8 +1449,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="220.98" y="104.14"/>
 <pinref part="X1" gate="X$1" pin="4"/>
 <pinref part="X1" gate="X$1" pin="2"/>
-<pinref part="C1" gate="C$1" pin="2"/>
 <pinref part="C2" gate="C$1" pin="2"/>
+<pinref part="C1" gate="C$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
@@ -1592,7 +1593,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="U1" gate="U$1" pin="XC2@35"/>
 <wire x1="193.04" y1="99.06" x2="152.4" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="X1" gate="X$1" pin="3"/>
-<pinref part="C1" gate="C$1" pin="1"/>
+<pinref part="C2" gate="C$1" pin="1"/>
 </segment>
 </net>
 <net name="X1" class="0">
@@ -1603,7 +1604,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="152.4" y1="96.52" x2="203.2" y2="96.52" width="0.1524" layer="91"/>
 <junction x="203.2" y="96.52"/>
 <pinref part="X1" gate="X$1" pin="1"/>
-<pinref part="C2" gate="C$1" pin="1"/>
+<pinref part="C1" gate="C$1" pin="1"/>
 </segment>
 </net>
 <net name="P0.31" class="0">
