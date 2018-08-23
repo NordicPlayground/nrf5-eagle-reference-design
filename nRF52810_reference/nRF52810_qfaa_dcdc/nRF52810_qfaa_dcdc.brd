@@ -513,7 +513,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U1" library="Nordic_nRF" package="QFN40P600X600X90-48_N" value="NRF52832" x="11" y="6" smashed="yes">
+<element name="U1" library="Nordic_nRF" package="QFN40P600X600X90-48_N" value="NRF52810_QF" x="11" y="6" smashed="yes">
 <attribute name="NAME" x="10.6" y="5.7" size="0.6" layer="25" ratio="11"/>
 <attribute name="VALUE" x="9" y="9.6" size="0.889" layer="27" ratio="11"/>
 </element>

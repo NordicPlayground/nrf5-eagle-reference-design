@@ -555,20 +555,20 @@ IPC Nominal Density</description>
 </package>
 </packages>
 <symbols>
-<symbol name="NRF52832">
-<pin name="DEC1@01" x="-5.08" y="40.64" length="middle" direction="pwr"/>
-<pin name="P0.00/XL1@02" x="-5.08" y="38.1" length="middle"/>
-<pin name="P0.01/XL2@03" x="-5.08" y="35.56" length="middle"/>
-<pin name="P0.02/AIN0@04" x="-5.08" y="33.02" length="middle"/>
-<pin name="P0.03/AIN1@05" x="-5.08" y="30.48" length="middle"/>
-<pin name="P0.04/AIN2@06" x="-5.08" y="27.94" length="middle"/>
-<pin name="P0.05/AIN3@07" x="-5.08" y="25.4" length="middle"/>
-<pin name="P0.06@08" x="-5.08" y="22.86" length="middle"/>
-<pin name="P0.07@09" x="-5.08" y="20.32" length="middle"/>
+<symbol name="NRF52810_QF">
+<pin name="DEC1@1" x="-5.08" y="40.64" length="middle"/>
+<pin name="P0.00/XL1@2" x="-5.08" y="38.1" length="middle"/>
+<pin name="P0.01/XL2@3" x="-5.08" y="35.56" length="middle"/>
+<pin name="P0.02/AIN0@4" x="-5.08" y="33.02" length="middle"/>
+<pin name="P0.03/AIN1@5" x="-5.08" y="30.48" length="middle"/>
+<pin name="P0.04/AIN2@6" x="-5.08" y="27.94" length="middle"/>
+<pin name="P0.05/AIN3@7" x="-5.08" y="25.4" length="middle"/>
+<pin name="P0.06@8" x="-5.08" y="22.86" length="middle"/>
+<pin name="P0.07@9" x="-5.08" y="20.32" length="middle"/>
 <pin name="P0.08@10" x="-5.08" y="17.78" length="middle"/>
-<pin name="P0.09/NFC1@11" x="-5.08" y="15.24" length="middle"/>
-<pin name="P0.10/NFC2@12" x="-5.08" y="12.7" length="middle"/>
-<pin name="VDD@13" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R90"/>
+<pin name="P0.09@11" x="-5.08" y="15.24" length="middle"/>
+<pin name="P0.10@12" x="-5.08" y="12.7" length="middle"/>
+<pin name="VDD@13" x="12.7" y="-5.08" length="middle" rot="R90"/>
 <pin name="P0.11@14" x="15.24" y="-5.08" length="middle" rot="R90"/>
 <pin name="P0.12@15" x="17.78" y="-5.08" length="middle" rot="R90"/>
 <pin name="P0.13@16" x="20.32" y="-5.08" length="middle" rot="R90"/>
@@ -576,11 +576,11 @@ IPC Nominal Density</description>
 <pin name="P0.15@18" x="25.4" y="-5.08" length="middle" rot="R90"/>
 <pin name="P0.16@19" x="27.94" y="-5.08" length="middle" rot="R90"/>
 <pin name="P0.17@20" x="30.48" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.18/SWO@21" x="33.02" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.19@21" x="33.02" y="-5.08" length="middle" rot="R90"/>
 <pin name="P0.19@22" x="35.56" y="-5.08" length="middle" rot="R90"/>
 <pin name="P0.20@23" x="38.1" y="-5.08" length="middle" rot="R90"/>
 <pin name="P0.21/RESET@24" x="40.64" y="-5.08" length="middle" rot="R90"/>
-<pin name="SWDCLK@25" x="58.42" y="12.7" length="middle" direction="in" rot="R180"/>
+<pin name="SWDCLK@25" x="58.42" y="12.7" length="middle" rot="R180"/>
 <pin name="SWDIO@26" x="58.42" y="15.24" length="middle" rot="R180"/>
 <pin name="P0.22@27" x="58.42" y="17.78" length="middle" rot="R180"/>
 <pin name="P0.23@28" x="58.42" y="20.32" length="middle" rot="R180"/>
@@ -589,26 +589,26 @@ IPC Nominal Density</description>
 <pin name="VSS@31" x="58.42" y="27.94" length="middle" rot="R180"/>
 <pin name="DEC2@32" x="58.42" y="30.48" length="middle" rot="R180"/>
 <pin name="DEC3@33" x="58.42" y="33.02" length="middle" rot="R180"/>
-<pin name="XC1@34" x="58.42" y="35.56" length="middle" direction="in" rot="R180"/>
-<pin name="XC2@35" x="58.42" y="38.1" length="middle" direction="out" rot="R180"/>
-<pin name="VDD@36" x="58.42" y="40.64" length="middle" direction="pwr" rot="R180"/>
+<pin name="XC1@34" x="58.42" y="35.56" length="middle" rot="R180"/>
+<pin name="XC2@35" x="58.42" y="38.1" length="middle" rot="R180"/>
+<pin name="VDD@36" x="58.42" y="40.64" length="middle" rot="R180"/>
 <pin name="P0.25@37" x="40.64" y="58.42" length="middle" rot="R270"/>
 <pin name="P0.26@38" x="38.1" y="58.42" length="middle" rot="R270"/>
 <pin name="P0.27@39" x="35.56" y="58.42" length="middle" rot="R270"/>
-<pin name="P0.28@40" x="33.02" y="58.42" length="middle" rot="R270"/>
-<pin name="P0.29@41" x="30.48" y="58.42" length="middle" rot="R270"/>
-<pin name="P0.30@42" x="27.94" y="58.42" length="middle" rot="R270"/>
-<pin name="P0.31@43" x="25.4" y="58.42" length="middle" rot="R270"/>
-<pin name="N.C.@44" x="22.86" y="58.42" length="middle" direction="nc" rot="R270"/>
-<pin name="VSS@45" x="20.32" y="58.42" length="middle" direction="pwr" rot="R270"/>
-<pin name="DEC4@46" x="17.78" y="58.42" length="middle" direction="pwr" rot="R270"/>
-<pin name="DCC@47" x="15.24" y="58.42" length="middle" direction="out" rot="R270"/>
-<pin name="VDD@48" x="12.7" y="58.42" length="middle" direction="pwr" rot="R270"/>
-<wire x1="53.34" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="53.34" width="0.254" layer="94"/>
-<wire x1="0" y1="53.34" x2="53.34" y2="53.34" width="0.254" layer="94"/>
-<wire x1="53.34" y1="53.34" x2="53.34" y2="0" width="0.254" layer="94"/>
-<text x="21.59" y="26.67" size="1.778" layer="94">nRF52832</text>
+<pin name="P0.28/AIN4@40" x="33.02" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.29/AIN5@41" x="30.48" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.30/AIN6@42" x="27.94" y="58.42" length="middle" rot="R270"/>
+<pin name="P031/AIN7@43" x="25.4" y="58.42" length="middle" rot="R270"/>
+<pin name="N.C.@44" x="22.86" y="58.42" length="middle" rot="R270"/>
+<pin name="VSS@45" x="20.32" y="58.42" length="middle" rot="R270"/>
+<pin name="DEC4@46" x="17.78" y="58.42" length="middle" rot="R270"/>
+<pin name="DCC@47" x="15.24" y="58.42" length="middle" rot="R270"/>
+<pin name="VDD@48" x="12.7" y="58.42" length="middle" rot="R270"/>
+<wire x1="0" y1="0" x2="53.34" y2="0" width="0.254" layer="94"/>
+<wire x1="53.34" y1="0" x2="53.34" y2="53.34" width="0.254" layer="94"/>
+<wire x1="53.34" y1="53.34" x2="0" y2="53.34" width="0.254" layer="94"/>
+<wire x1="0" y1="53.34" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="21.59" y="26.67" size="1.778" layer="94">nRF52810</text>
 <text x="48.26" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="48.26" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
@@ -678,28 +678,25 @@ IPC Nominal Density</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="NRF52832">
-<description>&lt;h2&gt;nRF52832&lt;/h2&gt;&lt;p&gt;
+<deviceset name="NRF52810_QF">
+<description>&lt;h2&gt;nRF52810&lt;/h2&gt;
 
- &lt;h3&gt;Features&lt;/h3&gt;
-
+&lt;h3&gt;Features&lt;/h3&gt;
 &lt;ul&gt;
 
 &lt;li&gt;Single chip, highly flexible, 2.4 GHz multi-protocol SoC&lt;/li&gt;
 
-&lt;li&gt;32-bit ARM Cortex-M4F Processor&lt;/li&gt;
+&lt;li&gt;32-bit ARM Cortex-M4 Processor&lt;/li&gt;
 
 &lt;li&gt;1.7v to 3.6v operation&lt;/li&gt;
 
-&lt;li&gt;512kB flash + 64kB RAM&lt;/li&gt;
+&lt;li&gt;192kB flash + 24kB RAM&lt;/li&gt;
 
-&lt;li&gt;Supports concurrent Bluetooth Smart/ANT protocol operation&lt;/li&gt;
-
-&lt;li&gt;On-chip NFC tag for Out-of-Band (OOB) pairing&lt;/li&gt;
+&lt;li&gt;Supports concurrent Bluetooth low energy/ANT protocol operation&lt;/li&gt;
 
 &lt;li&gt;Up to +4dBm output power&lt;/li&gt;
 
-&lt;li&gt;-96dBm sensitivity, Bluetooth Smart&lt;/li&gt;
+&lt;li&gt;-96dBm sensitivity, Bluetooth low energy&lt;/li&gt;
 
 &lt;li&gt;Thread safe and run-time protected&lt;/li&gt;
 
@@ -715,15 +712,21 @@ IPC Nominal Density</description>
 
 &lt;li&gt;Configurable I/O mapping for analog and digital I/O&lt;/li&gt;
 
-&lt;li&gt;3 x Master/Slave SPI&lt;/li&gt;
+&lt;li&gt;1 x Master/Slave SPI&lt;/li&gt;
 
-&lt;li&gt;2 x Two-wire interface (I²C)&lt;/li&gt;
+&lt;li&gt;1 x Two-wire interface (I²C)&lt;/li&gt;
 
 &lt;li&gt;UART (RTS/CTS)&lt;/li&gt;
 
-&lt;li&gt;3 x PWM&lt;/li&gt;
+&lt;li&gt;1 x PWM (4 channels)&lt;/li&gt;
 
 &lt;li&gt;AES HW encryption&lt;/li&gt;
+
+&lt;li&gt;8-channel 10/12-bit ADC&lt;/li&gt;
+
+&lt;li&gt;Quadrature decoder&lt;/li&gt;
+
+&lt;li&gt;64-level analog comparator&lt;/li&gt;
 
 &lt;li&gt;Real Time Counter (RTC)&lt;/li&gt;
 
@@ -733,27 +736,26 @@ IPC Nominal Density</description>
 
 &lt;/ul&gt;
 
- &lt;h3&gt;Applications&lt;/h3&gt;
-
+&lt;h3&gt;Applications&lt;/h3&gt;
 &lt;ul&gt;
 
-&lt;li&gt;Internet of Things (IoT)&lt;/li&gt;
+&lt;li&gt;Bluetooth 5 connectivity processor&lt;/li&gt;
+
+&lt;li&gt;Industrial sensors and actuators&lt;/li&gt;
 
 &lt;li&gt;Wearables&lt;/li&gt;
 
 &lt;li&gt;SmartHome sensors&lt;/li&gt;
 
-&lt;li&gt;Connected white goods&lt;/li&gt;
+&lt;li&gt;computer peripherals&lt;/li&gt;
 
-&lt;li&gt;Computer peripherals&lt;/li&gt;
+&lt;li&gt;RF smart remotes&lt;/li&gt;
 
-&lt;li&gt;Voice-command smart remotes&lt;/li&gt;
-
-&lt;li&gt;A4WP ‘Rezence’ wireless charging&lt;/li&gt;
+&lt;li&gt;Airfuel (A4WP) wireless charging&lt;/li&gt;
 
 &lt;li&gt;Beacons&lt;/li&gt;
 
-&lt;li&gt;Sports and fitness sensors and hubs&lt;/li&gt;
+&lt;li&gt;Sports and fitness sensors &lt;/li&gt;
 
 &lt;li&gt;Connected health products&lt;/li&gt;
 
@@ -763,63 +765,63 @@ IPC Nominal Density</description>
 
 &lt;li&gt;Interactive games&lt;/li&gt;
 
-&lt;li&gt;Building automation and sensor networks&lt;/li&gt;
+&lt;li&gt;Building automation &lt;/li&gt;
 
 &lt;/ul&gt;</description>
 <gates>
-<gate name="U$1" symbol="NRF52832" x="0" y="0"/>
+<gate name="G$1" symbol="NRF52810_QF" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="QFN40P600X600X90-48_N">
 <connects>
-<connect gate="U$1" pin="ANT@30" pad="30"/>
-<connect gate="U$1" pin="DCC@47" pad="47"/>
-<connect gate="U$1" pin="DEC1@01" pad="1"/>
-<connect gate="U$1" pin="DEC2@32" pad="32"/>
-<connect gate="U$1" pin="DEC3@33" pad="33"/>
-<connect gate="U$1" pin="DEC4@46" pad="46"/>
-<connect gate="U$1" pin="N.C.@44" pad="44"/>
-<connect gate="U$1" pin="P0.00/XL1@02" pad="2"/>
-<connect gate="U$1" pin="P0.01/XL2@03" pad="3"/>
-<connect gate="U$1" pin="P0.02/AIN0@04" pad="4"/>
-<connect gate="U$1" pin="P0.03/AIN1@05" pad="5"/>
-<connect gate="U$1" pin="P0.04/AIN2@06" pad="6"/>
-<connect gate="U$1" pin="P0.05/AIN3@07" pad="7"/>
-<connect gate="U$1" pin="P0.06@08" pad="8"/>
-<connect gate="U$1" pin="P0.07@09" pad="9"/>
-<connect gate="U$1" pin="P0.08@10" pad="10"/>
-<connect gate="U$1" pin="P0.09/NFC1@11" pad="11"/>
-<connect gate="U$1" pin="P0.10/NFC2@12" pad="12"/>
-<connect gate="U$1" pin="P0.11@14" pad="14"/>
-<connect gate="U$1" pin="P0.12@15" pad="15"/>
-<connect gate="U$1" pin="P0.13@16" pad="16"/>
-<connect gate="U$1" pin="P0.14@17" pad="17"/>
-<connect gate="U$1" pin="P0.15@18" pad="18"/>
-<connect gate="U$1" pin="P0.16@19" pad="19"/>
-<connect gate="U$1" pin="P0.17@20" pad="20"/>
-<connect gate="U$1" pin="P0.18/SWO@21" pad="21"/>
-<connect gate="U$1" pin="P0.19@22" pad="22"/>
-<connect gate="U$1" pin="P0.20@23" pad="23"/>
-<connect gate="U$1" pin="P0.21/RESET@24" pad="24"/>
-<connect gate="U$1" pin="P0.22@27" pad="27"/>
-<connect gate="U$1" pin="P0.23@28" pad="28"/>
-<connect gate="U$1" pin="P0.24@29" pad="29"/>
-<connect gate="U$1" pin="P0.25@37" pad="37"/>
-<connect gate="U$1" pin="P0.26@38" pad="38"/>
-<connect gate="U$1" pin="P0.27@39" pad="39"/>
-<connect gate="U$1" pin="P0.28@40" pad="40"/>
-<connect gate="U$1" pin="P0.29@41" pad="41"/>
-<connect gate="U$1" pin="P0.30@42" pad="42"/>
-<connect gate="U$1" pin="P0.31@43" pad="43"/>
-<connect gate="U$1" pin="SWDCLK@25" pad="25"/>
-<connect gate="U$1" pin="SWDIO@26" pad="26"/>
-<connect gate="U$1" pin="VDD@13" pad="13"/>
-<connect gate="U$1" pin="VDD@36" pad="36"/>
-<connect gate="U$1" pin="VDD@48" pad="48"/>
-<connect gate="U$1" pin="VSS@31" pad="31"/>
-<connect gate="U$1" pin="VSS@45" pad="45 PAD PAD@VIA01 PAD@VIA02 PAD@VIA03 PAD@VIA04 PAD@VIA05 PAD@VIA06 PAD@VIA07 PAD@VIA08 PAD@VIA09 PAD@VIA10 PAD@VIA11 PAD@VIA12 PAD@VIA13 PAD@VIA14 PAD@VIA15 PAD@VIA16"/>
-<connect gate="U$1" pin="XC1@34" pad="34"/>
-<connect gate="U$1" pin="XC2@35" pad="35"/>
+<connect gate="G$1" pin="ANT@30" pad="30"/>
+<connect gate="G$1" pin="DCC@47" pad="47"/>
+<connect gate="G$1" pin="DEC1@1" pad="1"/>
+<connect gate="G$1" pin="DEC2@32" pad="32"/>
+<connect gate="G$1" pin="DEC3@33" pad="33"/>
+<connect gate="G$1" pin="DEC4@46" pad="46"/>
+<connect gate="G$1" pin="N.C.@44" pad="44"/>
+<connect gate="G$1" pin="P0.00/XL1@2" pad="2"/>
+<connect gate="G$1" pin="P0.01/XL2@3" pad="3"/>
+<connect gate="G$1" pin="P0.02/AIN0@4" pad="4"/>
+<connect gate="G$1" pin="P0.03/AIN1@5" pad="5"/>
+<connect gate="G$1" pin="P0.04/AIN2@6" pad="6"/>
+<connect gate="G$1" pin="P0.05/AIN3@7" pad="7"/>
+<connect gate="G$1" pin="P0.06@8" pad="8"/>
+<connect gate="G$1" pin="P0.07@9" pad="9"/>
+<connect gate="G$1" pin="P0.08@10" pad="10"/>
+<connect gate="G$1" pin="P0.09@11" pad="11"/>
+<connect gate="G$1" pin="P0.10@12" pad="12"/>
+<connect gate="G$1" pin="P0.11@14" pad="14"/>
+<connect gate="G$1" pin="P0.12@15" pad="15"/>
+<connect gate="G$1" pin="P0.13@16" pad="16"/>
+<connect gate="G$1" pin="P0.14@17" pad="17"/>
+<connect gate="G$1" pin="P0.15@18" pad="18"/>
+<connect gate="G$1" pin="P0.16@19" pad="19"/>
+<connect gate="G$1" pin="P0.17@20" pad="20"/>
+<connect gate="G$1" pin="P0.19@21" pad="21"/>
+<connect gate="G$1" pin="P0.19@22" pad="22"/>
+<connect gate="G$1" pin="P0.20@23" pad="23"/>
+<connect gate="G$1" pin="P0.21/RESET@24" pad="24"/>
+<connect gate="G$1" pin="P0.22@27" pad="27"/>
+<connect gate="G$1" pin="P0.23@28" pad="28"/>
+<connect gate="G$1" pin="P0.24@29" pad="29"/>
+<connect gate="G$1" pin="P0.25@37" pad="37"/>
+<connect gate="G$1" pin="P0.26@38" pad="38"/>
+<connect gate="G$1" pin="P0.27@39" pad="39"/>
+<connect gate="G$1" pin="P0.28/AIN4@40" pad="40"/>
+<connect gate="G$1" pin="P0.29/AIN5@41" pad="41"/>
+<connect gate="G$1" pin="P0.30/AIN6@42" pad="42"/>
+<connect gate="G$1" pin="P031/AIN7@43" pad="43"/>
+<connect gate="G$1" pin="SWDCLK@25" pad="25"/>
+<connect gate="G$1" pin="SWDIO@26" pad="26"/>
+<connect gate="G$1" pin="VDD@13" pad="13"/>
+<connect gate="G$1" pin="VDD@36" pad="36"/>
+<connect gate="G$1" pin="VDD@48" pad="48"/>
+<connect gate="G$1" pin="VSS@31" pad="31"/>
+<connect gate="G$1" pin="VSS@45" pad="45 PAD PAD@VIA01 PAD@VIA02 PAD@VIA03 PAD@VIA04 PAD@VIA05 PAD@VIA06 PAD@VIA07 PAD@VIA08 PAD@VIA09 PAD@VIA10 PAD@VIA11 PAD@VIA12 PAD@VIA13 PAD@VIA14 PAD@VIA15 PAD@VIA16"/>
+<connect gate="G$1" pin="XC1@34" pad="34"/>
+<connect gate="G$1" pin="XC2@35" pad="35"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1185,7 +1187,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="U1" library="Nordic_nRF" deviceset="NRF52832" device=""/>
+<part name="U1" library="Nordic_nRF" deviceset="NRF52810_QF" device=""/>
 <part name="X1" library="Nordic_nRF" deviceset="XTAL_32MHZ" device="" value="32MHz"/>
 <part name="X2" library="Nordic_nRF" deviceset="XTAL_32KHZ" device="" value="32.768kHz"/>
 <part name="L1" library="Nordic_nRF" deviceset="INDUCTOR" device="_0402_N" value="3.9nH"/>
@@ -1210,7 +1212,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="U1" gate="U$1" x="93.98" y="60.96"/>
+<instance part="U1" gate="G$1" x="93.98" y="60.96"/>
 <instance part="VDD_NRF" gate="G$1" x="88.9" y="53.34"/>
 <instance part="GND1" gate="1" x="88.9" y="35.56" rot="MR0"/>
 <instance part="GND2" gate="1" x="68.58" y="121.92" rot="MR0"/>
@@ -1264,7 +1266,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="119.38" y1="149.86" x2="119.38" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="VSS@45"/>
+<pinref part="U1" gate="G$1" pin="VSS@45"/>
 <wire x1="114.3" y1="119.38" x2="114.3" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="147.32" x2="119.38" y2="147.32" width="0.1524" layer="91"/>
 <junction x="119.38" y="147.32"/>
@@ -1306,7 +1308,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="182.88" y1="73.66" x2="182.88" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="VSS@31"/>
+<pinref part="U1" gate="G$1" pin="VSS@31"/>
 <wire x1="152.4" y1="88.9" x2="177.8" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="88.9" x2="177.8" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="73.66" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
@@ -1327,7 +1329,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="VDD_P3V3" class="0">
 <segment>
 <pinref part="VDD_NRF" gate="G$1" pin="VCC"/>
-<pinref part="U1" gate="U$1" pin="VDD@13"/>
+<pinref part="U1" gate="G$1" pin="VDD@13"/>
 <wire x1="88.9" y1="50.8" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="55.88" x2="106.68" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
@@ -1337,7 +1339,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="83.82" y1="137.16" x2="83.82" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="VDD_NRF1" gate="G$1" pin="VCC"/>
-<pinref part="U1" gate="U$1" pin="VDD@48"/>
+<pinref part="U1" gate="G$1" pin="VDD@48"/>
 <wire x1="106.68" y1="119.38" x2="106.68" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="121.92" x2="93.98" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="121.92" x2="93.98" y2="137.16" width="0.1524" layer="91"/>
@@ -1346,7 +1348,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="C9" gate="C$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U1" gate="U$1" pin="VDD@36"/>
+<pinref part="U1" gate="G$1" pin="VDD@36"/>
 <wire x1="152.4" y1="101.6" x2="154.94" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="101.6" x2="154.94" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="137.16" x2="144.78" y2="137.16" width="0.1524" layer="91"/>
@@ -1359,7 +1361,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="DEC1" class="0">
 <segment>
 <wire x1="68.58" y1="137.16" x2="68.58" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="DEC1@01"/>
+<pinref part="U1" gate="G$1" pin="DEC1@1"/>
 <wire x1="88.9" y1="101.6" x2="78.74" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="101.6" x2="78.74" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="137.16" x2="68.58" y2="137.16" width="0.1524" layer="91"/>
@@ -1369,7 +1371,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="DEC4" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="DEC4@46"/>
+<pinref part="U1" gate="G$1" pin="DEC4@46"/>
 <wire x1="111.76" y1="119.38" x2="111.76" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="160.02" x2="119.38" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="160.02" x2="119.38" y2="157.48" width="0.1524" layer="91"/>
@@ -1386,7 +1388,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="160.02" y1="134.62" x2="160.02" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="137.16" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="137.16" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="DEC3@33"/>
+<pinref part="U1" gate="G$1" pin="DEC3@33"/>
 <wire x1="170.18" y1="93.98" x2="152.4" y2="93.98" width="0.1524" layer="91"/>
 <label x="160.02" y="137.16" size="1.778" layer="95"/>
 <pinref part="C7" gate="C$1" pin="1"/>
@@ -1394,7 +1396,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="DEC2" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="DEC2@32"/>
+<pinref part="U1" gate="G$1" pin="DEC2@32"/>
 <wire x1="152.4" y1="91.44" x2="185.42" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="91.44" x2="185.42" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="137.16" x2="175.26" y2="137.16" width="0.1524" layer="91"/>
@@ -1405,7 +1407,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="ANT" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="ANT@30"/>
+<pinref part="U1" gate="G$1" pin="ANT@30"/>
 <wire x1="152.4" y1="86.36" x2="182.88" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="86.36" x2="185.42" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="83.82" x2="182.88" y2="86.36" width="0.1524" layer="91"/>
@@ -1421,7 +1423,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="203.2" y1="114.3" x2="193.04" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="114.3" x2="193.04" y2="99.06" width="0.1524" layer="91"/>
 <junction x="203.2" y="114.3"/>
-<pinref part="U1" gate="U$1" pin="XC2@35"/>
+<pinref part="U1" gate="G$1" pin="XC2@35"/>
 <wire x1="193.04" y1="99.06" x2="152.4" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="X1" gate="X$1" pin="3"/>
 <pinref part="C2" gate="C$1" pin="1"/>
@@ -1431,7 +1433,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="203.2" y1="101.6" x2="203.2" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="96.52" x2="210.82" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="XC1@34"/>
+<pinref part="U1" gate="G$1" pin="XC1@34"/>
 <wire x1="152.4" y1="96.52" x2="203.2" y2="96.52" width="0.1524" layer="91"/>
 <junction x="203.2" y="96.52"/>
 <pinref part="X1" gate="X$1" pin="1"/>
@@ -1440,119 +1442,119 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="P0.31" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.31@43"/>
+<pinref part="U1" gate="G$1" pin="P031/AIN7@43"/>
 <wire x1="119.38" y1="119.38" x2="119.38" y2="121.92" width="0.1524" layer="91"/>
 <label x="119.38" y="121.92" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="P0.30" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.30@42"/>
+<pinref part="U1" gate="G$1" pin="P0.30/AIN6@42"/>
 <wire x1="121.92" y1="119.38" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
 <label x="121.92" y="121.92" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="P0.29" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.29@41"/>
+<pinref part="U1" gate="G$1" pin="P0.29/AIN5@41"/>
 <wire x1="124.46" y1="119.38" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
 <label x="124.46" y="121.92" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="P0.28" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.28@40"/>
+<pinref part="U1" gate="G$1" pin="P0.28/AIN4@40"/>
 <wire x1="127" y1="119.38" x2="127" y2="121.92" width="0.1524" layer="91"/>
 <label x="127" y="121.92" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="P0.27" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.27@39"/>
+<pinref part="U1" gate="G$1" pin="P0.27@39"/>
 <wire x1="129.54" y1="119.38" x2="129.54" y2="121.92" width="0.1524" layer="91"/>
 <label x="129.54" y="121.92" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="P0.26" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.26@38"/>
+<pinref part="U1" gate="G$1" pin="P0.26@38"/>
 <wire x1="132.08" y1="119.38" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
 <label x="132.08" y="121.92" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="P0.25" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.25@37"/>
+<pinref part="U1" gate="G$1" pin="P0.25@37"/>
 <wire x1="134.62" y1="119.38" x2="134.62" y2="121.92" width="0.1524" layer="91"/>
 <label x="134.62" y="121.92" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="P0.24" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.24@29"/>
+<pinref part="U1" gate="G$1" pin="P0.24@29"/>
 <wire x1="152.4" y1="83.82" x2="154.94" y2="83.82" width="0.1524" layer="91"/>
 <label x="154.94" y="83.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="P0.23" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.23@28"/>
+<pinref part="U1" gate="G$1" pin="P0.23@28"/>
 <wire x1="152.4" y1="81.28" x2="154.94" y2="81.28" width="0.1524" layer="91"/>
 <label x="154.94" y="81.28" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="P0.22" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.22@27"/>
+<pinref part="U1" gate="G$1" pin="P0.22@27"/>
 <wire x1="152.4" y1="78.74" x2="154.94" y2="78.74" width="0.1524" layer="91"/>
 <label x="154.94" y="78.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="P0.02" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.02/AIN0@04"/>
+<pinref part="U1" gate="G$1" pin="P0.02/AIN0@4"/>
 <wire x1="88.9" y1="93.98" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
 <label x="86.36" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="P0.03" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.03/AIN1@05"/>
+<pinref part="U1" gate="G$1" pin="P0.03/AIN1@5"/>
 <wire x1="88.9" y1="91.44" x2="86.36" y2="91.44" width="0.1524" layer="91"/>
 <label x="86.36" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="P0.04" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.04/AIN2@06"/>
+<pinref part="U1" gate="G$1" pin="P0.04/AIN2@6"/>
 <wire x1="88.9" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
 <label x="86.36" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="P0.05" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.05/AIN3@07"/>
+<pinref part="U1" gate="G$1" pin="P0.05/AIN3@7"/>
 <wire x1="88.9" y1="86.36" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
 <label x="86.36" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="P0.06" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.06@08"/>
+<pinref part="U1" gate="G$1" pin="P0.06@8"/>
 <wire x1="88.9" y1="83.82" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
 <label x="86.36" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="P0.07" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.07@09"/>
+<pinref part="U1" gate="G$1" pin="P0.07@9"/>
 <wire x1="88.9" y1="81.28" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
 <label x="86.36" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="P0.08" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.08@10"/>
+<pinref part="U1" gate="G$1" pin="P0.08@10"/>
 <wire x1="88.9" y1="78.74" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
 <label x="86.36" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -1561,82 +1563,82 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <label x="86.36" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="88.9" y1="73.66" x2="86.36" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="P0.10/NFC2@12"/>
+<pinref part="U1" gate="G$1" pin="P0.10@12"/>
 </segment>
 </net>
 <net name="P0.11" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.11@14"/>
+<pinref part="U1" gate="G$1" pin="P0.11@14"/>
 <wire x1="109.22" y1="55.88" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
 <label x="109.22" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="P0.12" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.12@15"/>
+<pinref part="U1" gate="G$1" pin="P0.12@15"/>
 <wire x1="111.76" y1="55.88" x2="111.76" y2="53.34" width="0.1524" layer="91"/>
 <label x="111.76" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="P0.13" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.13@16"/>
+<pinref part="U1" gate="G$1" pin="P0.13@16"/>
 <wire x1="114.3" y1="55.88" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
 <label x="114.3" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="P0.14" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.14@17"/>
+<pinref part="U1" gate="G$1" pin="P0.14@17"/>
 <wire x1="116.84" y1="55.88" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
 <label x="116.84" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="P0.15" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.15@18"/>
+<pinref part="U1" gate="G$1" pin="P0.15@18"/>
 <wire x1="119.38" y1="55.88" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
 <label x="119.38" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="P0.16" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.16@19"/>
+<pinref part="U1" gate="G$1" pin="P0.16@19"/>
 <wire x1="121.92" y1="55.88" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
 <label x="121.92" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="P0.17" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.17@20"/>
+<pinref part="U1" gate="G$1" pin="P0.17@20"/>
 <wire x1="124.46" y1="55.88" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
 <label x="124.46" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="P0.18/SWO" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.18/SWO@21"/>
+<pinref part="U1" gate="G$1" pin="P0.19@21"/>
 <wire x1="127" y1="55.88" x2="127" y2="53.34" width="0.1524" layer="91"/>
 <label x="127" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="P0.19" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.19@22"/>
+<pinref part="U1" gate="G$1" pin="P0.19@22"/>
 <wire x1="129.54" y1="55.88" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
 <label x="129.54" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="P0.20" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.20@23"/>
+<pinref part="U1" gate="G$1" pin="P0.20@23"/>
 <wire x1="132.08" y1="55.88" x2="132.08" y2="53.34" width="0.1524" layer="91"/>
 <label x="132.08" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="P0.21/RESET" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.21/RESET@24"/>
+<pinref part="U1" gate="G$1" pin="P0.21/RESET@24"/>
 <wire x1="134.62" y1="55.88" x2="134.62" y2="53.34" width="0.1524" layer="91"/>
 <label x="134.62" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
@@ -1649,7 +1651,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="DCC@47"/>
+<pinref part="U1" gate="G$1" pin="DCC@47"/>
 <wire x1="109.22" y1="119.38" x2="109.22" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="124.46" x2="104.14" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="L2" gate="L$1" pin="1"/>
@@ -1664,7 +1666,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="40.64" y1="114.3" x2="40.64" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="114.3" x2="40.64" y2="114.3" width="0.1524" layer="91"/>
 <junction x="40.64" y="114.3"/>
-<pinref part="U1" gate="U$1" pin="P0.00/XL1@02"/>
+<pinref part="U1" gate="G$1" pin="P0.00/XL1@2"/>
 <wire x1="88.9" y1="99.06" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="99.06" x2="53.34" y2="99.06" width="0.1524" layer="91"/>
 <label x="71.12" y="99.06" size="1.778" layer="95"/>
@@ -1675,7 +1677,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="86.36" y1="76.2" x2="88.9" y2="76.2" width="0.1524" layer="91"/>
 <label x="86.36" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="U$1" pin="P0.09/NFC1@11"/>
+<pinref part="U1" gate="G$1" pin="P0.09@11"/>
 </segment>
 </net>
 <net name="P0.01/XL2" class="0">
@@ -1683,7 +1685,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="X2" gate="X$1" pin="2"/>
 <wire x1="33.02" y1="96.52" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="96.52" x2="40.64" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="P0.01/XL2@03"/>
+<pinref part="U1" gate="G$1" pin="P0.01/XL2@3"/>
 <wire x1="40.64" y1="96.52" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
 <label x="71.12" y="96.52" size="1.778" layer="95"/>
@@ -1693,14 +1695,14 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="SWDCLK" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="SWDCLK@25"/>
+<pinref part="U1" gate="G$1" pin="SWDCLK@25"/>
 <wire x1="152.4" y1="73.66" x2="154.94" y2="73.66" width="0.1524" layer="91"/>
 <label x="154.94" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="SWDIO@26"/>
+<pinref part="U1" gate="G$1" pin="SWDIO@26"/>
 <wire x1="152.4" y1="76.2" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
 <label x="154.94" y="76.2" size="1.27" layer="95" xref="yes"/>
 </segment>
