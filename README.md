@@ -3,7 +3,8 @@
 ## Reference designs
 ![alt-text][dcdc_reference]
 
-The reference designs supplied for eagle are made by following the [general pcb design guidelines][designguidenrf52] and referencing the [altium reference layout][altiumreference]
+The reference designs supplied for eagle are made by following the [general pcb design guidelines][designguidenrf52] and referencing the [altium reference layout][altiumreference].
+The eagle reference design is not the official reference designs, only the Altium reference designs has been tested and verified. They are available for download in Nordic's product pages.
 The reference designs include eagle files as well as pdf printouts. For BOM see the altium reference designs.
 
 * nRF51x22_qfaa
@@ -13,7 +14,7 @@ The reference designs include eagle files as well as pdf printouts. For BOM see 
 * nRF52832_qfaa_nfc
 
 ## Libraries
-**The libraries are not yet verified**
+**The libraries are not verified, only the Altium reference designs has been tested and verified.**
 
 ### Nordic_nRF
 This library contains the nRF51 and nRF52 in qfn and bga packages, as well as; capacitors, inductors, and a 32MHz and 32kHz xtal. All that is needed for the core reference design. (link?)
