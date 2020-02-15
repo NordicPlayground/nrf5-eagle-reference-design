@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -51,6 +65,8 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -981,7 +997,64 @@ IPC Low Density</description>
 <pad name="P$41" x="0" y="-1" drill="0.3" diameter="0.6" thermals="no"/>
 <pad name="P$42" x="1" y="-1" drill="0.3" diameter="0.6" thermals="no"/>
 </package>
+<package name="CAAA_WLCSP_C33_N" urn="urn:adsk.eagle:footprint:17338437/1">
+<circle x="-1.744" y="1" radius="0.25" width="0" layer="21"/>
+<wire x1="-1.367" y1="0.615" x2="-1.367" y2="1.357" width="0.12" layer="21"/>
+<wire x1="-1.367" y1="1.357" x2="-0.625" y2="1.357" width="0.12" layer="21"/>
+<wire x1="1.367" y1="0.615" x2="1.367" y2="1.357" width="0.12" layer="21"/>
+<wire x1="1.367" y1="1.357" x2="0.625" y2="1.357" width="0.12" layer="21"/>
+<wire x1="1.367" y1="-0.615" x2="1.367" y2="-1.357" width="0.12" layer="21"/>
+<wire x1="1.367" y1="-1.357" x2="0.625" y2="-1.357" width="0.12" layer="21"/>
+<wire x1="-1.367" y1="-0.615" x2="-1.367" y2="-1.357" width="0.12" layer="21"/>
+<wire x1="-1.367" y1="-1.357" x2="-0.625" y2="-1.357" width="0.12" layer="21"/>
+<wire x1="1.24" y1="-1.23" x2="-1.24" y2="-1.23" width="0.12" layer="51"/>
+<wire x1="-1.24" y1="-1.23" x2="-1.24" y2="1.23" width="0.12" layer="51"/>
+<wire x1="-1.24" y1="1.23" x2="1.24" y2="1.23" width="0.12" layer="51"/>
+<wire x1="1.24" y1="1.23" x2="1.24" y2="-1.23" width="0.12" layer="51"/>
+<smd name="A1" x="-1" y="1" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="A2" x="-0.6" y="1" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="A3" x="-0.2" y="1" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="A4" x="0.2" y="1" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="A5" x="0.6" y="1" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="A6" x="1" y="1" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="B3" x="-0.2" y="0.6" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="B4" x="0.2" y="0.6" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="B5" x="0.6" y="0.6" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="B6" x="1" y="0.6" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="C1" x="-1" y="0.4" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="D3" x="-0.2" y="0.2" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="D4" x="0.2" y="0.2" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="D5" x="0.6" y="0.2" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="D6" x="1" y="0.2" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="E1" x="-1" y="-0.2" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="E2" x="-0.6" y="-0.2" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="E3" x="-0.2" y="-0.2" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="E4" x="0.2" y="-0.2" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="E5" x="0.6" y="-0.2" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="E6" x="1" y="-0.2" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="F1" x="-1" y="-0.6" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="F2" x="-0.6" y="-0.6" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="F3" x="-0.2" y="-0.6" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="F4" x="0.2" y="-0.6" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="F5" x="0.6" y="-0.6" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="F6" x="1" y="-0.6" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="G1" x="-1" y="-1" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="G2" x="-0.6" y="-1" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="G3" x="-0.2" y="-1" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="G4" x="0.2" y="-1" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="G5" x="0.6" y="-1" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<smd name="G6" x="1" y="-1" dx="0.24" dy="0.24" layer="1" roundness="100" thermals="no"/>
+<text x="0" y="1.885" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.865" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
+<packages3d>
+<package3d name="CAAA_WLCSP_C33_N" urn="urn:adsk.eagle:package:17338439/2" type="model">
+<packageinstances>
+<packageinstance name="CAAA_WLCSP_C33_N"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="NRF51X22_QF">
 <pin name="VDD@01" x="-5.08" y="40.64" length="middle" direction="pwr"/>
@@ -1518,6 +1591,47 @@ IPC Low Density</description>
 <text x="21.59" y="26.67" size="1.778" layer="94">nRF52810</text>
 <text x="48.26" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="48.26" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="NRF52811_CA">
+<pin name="XC1@A1" x="-25.4" y="33.02" length="middle" direction="in"/>
+<pin name="XC2@A2" x="-25.4" y="30.48" length="middle" direction="in"/>
+<pin name="VSS_PA@C1" x="-25.4" y="-5.08" length="middle" direction="pwr"/>
+<pin name="ANT@E1" x="25.4" y="-33.02" length="middle" rot="R180"/>
+<pin name="SWDIO@F1" x="25.4" y="-25.4" length="middle" rot="R180"/>
+<pin name="SWDCLK@G1" x="25.4" y="-27.94" length="middle" direction="in" rot="R180"/>
+<pin name="DEC2@A3" x="-25.4" y="22.86" length="middle" direction="pwr"/>
+<pin name="DEC4@A4" x="-25.4" y="17.78" length="middle" direction="pwr"/>
+<pin name="DCC@A5" x="-25.4" y="5.08" length="middle" direction="out"/>
+<pin name="VDD@A6" x="-25.4" y="12.7" length="middle" direction="pwr"/>
+<pin name="VSS@B3" x="-25.4" y="0" length="middle" direction="pwr"/>
+<pin name="VSS@B4" x="-25.4" y="-2.54" length="middle" direction="pwr"/>
+<pin name="P0.00/XL1@B5" x="25.4" y="33.02" length="middle" rot="R180"/>
+<pin name="DEC1@B6" x="-25.4" y="25.4" length="middle" direction="pwr"/>
+<pin name="VSS@D3" x="-25.4" y="-7.62" length="middle" direction="pwr"/>
+<pin name="VSS@D4" x="-25.4" y="-10.16" length="middle" direction="pwr"/>
+<pin name="P0.01/XL2@D5" x="25.4" y="30.48" length="middle" rot="R180"/>
+<pin name="P0.03/AIN1@D6" x="25.4" y="25.4" length="middle" rot="R180"/>
+<pin name="P0.18@E2" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="VSS@E3" x="-25.4" y="-12.7" length="middle" direction="pwr"/>
+<pin name="VSS@E4" x="-25.4" y="-15.24" length="middle" direction="pwr"/>
+<pin name="P0.04/AIN2@E5" x="25.4" y="22.86" length="middle" rot="R180"/>
+<pin name="P0.05/AIN3@E6" x="25.4" y="20.32" length="middle" rot="R180"/>
+<pin name="P0.21/N-RESET@F2" x="25.4" y="-20.32" length="middle" rot="R180"/>
+<pin name="P0.17@F3" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="P0.14@F4" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="P0.11@F5" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="P0.08@F6" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="P0.20@G2" x="25.4" y="-17.78" length="middle" rot="R180"/>
+<pin name="P0.16@G3" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="P0.15@G4" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="P0.12@G5" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="VDD@G6" x="-25.4" y="10.16" length="middle"/>
+<wire x1="-20.32" y1="35.56" x2="20.32" y2="35.56" width="0.254" layer="94"/>
+<wire x1="20.32" y1="35.56" x2="20.32" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-35.56" x2="-20.32" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-35.56" x2="-20.32" y2="35.56" width="0.254" layer="94"/>
+<text x="-20.32" y="38.1" size="1.778" layer="95">&gt; NAME</text>
+<text x="-20.32" y="-38.1" size="1.778" layer="96">&gt; VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3016,7 +3130,165 @@ IPC Low Density</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="NRF52811_CA">
+<description>&lt;h1&gt;nRF52811&lt;/h1&gt;
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bluetooth 5.1, IEEE 802.15.4-2006, 2.4 GHz transceiver&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;-97 dBm sensitivity in 1 Mbps Bluetooth low energy mode&lt;/li&gt;
+&lt;li&gt;-104 dBm sensitivity in 125 kbps Bluetooth low energy mode (long range)&lt;/li&gt;
+&lt;li&gt;-20 to +4 dBm TX power, configurable in 4 dB steps&lt;/li&gt;
+&lt;li&gt;On-air compatible with nRF52, nRF51, nRF24L, and nRF24AP Series&lt;/li&gt;
+&lt;li&gt;Supported data rates:&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;Bluetooth 5.1: 2 Mbps, 1 Mbps, 500 kbps, and 125 kbps&lt;/li&gt;
+&lt;li&gt;IEEE 802.15.4-2006: 250 kbps&lt;/li&gt;
+&lt;li&gt;Proprietary 2.4 GHz: 2 Mbps, 1 Mbps&lt;/li&gt;
+&lt;li&gt;Angle-of-arrival (AoA) and angle-of-departure (AoD) direction finding using Bluetooth.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;li&gt;Single-ended antenna output (on-chip balun)&lt;/li&gt;
+&lt;li&gt;4.6 mA peak current in TX (0 dBm)&lt;/li&gt;
+&lt;li&gt;4.6 mA peak current in RX&lt;/li&gt;
+&lt;li&gt;RSSI (1 dB resolution)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;li&gt;ARM® Cortex®-M4 32-bit processor, 64 MHz&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;144 EEMBC CoreMark® score running from flash memory&lt;/li&gt;
+&lt;li&gt;34.4 µA/MHz running CoreMark from flash memory&lt;/li&gt;
+&lt;li&gt;32.8 µA/MHz running CoreMark from RAM memory&lt;/li&gt;
+&lt;li&gt;Serial wire debug (SWD)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;li&gt;Flexible power management&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;1.7 V to 3.6 V supply voltage range&lt;/li&gt;
+&lt;li&gt;Fully automatic LDO and DC/DC regulator system&lt;/li&gt;
+&lt;li&gt;Fast wake-up using 64 MHz internal oscillator&lt;/li&gt;
+&lt;li&gt;0.3 µA at 3 V in System OFF mode, no RAM retention&lt;/li&gt;
+&lt;li&gt;0.5 µA at 3 V in System OFF mode with full 24 kB RAM retention&lt;/li&gt;
+&lt;li&gt;1.5 µA at 3 V in System ON mode, with full 24 kB RAM retention, wake on RTC&lt;/li&gt;
+&lt;li&gt;1.4 µA at 3 V in System ON mode, no RAM retention, wake on RTC&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;li&gt;192 kB flash and 24 kB RAM&lt;/li&gt;
+&lt;li&gt;Nordic SoftDevice ready&lt;/li&gt;
+&lt;li&gt;Support for concurrent multi-protocol&lt;/li&gt;
+&lt;li&gt;12-bit, 200 ksps ADC - 8 configurable channels with programmable gain&lt;/li&gt;
+&lt;li&gt;64 level comparator&lt;/li&gt;
+&lt;li&gt;Temperature sensor&lt;/li&gt;
+&lt;li&gt;Up to 32 general purpose I/O pins&lt;/li&gt;
+&lt;li&gt;4-channel pulse width modulator (PWM) unit with EasyDMA&lt;/li&gt;
+&lt;li&gt;Digital microphone interface (PDM)&lt;/li&gt;
+&lt;li&gt;3x 32-bit timer with counter mode&lt;/li&gt;
+&lt;li&gt;2x SPI master/slave with EasyDMA&lt;/li&gt;
+&lt;li&gt;I2C compatible 2-wire master/slave&lt;/li&gt;
+&lt;li&gt;UART (CTS/RTS) with EasyDMA&lt;/li&gt;
+&lt;li&gt;Programmable peripheral interconnect (PPI)&lt;/li&gt;
+&lt;li&gt;Quadrature decoder (QDEC)&lt;/li&gt;
+&lt;li&gt;AES HW encryption with EasyDMA&lt;/li&gt;
+&lt;li&gt;2x real-time counter (RTC)&lt;/li&gt;
+&lt;li&gt;Single crystal operation&lt;/li&gt;
+&lt;li&gt;Package variants&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;QFN48 package, 6 x 6 mm&lt;/li&gt;
+&lt;li&gt;QFN32 package, 5 x 5 mm&lt;/li&gt;
+&lt;li&gt;WLCSP package, 2.482 x 2.464 mm&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/ul&gt;
+
+&lt;h2&gt;Applications:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer peripherals and I/O devices&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;Mouse&lt;/li&gt;
+&lt;li&gt;Keyboard&lt;/li&gt;
+&lt;li&gt;Mobile HID&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;li&gt;CE remote controls&lt;/li&gt;
+&lt;li&gt;Network processor&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;Wearables&lt;/li&gt;
+&lt;li&gt;Virtual reality headsets&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;li&gt;Health and medical&lt;/li&gt;
+&lt;li&gt;Enterprise lighting&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;Industrial&lt;/li&gt;
+&lt;li&gt;Commercial&lt;/li&gt;
+&lt;li&gt;Retail&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;li&gt;Beacons&lt;/li&gt;
+&lt;li&gt;Connectivity device in multi-chip solutions&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="NRF52811_CA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAAA_WLCSP_C33_N">
+<connects>
+<connect gate="G$1" pin="ANT@E1" pad="E1"/>
+<connect gate="G$1" pin="DCC@A5" pad="A5"/>
+<connect gate="G$1" pin="DEC1@B6" pad="B6"/>
+<connect gate="G$1" pin="DEC2@A3" pad="A3"/>
+<connect gate="G$1" pin="DEC4@A4" pad="A4"/>
+<connect gate="G$1" pin="P0.00/XL1@B5" pad="B5"/>
+<connect gate="G$1" pin="P0.01/XL2@D5" pad="D5"/>
+<connect gate="G$1" pin="P0.03/AIN1@D6" pad="D6"/>
+<connect gate="G$1" pin="P0.04/AIN2@E5" pad="E5"/>
+<connect gate="G$1" pin="P0.05/AIN3@E6" pad="E6"/>
+<connect gate="G$1" pin="P0.08@F6" pad="F6"/>
+<connect gate="G$1" pin="P0.11@F5" pad="F5"/>
+<connect gate="G$1" pin="P0.12@G5" pad="G5"/>
+<connect gate="G$1" pin="P0.14@F4" pad="F4"/>
+<connect gate="G$1" pin="P0.15@G4" pad="G4"/>
+<connect gate="G$1" pin="P0.16@G3" pad="G3"/>
+<connect gate="G$1" pin="P0.17@F3" pad="F3"/>
+<connect gate="G$1" pin="P0.18@E2" pad="E2"/>
+<connect gate="G$1" pin="P0.20@G2" pad="G2"/>
+<connect gate="G$1" pin="P0.21/N-RESET@F2" pad="F2"/>
+<connect gate="G$1" pin="SWDCLK@G1" pad="G1"/>
+<connect gate="G$1" pin="SWDIO@F1" pad="F1"/>
+<connect gate="G$1" pin="VDD@A6" pad="A6"/>
+<connect gate="G$1" pin="VDD@G6" pad="G6"/>
+<connect gate="G$1" pin="VSS@B3" pad="B3"/>
+<connect gate="G$1" pin="VSS@B4" pad="B4"/>
+<connect gate="G$1" pin="VSS@D3" pad="D3"/>
+<connect gate="G$1" pin="VSS@D4" pad="D4"/>
+<connect gate="G$1" pin="VSS@E3" pad="E3"/>
+<connect gate="G$1" pin="VSS@E4" pad="E4"/>
+<connect gate="G$1" pin="VSS_PA@C1" pad="C1"/>
+<connect gate="G$1" pin="XC1@A1" pad="A1"/>
+<connect gate="G$1" pin="XC2@A2" pad="A2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:17338439/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
