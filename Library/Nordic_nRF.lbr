@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1337,7 +1337,7 @@ IPC Low Density</description>
 <pin name="DEC3@C2" x="40.64" y="22.86" length="middle" direction="pwr" rot="R180"/>
 <pin name="DEC4@A6" x="40.64" y="20.32" length="middle" direction="pwr" rot="R180"/>
 </symbol>
-<symbol name="NRF52840_QF">
+<symbol name="NRF52840_QI">
 <description>Multi-protocol Bluetooth Low Energy, IEEE 802.15.4, ANT and 2.4GHz proprietary system-on-chip</description>
 <pin name="DEC1@C1" x="-5.08" y="55.88" length="middle" direction="pwr"/>
 <pin name="P0.00/XL1@D2" x="-5.08" y="53.34" length="middle"/>
@@ -1420,6 +1420,65 @@ IPC Low Density</description>
 <pin name="P1.10@A20" x="53.34" y="73.66" length="middle" rot="R270"/>
 <pin name="DEC2@A18" x="48.26" y="73.66" length="middle" rot="R270"/>
 <pin name="VSS_PAD" x="73.66" y="2.54" visible="pin" length="middle" rot="R180"/>
+</symbol>
+<symbol name="NRF52840_QF">
+<description>Multi-protocol Bluetooth Low Energy, IEEE 802.15.4, ANT and 2.4GHz proprietary system-on-chip</description>
+<pin name="DEC1" x="-5.08" y="40.64" length="middle" direction="pwr"/>
+<pin name="P0.00/XL1" x="-5.08" y="38.1" length="middle"/>
+<pin name="P0.01/XL2" x="-5.08" y="35.56" length="middle"/>
+<pin name="P0.04/AIN2" x="-5.08" y="33.02" length="middle"/>
+<pin name="P0.05/AIN3" x="-5.08" y="30.48" length="middle"/>
+<pin name="P0.07" x="-5.08" y="27.94" length="middle"/>
+<pin name="P0.08" x="-5.08" y="25.4" length="middle"/>
+<pin name="P1.08" x="-5.08" y="22.86" length="middle"/>
+<pin name="P1.09" x="-5.08" y="20.32" length="middle"/>
+<pin name="VDD" x="12.7" y="58.42" length="middle" direction="pwr" rot="R270"/>
+<pin name="P0.11" x="-5.08" y="17.78" length="middle"/>
+<pin name="P0.12" x="-5.08" y="15.24" length="middle"/>
+<pin name="P0.13" x="12.7" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.14" x="15.24" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.17" x="17.78" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.18/RESET" x="20.32" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.19" x="25.4" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.20" x="27.94" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.21" x="30.48" y="-5.08" length="middle" rot="R90"/>
+<pin name="SWDCLK" x="58.42" y="17.78" length="middle" direction="in" rot="R180"/>
+<pin name="SWDIO" x="58.42" y="15.24" length="middle" rot="R180"/>
+<pin name="P0.22" x="33.02" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.23" x="35.56" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.24" x="38.1" y="-5.08" length="middle" rot="R90"/>
+<pin name="ANT" x="58.42" y="27.94" length="middle" rot="R180"/>
+<pin name="VSS_PA" x="58.42" y="30.48" length="middle" rot="R180"/>
+<pin name="DEC6" x="58.42" y="33.02" length="middle" rot="R180"/>
+<pin name="DEC3" x="58.42" y="35.56" length="middle" rot="R180"/>
+<pin name="XC1" x="58.42" y="38.1" length="middle" direction="in" rot="R180"/>
+<pin name="XC2" x="58.42" y="40.64" length="middle" direction="out" rot="R180"/>
+<pin name="VDD@12" x="-5.08" y="12.7" length="middle" direction="pwr"/>
+<pin name="P0.03/AIN1" x="35.56" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.02/AIN0" x="33.02" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.28/AIN4" x="30.48" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.29/AIN5" x="27.94" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.30/AIN6" x="25.4" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.31/AIN7" x="22.86" y="58.42" length="middle" rot="R270"/>
+<pin name="VSS" x="20.32" y="58.42" length="middle" direction="pwr" rot="R270"/>
+<pin name="DEC4" x="17.78" y="58.42" length="middle" direction="pwr" rot="R270"/>
+<pin name="DCC" x="15.24" y="58.42" length="middle" direction="out" rot="R270"/>
+<pin name="VDD@37" x="40.64" y="58.42" length="middle" direction="pwr" rot="R270"/>
+<wire x1="53.34" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="53.34" width="0.254" layer="94"/>
+<wire x1="0" y1="53.34" x2="53.34" y2="53.34" width="0.254" layer="94"/>
+<wire x1="53.34" y1="53.34" x2="53.34" y2="0" width="0.254" layer="94"/>
+<text x="21.59" y="26.67" size="1.778" layer="94">nRF52840</text>
+<text x="48.26" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="48.26" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P1.00" x="40.64" y="-5.08" length="middle" rot="R90"/>
+<pin name="VDD@17" x="22.86" y="-5.08" length="middle" direction="pwr" rot="R90"/>
+<pin name="VDD@25" x="58.42" y="12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="P0.09/NFC1" x="58.42" y="22.86" length="middle" rot="R180"/>
+<pin name="P0.10/NFC2" x="58.42" y="25.4" length="middle" rot="R180"/>
+<pin name="P1.15" x="38.1" y="58.42" length="middle" rot="R270"/>
+<pin name="VSS_PAD" x="58.42" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="NC" x="58.42" y="20.32" length="middle" direction="nc" rot="R180"/>
 </symbol>
 <symbol name="NRF52810_QC">
 <pin name="DEC1@1" x="-5.08" y="33.02" length="middle"/>
@@ -2557,7 +2616,7 @@ IPC Low Density</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NRF52840_QF">
+<deviceset name="NRF52840_QI">
 <description>&lt;h2&gt;nRF52840&lt;/h2&gt;&lt;p&gt;
 
  &lt;h3&gt;Features&lt;/h3&gt;
@@ -2644,7 +2703,7 @@ IPC Low Density</description>
 
 &lt;/ul&gt;</description>
 <gates>
-<gate name="G$1" symbol="NRF52840_QF" x="0" y="0"/>
+<gate name="G$1" symbol="NRF52840_QI" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="AQFN50P700X700X85_HS-74N">
@@ -3009,6 +3068,154 @@ IPC Low Density</description>
 <connect gate="G$1" pin="VSS@45" pad="45 PAD PAD@VIA01 PAD@VIA02 PAD@VIA03 PAD@VIA04 PAD@VIA05 PAD@VIA06 PAD@VIA07 PAD@VIA08 PAD@VIA09 PAD@VIA10 PAD@VIA11 PAD@VIA12 PAD@VIA13 PAD@VIA14 PAD@VIA15 PAD@VIA16"/>
 <connect gate="G$1" pin="XC1@34" pad="34"/>
 <connect gate="G$1" pin="XC2@35" pad="35"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NRF52840_QF" prefix="U">
+<description>&lt;h2&gt;nRF52840&lt;/h2&gt;&lt;p&gt;
+
+ &lt;h3&gt;Features&lt;/h3&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;Advanced Single chip 2.4 GHz multi-protocol SoC&lt;/li&gt;
+
+&lt;li&gt;32-bit ARM Cortex-M4F Processor&lt;/li&gt;
+
+&lt;li&gt;1.7v to 5.5v operation&lt;/li&gt;
+
+&lt;li&gt;1MB flash + 256kB RAM&lt;/li&gt;
+
+&lt;li&gt;Bluetooth 5 support for long range and high throughput&lt;/li&gt;
+
+&lt;li&gt;802.15.4 radio support&lt;/li&gt;
+
+&lt;li&gt;On-chip NFC &lt;/li&gt;
+
+&lt;li&gt;PPI –Programmable Peripheral Interconnect&lt;/li&gt;
+
+&lt;li&gt;Automated power management system with automatic power management of each peripheral&lt;/li&gt;
+
+&lt;li&gt;Configurable I/O mapping for analog and digital I/O&lt;/li&gt;
+
+&lt;li&gt;48 x GPIO&lt;/li&gt;
+
+&lt;li&gt;1 x QSPI&lt;/li&gt;
+
+&lt;li&gt;4 x Master/Slave SPI&lt;/li&gt;
+
+&lt;li&gt;2 x Two-wire interface (I²C)&lt;/li&gt;
+
+&lt;li&gt;I²S interface&lt;/li&gt;
+
+&lt;li&gt;2 x UART &lt;/li&gt;
+
+&lt;li&gt;4 x PWM&lt;/li&gt;
+
+&lt;li&gt;USB 2.0 controller&lt;/li&gt;
+
+&lt;li&gt;ARM TrustZone CryptoCell-310 Cryptographic and security module&lt;/li&gt;
+
+&lt;li&gt;AES 128-bit ECB/CCM/AAR hardware accelerator&lt;/li&gt;
+
+&lt;li&gt;Digital microphone interface (PDM)&lt;/li&gt;
+
+&lt;li&gt;Quadrature decoder&lt;/li&gt;
+
+&lt;li&gt;12-bit ADC&lt;/li&gt;
+
+&lt;li&gt;Low power comparator&lt;/li&gt;
+
+&lt;li&gt;On-chip 50Ω balun&lt;/li&gt;
+
+&lt;li&gt;On-air compatible with nRF52, nRF51 and nRF24 Series&lt;/li&gt;
+
+&lt;/ul&gt;
+
+ &lt;h3&gt;Applications&lt;/h3&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;Advanced high performance wearables&lt;/li&gt;
+
+&lt;li&gt;Wearables for secure payments&lt;/li&gt;
+
+&lt;li&gt;Virtual Reality/Augmented Reality systems&lt;/li&gt;
+
+&lt;li&gt;Smart Home sensor networks&lt;/li&gt;
+
+&lt;li&gt;Smart city sensor networks&lt;/li&gt;
+
+&lt;li&gt;High performance HID controllers&lt;/li&gt;
+
+&lt;li&gt;Internet of Things (IoT) sensor networks&lt;/li&gt;
+
+&lt;li&gt;Smart door locks&lt;/li&gt;
+
+&lt;li&gt;Smart lighting networks&lt;/li&gt;
+
+&lt;li&gt;Connected white goods&lt;/li&gt;
+
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="NRF52840_QF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN40P600X600X90-48_N">
+<connects>
+<connect gate="G$1" pin="ANT" pad="31"/>
+<connect gate="G$1" pin="DCC" pad="47"/>
+<connect gate="G$1" pin="DEC1" pad="1"/>
+<connect gate="G$1" pin="DEC3" pad="34"/>
+<connect gate="G$1" pin="DEC4" pad="46"/>
+<connect gate="G$1" pin="DEC6" pad="33"/>
+<connect gate="G$1" pin="NC" pad="28"/>
+<connect gate="G$1" pin="P0.00/XL1" pad="2"/>
+<connect gate="G$1" pin="P0.01/XL2" pad="3"/>
+<connect gate="G$1" pin="P0.02/AIN0" pad="40"/>
+<connect gate="G$1" pin="P0.03/AIN1" pad="39"/>
+<connect gate="G$1" pin="P0.04/AIN2" pad="4"/>
+<connect gate="G$1" pin="P0.05/AIN3" pad="5"/>
+<connect gate="G$1" pin="P0.07" pad="6"/>
+<connect gate="G$1" pin="P0.08" pad="7"/>
+<connect gate="G$1" pin="P0.09/NFC1" pad="29"/>
+<connect gate="G$1" pin="P0.10/NFC2" pad="30"/>
+<connect gate="G$1" pin="P0.11" pad="10"/>
+<connect gate="G$1" pin="P0.12" pad="11"/>
+<connect gate="G$1" pin="P0.13" pad="13"/>
+<connect gate="G$1" pin="P0.14" pad="14"/>
+<connect gate="G$1" pin="P0.17" pad="15"/>
+<connect gate="G$1" pin="P0.18/RESET" pad="16"/>
+<connect gate="G$1" pin="P0.19" pad="18"/>
+<connect gate="G$1" pin="P0.20" pad="19"/>
+<connect gate="G$1" pin="P0.21" pad="20"/>
+<connect gate="G$1" pin="P0.22" pad="21"/>
+<connect gate="G$1" pin="P0.23" pad="22"/>
+<connect gate="G$1" pin="P0.24" pad="23"/>
+<connect gate="G$1" pin="P0.28/AIN4" pad="41"/>
+<connect gate="G$1" pin="P0.29/AIN5" pad="42"/>
+<connect gate="G$1" pin="P0.30/AIN6" pad="43"/>
+<connect gate="G$1" pin="P0.31/AIN7" pad="44"/>
+<connect gate="G$1" pin="P1.00" pad="24"/>
+<connect gate="G$1" pin="P1.08" pad="8"/>
+<connect gate="G$1" pin="P1.09" pad="9"/>
+<connect gate="G$1" pin="P1.15" pad="38"/>
+<connect gate="G$1" pin="SWDCLK" pad="27"/>
+<connect gate="G$1" pin="SWDIO" pad="26"/>
+<connect gate="G$1" pin="VDD" pad="48"/>
+<connect gate="G$1" pin="VDD@12" pad="12"/>
+<connect gate="G$1" pin="VDD@17" pad="17"/>
+<connect gate="G$1" pin="VDD@25" pad="25"/>
+<connect gate="G$1" pin="VDD@37" pad="37"/>
+<connect gate="G$1" pin="VSS" pad="45"/>
+<connect gate="G$1" pin="VSS_PA" pad="32"/>
+<connect gate="G$1" pin="VSS_PAD" pad="PAD PAD@VIA01 PAD@VIA02 PAD@VIA03 PAD@VIA04 PAD@VIA05 PAD@VIA06 PAD@VIA07 PAD@VIA08 PAD@VIA09 PAD@VIA10 PAD@VIA11 PAD@VIA12 PAD@VIA13 PAD@VIA14 PAD@VIA15 PAD@VIA16"/>
+<connect gate="G$1" pin="XC1" pad="35"/>
+<connect gate="G$1" pin="XC2" pad="36"/>
 </connects>
 <technologies>
 <technology name=""/>
