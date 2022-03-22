@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1423,62 +1423,62 @@ IPC Low Density</description>
 </symbol>
 <symbol name="NRF52840_QF">
 <description>Multi-protocol Bluetooth Low Energy, IEEE 802.15.4, ANT and 2.4GHz proprietary system-on-chip</description>
-<pin name="DEC1" x="-5.08" y="38.1" length="middle" direction="pwr"/>
-<pin name="P0.00/XL1" x="-5.08" y="35.56" length="middle"/>
-<pin name="P0.01/XL2" x="-5.08" y="33.02" length="middle"/>
-<pin name="P0.04/AIN2" x="-5.08" y="30.48" length="middle"/>
-<pin name="P0.05/AIN3" x="-5.08" y="27.94" length="middle"/>
-<pin name="P0.07" x="-5.08" y="25.4" length="middle"/>
-<pin name="P0.08" x="-5.08" y="22.86" length="middle"/>
-<pin name="P1.08" x="-5.08" y="20.32" length="middle"/>
-<pin name="P1.09" x="-5.08" y="17.78" length="middle"/>
-<pin name="VDD" x="10.16" y="50.8" length="middle" direction="pwr" rot="R270"/>
-<pin name="P0.11" x="-5.08" y="15.24" length="middle"/>
-<pin name="P0.12" x="-5.08" y="12.7" length="middle"/>
-<pin name="P0.13" x="10.16" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.14" x="12.7" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.17" x="15.24" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.18/RESET" x="17.78" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.19" x="22.86" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.20" x="25.4" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.21" x="27.94" y="-5.08" length="middle" rot="R90"/>
-<pin name="SWDCLK" x="58.42" y="15.24" length="middle" direction="in" rot="R180"/>
-<pin name="SWDIO" x="58.42" y="12.7" length="middle" rot="R180"/>
-<pin name="P0.22" x="30.48" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.23" x="33.02" y="-5.08" length="middle" rot="R90"/>
-<pin name="P0.24" x="35.56" y="-5.08" length="middle" rot="R90"/>
-<pin name="ANT" x="58.42" y="25.4" length="middle" rot="R180"/>
-<pin name="VSS_PA" x="58.42" y="27.94" length="middle" rot="R180"/>
-<pin name="DEC6" x="58.42" y="30.48" length="middle" rot="R180"/>
-<pin name="DEC3" x="58.42" y="33.02" length="middle" rot="R180"/>
-<pin name="XC1" x="58.42" y="35.56" length="middle" direction="in" rot="R180"/>
-<pin name="XC2" x="58.42" y="38.1" length="middle" direction="out" rot="R180"/>
-<pin name="VDD@12" x="-5.08" y="10.16" length="middle" direction="pwr"/>
-<pin name="P0.03/AIN1" x="33.02" y="50.8" length="middle" rot="R270"/>
-<pin name="P0.02/AIN0" x="30.48" y="50.8" length="middle" rot="R270"/>
-<pin name="P0.28/AIN4" x="27.94" y="50.8" length="middle" rot="R270"/>
-<pin name="P0.29/AIN5" x="25.4" y="50.8" length="middle" rot="R270"/>
-<pin name="P0.30/AIN6" x="22.86" y="50.8" length="middle" rot="R270"/>
-<pin name="P0.31/AIN7" x="20.32" y="50.8" length="middle" rot="R270"/>
-<pin name="VSS" x="17.78" y="50.8" length="middle" direction="pwr" rot="R270"/>
-<pin name="DEC4" x="15.24" y="50.8" length="middle" direction="pwr" rot="R270"/>
-<pin name="DCC" x="12.7" y="50.8" length="middle" direction="out" rot="R270"/>
-<pin name="VDD@37" x="38.1" y="50.8" length="middle" direction="pwr" rot="R270"/>
+<pin name="DEC1" x="-5.08" y="40.64" length="middle" direction="pwr"/>
+<pin name="P0.00/XL1" x="-5.08" y="38.1" length="middle"/>
+<pin name="P0.01/XL2" x="-5.08" y="35.56" length="middle"/>
+<pin name="P0.04/AIN2" x="-5.08" y="33.02" length="middle"/>
+<pin name="P0.05/AIN3" x="-5.08" y="30.48" length="middle"/>
+<pin name="P0.07" x="-5.08" y="27.94" length="middle"/>
+<pin name="P0.08" x="-5.08" y="25.4" length="middle"/>
+<pin name="P1.08" x="-5.08" y="22.86" length="middle"/>
+<pin name="P1.09" x="-5.08" y="20.32" length="middle"/>
+<pin name="VDD" x="12.7" y="58.42" length="middle" direction="pwr" rot="R270"/>
+<pin name="P0.11" x="-5.08" y="17.78" length="middle"/>
+<pin name="P0.12" x="-5.08" y="15.24" length="middle"/>
+<pin name="P0.13" x="12.7" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.14" x="15.24" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.17" x="17.78" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.18/RESET" x="20.32" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.19" x="25.4" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.20" x="27.94" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.21" x="30.48" y="-5.08" length="middle" rot="R90"/>
+<pin name="SWDCLK" x="58.42" y="17.78" length="middle" direction="in" rot="R180"/>
+<pin name="SWDIO" x="58.42" y="15.24" length="middle" rot="R180"/>
+<pin name="P0.22" x="33.02" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.23" x="35.56" y="-5.08" length="middle" rot="R90"/>
+<pin name="P0.24" x="38.1" y="-5.08" length="middle" rot="R90"/>
+<pin name="ANT" x="58.42" y="27.94" length="middle" rot="R180"/>
+<pin name="VSS_PA" x="58.42" y="30.48" length="middle" rot="R180"/>
+<pin name="DEC6" x="58.42" y="33.02" length="middle" rot="R180"/>
+<pin name="DEC3" x="58.42" y="35.56" length="middle" rot="R180"/>
+<pin name="XC1" x="58.42" y="38.1" length="middle" direction="in" rot="R180"/>
+<pin name="XC2" x="58.42" y="40.64" length="middle" direction="out" rot="R180"/>
+<pin name="VDD@12" x="-5.08" y="12.7" length="middle" direction="pwr"/>
+<pin name="P0.03/AIN1" x="35.56" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.02/AIN0" x="33.02" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.28/AIN4" x="30.48" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.29/AIN5" x="27.94" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.30/AIN6" x="25.4" y="58.42" length="middle" rot="R270"/>
+<pin name="P0.31/AIN7" x="22.86" y="58.42" length="middle" rot="R270"/>
+<pin name="VSS" x="20.32" y="58.42" length="middle" direction="pwr" rot="R270"/>
+<pin name="DEC4" x="17.78" y="58.42" length="middle" direction="pwr" rot="R270"/>
+<pin name="DCC" x="15.24" y="58.42" length="middle" direction="out" rot="R270"/>
+<pin name="VDD@37" x="40.64" y="58.42" length="middle" direction="pwr" rot="R270"/>
 <wire x1="53.34" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="45.72" width="0.254" layer="94"/>
-<wire x1="0" y1="45.72" x2="53.34" y2="45.72" width="0.254" layer="94"/>
-<wire x1="53.34" y1="45.72" x2="53.34" y2="0" width="0.254" layer="94"/>
-<text x="19.05" y="24.13" size="1.778" layer="94">nRF52840-QF</text>
-<text x="45.72" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="45.72" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="P1.00" x="38.1" y="-5.08" length="middle" rot="R90"/>
-<pin name="VDD@17" x="20.32" y="-5.08" length="middle" direction="pwr" rot="R90"/>
-<pin name="VDD@25" x="58.42" y="10.16" length="middle" direction="pwr" rot="R180"/>
-<pin name="P0.09/NFC1" x="58.42" y="20.32" length="middle" rot="R180"/>
-<pin name="P0.10/NFC2" x="58.42" y="22.86" length="middle" rot="R180"/>
-<pin name="P1.15" x="35.56" y="50.8" length="middle" rot="R270"/>
-<pin name="VSS_PAD" x="58.42" y="7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="NC" x="58.42" y="17.78" length="middle" direction="nc" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="53.34" width="0.254" layer="94"/>
+<wire x1="0" y1="53.34" x2="53.34" y2="53.34" width="0.254" layer="94"/>
+<wire x1="53.34" y1="53.34" x2="53.34" y2="0" width="0.254" layer="94"/>
+<text x="21.59" y="26.67" size="1.778" layer="94">nRF52840</text>
+<text x="48.26" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="48.26" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P1.00" x="40.64" y="-5.08" length="middle" rot="R90"/>
+<pin name="VDD@17" x="22.86" y="-5.08" length="middle" direction="pwr" rot="R90"/>
+<pin name="VDD@25" x="58.42" y="12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="P0.09/NFC1" x="58.42" y="22.86" length="middle" rot="R180"/>
+<pin name="P0.10/NFC2" x="58.42" y="25.4" length="middle" rot="R180"/>
+<pin name="P1.15" x="38.1" y="58.42" length="middle" rot="R270"/>
+<pin name="VSS_PAD" x="58.42" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="NC" x="58.42" y="20.32" length="middle" direction="nc" rot="R180"/>
 </symbol>
 <symbol name="NRF52810_QC">
 <pin name="DEC1@1" x="-5.08" y="33.02" length="middle"/>
